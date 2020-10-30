@@ -1,0 +1,43 @@
+{
+	"http-request": {
+		"identifier": "http-request",
+		"name": "HTTP Request Card",
+		"versions": [{
+			"version": 1,
+			"name": "1",
+			"created": "iso8601-date",
+			"notes": "notes here",
+			"sha512-hash": "xxxx",
+			"entry-actions": "URL HERE",
+			"evaluate-function": "URL HERE",
+			"client-implementation": "URL HERE"
+		}, { 
+			"version": 2,
+			"name": "2",
+			"created": "iso8601-date",
+			"notes": "notes here",
+			"sha512-hash": "xxxx",
+			"entry-actions": "URL HERE",
+			"evaluate-function": "URL HERE",
+			"client-implementation": "URL HERE"
+		}]
+	},
+	"pause": {
+		"identifier": "pause",
+		"sha512-hash": "xxxx",
+		"versions": [{
+			"version": 1,
+			"name": "1",
+			"created": "iso8601-date",
+			"notes": "notes here",
+			"sha512-hash": "xxxx",
+			"entry-actions": "URL HERE",
+			"evaluate-function": "URL HERE",
+			"client-implementation": "URL HERE"
+		}]
+	}	
+}
+	
+	
+				
+			
