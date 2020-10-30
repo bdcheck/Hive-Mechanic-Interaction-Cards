@@ -1,3 +1,5 @@
+# pylint: disable=line-too-long
+
 import datetime
 import logging
 import re
@@ -36,7 +38,7 @@ result['details'] = {}
 result['actions'] = []
 result['next_id'] = None
 
-logger.info('PROCESS RESP: ' + str(response))
+logger.info('PROCESS RESP: %s', response)
 
 if response is not None:
     result['details']['response'] = response
@@ -61,7 +63,7 @@ if response is not None:
 elif 'timeout' in definition:
     test = timezone.now()
 
-    logger.info('NOW: ' + test.isoformat())
+    logger.info('NOW: %s', test.isoformat())
 
     if 'units' in definition['timeout'] and 'duration' in definition['timeout']:
         duration = int(definition['timeout']['duration'])
@@ -77,7 +79,7 @@ elif 'timeout' in definition:
         else:
             logger.info('CANNOT TEST WITH DURATION = ' + str(duration) + ' AND UNITS = ' + str(definition['timeout']['units']))
 
-    logger.info('TEST: ' + last_transition.isoformat() + ' >? ' + test.isoformat())
+    logger.info('TEST: %s >? %s', last_transition.isoformat(), test.isoformat())
 
     if last_transition < test :
         result['next_id'] = definition['timeout']['action']

@@ -1,5 +1,4 @@
 import re
-import json
 
 # Incoming globals: definition, response, last_transition, previous_state
 
@@ -8,11 +7,11 @@ result['details'] = {}
 result['actions'] = []
 result['next_id'] = None
 
-value = extras['session'].fetch_variable(definition['variable'])
+value = extras['session'].fetch_variable(definition['variable']) # pylint: disable=invalid-name
 
 if value is None:
     value = ''
-    
+
 result['details']['fetched'] = value
 result['details']['variable'] = definition['variable']
 result['actions'] = []

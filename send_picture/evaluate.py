@@ -2,12 +2,12 @@
 
 # Definition Example
 #      {
-#        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Welcome_sign_at_Wrigley.jpg", 
-#        "type": "send-picture", 
-#        "id": "wrigley-sign-example", 
-#        "name": "Show Sign Example", 
+#        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Welcome_sign_at_Wrigley.jpg",
+#        "type": "send-picture",
+#        "id": "wrigley-sign-example",
+#        "name": "Show Sign Example",
 #        "next": "instruction-3"
-#      }, 
+#      },
 #
 # Must populate:
 #   result = {

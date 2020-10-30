@@ -1,15 +1,13 @@
-import re
-
 # Incoming globals: definition, response, last_transition, previous_state
 
 # Definition Example
 #      {
-#        "message": "Are you ready to proceed? (Respond Y to continue.)", 
-#        "next": "process-consent", 
-#        "type": "send-message", 
-#        "id": "request-consent-2", 
+#        "message": "Are you ready to proceed? (Respond Y to continue.)",
+#        "next": "process-consent",
+#        "type": "send-message",
+#        "id": "request-consent-2",
 #        "name": "Request Consent"
-#      }, 
+#      },
 #
 # Must populate:
 #   result = {
