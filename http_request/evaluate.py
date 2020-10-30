@@ -1,6 +1,6 @@
  # pylint: disable=line-too-long
  
- import re
+import re
 import json
 
 import requests
