@@ -1,4 +1,6 @@
-import re
+ # pylint: disable=line-too-long
+ 
+ import re
 import json
 
 import requests
@@ -46,7 +48,7 @@ except requests.exceptions.Timeout:
 
 if response.status_code == 200:
     for pattern_def in definition['patterns']:
-        logger.info('MATCH? ' + pattern_def['pattern'] + ' / ' + str(response.text.encode('ascii',errors='ignore')) + ' --> ' + str(re.search(pattern_def['pattern'], response.text)))
+        logger.info('MATCH? %s / %s --> %s', pattern_def['pattern'], response.text, re.search(pattern_def['pattern'], response.text))
 
         pattern = re.compile(pattern_def['pattern'], re.IGNORECASE)
 

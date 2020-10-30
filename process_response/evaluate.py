@@ -81,7 +81,7 @@ elif 'timeout' in definition:
 
     logger.info('TEST: %s >? %s', last_transition.isoformat(), test.isoformat())
 
-    if last_transition < test :
+    if last_transition < test:
         result['next_id'] = definition['timeout']['action']
     else:
         result['next_id'] = definition['id']

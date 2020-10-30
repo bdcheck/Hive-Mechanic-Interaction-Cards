@@ -1,5 +1,3 @@
-import re
-
 # Incoming globals: definition, response, last_transition, previous_state
 
 # Definition Example

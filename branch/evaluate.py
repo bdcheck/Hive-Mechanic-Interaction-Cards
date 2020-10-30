@@ -1,7 +1,6 @@
 import json
 import logging
 import random
-import re
 
 # Incoming globals: definition, response, last_transition, previous_state
 
@@ -66,7 +65,7 @@ elif definition["mode"] == "random-no-repeat":
 
     logger.info('OPTIONS 2: %s', options)
 
-    if len(options) == 0:
+    if len(options) == 0: # pylint: disable=len-as-condition
         options = range(0, len(definition["branches"]))
         visits = []
 
@@ -74,7 +73,7 @@ elif definition["mode"] == "random-no-repeat":
 
     next_index = random.choice(options) # nosec
 else: # Sequential
-    if len(visits) > 0:
+    if len(visits) > 0: # pylint: disable=len-as-condition
         next_index = len(visits) % len(definition["branches"])
     else:
         next_index = 0
