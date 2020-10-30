@@ -10,5 +10,15 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - pylint .
+  - pylint branch
+  - pylint comment
+  - pylint game_over
+  - pylint http_request
+  - pylint process_response
+  - pylint process_variable
+  - pylint send_message
+  - pylint send_picture
+  - pylint send_picture
+  - pylint set_variable
+  - pylint voice_message
   - bandit -r .
