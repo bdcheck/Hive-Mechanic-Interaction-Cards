@@ -54,7 +54,7 @@ if past_branches:
 logger.info('VISITS: ' + str(visits))
  
 if definition["mode"] == "random":
-    next_index = random.randint(0, len(definition["branches"]) - 1)
+    next_index = random.randint(0, len(definition["branches"]) - 1) # nosec
 elif definition["mode"] == "random-no-repeat":
     options = range(0, len(definition["branches"]))
 
@@ -72,7 +72,7 @@ elif definition["mode"] == "random-no-repeat":
 
     logger.info('OPTIONS 3: ' + str(options))
     
-    next_index = random.choice(options)
+    next_index = random.choice(options) # nosec
 else: # Sequential
     if len(visits) > 0:
         next_index = len(visits) % len(definition["branches"])
