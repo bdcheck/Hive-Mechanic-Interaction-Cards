@@ -55,7 +55,7 @@ logger.info('VISITS: %s', visits)
 if definition["mode"] == "random":
     next_index = random.randint(0, len(definition["branches"]) - 1) # nosec
 elif definition["mode"] == "random-no-repeat":
-    options = range(0, len(definition["branches"]))
+    options = list(range(0, len(definition["branches"])))
 
     logger.info('OPTIONS 1: %s', options)
 

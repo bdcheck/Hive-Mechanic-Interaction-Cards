@@ -77,7 +77,7 @@ elif 'timeout' in definition:
         elif definition['timeout']['units'] == 'day':
             test = test - datetime.timedelta(days=duration)
         else:
-            logger.info('CANNOT TEST WITH DURATION = ' + str(duration) + ' AND UNITS = ' + str(definition['timeout']['units']))
+            logger.info('CANNOT TEST WITH DURATION = %d, AND UNITS = %s', str(duration), str(definition['timeout']['units']))
 
     logger.info('TEST: %s >? %s', last_transition.isoformat(), test.isoformat())
 
