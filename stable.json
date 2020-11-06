@@ -28,7 +28,7 @@
 		}]
 	},
 	"http_request": {
-		"identifier": "game_over",
+		"identifier": "game-over",
 		"name": "Game Over Card",
 		"versions": [{
 			"version": 0.1,
@@ -56,7 +56,7 @@
 		}]
 	},
 	"process_response": {
-		"identifier": "process_response",
+		"identifier": "process-response",
 		"name": "Process Response Card",
 		"versions": [{
 			"version": 0.1,
@@ -70,7 +70,7 @@
 		}]
 	},
 	"process_variable": {
-		"identifier": "process_variable",
+		"identifier": "process-variable",
 		"name": "Process Variable Card",
 		"versions": [{
 			"version": 0.1,
@@ -84,7 +84,7 @@
 		}]
 	},
 	"send_message": {
-		"identifier": "send_message",
+		"identifier": "send-message",
 		"name": "Send Message Card",
 		"versions": [{
 			"version": 0.1,
@@ -98,7 +98,7 @@
 		}]
 	},
 	"send_picture": {
-		"identifier": "send_picture",
+		"identifier": "send-picture",
 		"name": "Send Picture Card",
 		"versions": [{
 			"version": 0.1,
@@ -112,7 +112,7 @@
 		}]
 	},
 	"set_variable": {
-		"identifier": "set_variable",
+		"identifier": "set-variable",
 		"name": "Set Variable Card",
 		"versions": [{
 			"version": 0.1,
@@ -126,7 +126,7 @@
 		}]
 	},
 	"voice_message": {
-		"identifier": "voice_message",
+		"identifier": "voice-message",
 		"name": "Voice Message Card",
 		"versions": [{
 			"version": 0.1,
