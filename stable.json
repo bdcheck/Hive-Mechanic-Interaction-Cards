@@ -19,9 +19,9 @@
 		"versions": [{
 			"version": 0.1,
 			"name": "0.1",
-			"created": "",
-			"notes": "",
-			"sha512-hash": "",
+			"created": "2020-11-06T18:11:51.987813+00:00",
+			"notes": "Initial version.",
+			"sha512-hash": "f7a960773df4e045381d7e77749d2f25da1d09fdd20c2f03d2e9dee211eb0be7d28f5c195a23761f84f6fb0bf71859babe0fed4f932ccce119c73240a0f622f1",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/client.js"
