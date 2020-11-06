@@ -27,7 +27,7 @@
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/client.js"
 		}]
 	},
-	"http_request": {
+	"game-over": {
 		"identifier": "game-over",
 		"name": "Game Over Card",
 		"versions": [{
@@ -39,6 +39,20 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/client.js"
+		}]
+	},
+	"http-request": {
+		"identifier": "http-request",
+		"name": "HTTP Request Card",
+		"versions": [{
+			"version": 0.1,
+			"name": "0.1",
+			"created": "2020-11-06T18:11:51.987813+00:00",
+			"notes": "Initial version.",
+			"sha512-hash": "29e496def6bac38307926bab0f7891dda2e572a32733720ab74447d0ecb5e5a6586c8d26d07e47b0a32082d195f2f37c954a9c4db3941bcc6549374803f736bd",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/client.js"
 		}]
 	},
 	"pause": {
