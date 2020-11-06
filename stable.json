@@ -7,7 +7,7 @@
 			"name": "0.1",
 			"created": "2020-11-06T18:11:51.987813+00:00",
 			"notes": "Initial version.",
-			"sha512-hash": "f7a960773df4e045381d7e77749d2f25da1d09fdd20c2f03d2e9dee211eb0be7d28f5c195a23761f84f6fb0bf71859babe0fed4f932ccce119c73240a0f622f1",
+			"sha512-hash": "9eea4202a87de1ecceec77f6ebd3f64fc9c1f69250a22b19b30fc3c5da164ee091920342e57821dbc62dbb0265461146bae54007dd8f5f27eb5f63059fe5ce11",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/client.js"
@@ -49,7 +49,7 @@
 			"name": "0.1",
 			"created": "2020-11-06T18:11:51.987813+00:00",
 			"notes": "Initial version.",
-			"sha512-hash": "29e496def6bac38307926bab0f7891dda2e572a32733720ab74447d0ecb5e5a6586c8d26d07e47b0a32082d195f2f37c954a9c4db3941bcc6549374803f736bd",
+			"sha512-hash": "851c4cbcb5e6e7d59b510b22a00982bfe5f4eb0aab8cc7b6bb8814d8836d4214b03ca7983f0761d2b9180158bfc788bedd8cac5916a4930d0f4a811bb7855d4a",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/client.js"
