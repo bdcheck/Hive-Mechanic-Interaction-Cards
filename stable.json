@@ -13,7 +13,7 @@
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/client.js"
 		}]
 	},
-	"branch": {
+	"comment": {
 		"identifier": "comment",
 		"name": "Comment Card",
 		"versions": [{
