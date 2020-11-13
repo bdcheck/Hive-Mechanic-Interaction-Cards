@@ -21,4 +21,5 @@ script:
   - pylint send_picture
   - pylint set_variable
   - pylint voice_message
+  - pylint response_contains_image
   - bandit -r .
