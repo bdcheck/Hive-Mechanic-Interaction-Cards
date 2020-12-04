@@ -97,6 +97,20 @@
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_variable/client.js"
 		}]
 	},
+	"response_contains_image": {
+		"identifier": "response-contains-image",
+		"name": "Response Contains Image Card",
+		"versions": [{
+			"version": 0.2,
+			"name": "0.2",
+			"created": "2020-12-05T00:00:00.000000+00:00",
+			"notes": "Initial version.",
+			"sha512-hash": "eb70d97cc54fec49f4f1d02c5e0661761c72ff9e790c78cf47f6508e0988103249bada4264bdb8d3e5151c4770d21c2d6bf4a4295bf4cdd29b660cafe9cf0c77",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/client.js"
+		}]
+	},
 	"send_message": {
 		"identifier": "send-message",
 		"name": "Send Message Card",
