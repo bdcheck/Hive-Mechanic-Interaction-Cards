@@ -71,16 +71,16 @@
 	},
 	"process_response": {
 		"identifier": "process-response",
-		"name": "Process Response Card",
+		"name": "Keyword Response (SMS)",
 		"versions": [{
-			"version": 0.1,
-			"name": "0.1",
+			"version": 0.4,
+			"name": "0.4",
 			"created": "2020-11-06T18:11:51.987813+00:00",
-			"notes": "Initial version.",
-			"sha512-hash": "5436ff6e7b5be5dd8773bc24ba4d918f80964e3de54bdec156430025e9b3073505284fcb9afaf40a2aa402c1570295b0f16ded99a05fe2ff6fb91f0fee1a01af",
-			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_response/entry.py",
-			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_response/evaluate.py",
-			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_response/client.js"
+			"notes": "Updates human-readable card name",
+			"sha512-hash": "3a70ec072a4992088ea29a104a6fc725169d1464f0b2f1c7f1753dbf86f3f0662e51f8a452c9e89379dcb0b271099e4e625854e2e4f6f6fe55d22464e61bac9d",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/client.js"
 		}]
 	},
 	"process_variable": {
