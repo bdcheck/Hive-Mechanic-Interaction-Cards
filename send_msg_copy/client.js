@@ -1,7 +1,7 @@
 var modules = ["material", 'cards/node', 'jquery'];
 
 define(modules, function (mdc, Node) {
-    class SendMsgCopyNode extends Node {
+    class SendMessageNode extends Node {
         constructor(definition, sequence) {
             super(definition, sequence);
         }
