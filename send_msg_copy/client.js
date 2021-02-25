@@ -1,7 +1,7 @@
 var modules = ["material", 'cards/node', 'jquery'];
 
 define(modules, function (mdc, Node) {
-    class SendMessageNode extends Node {
+    class SendMsgCopyNode extends Node {
         constructor(definition, sequence) {
             super(definition, sequence);
         }
@@ -99,9 +99,9 @@ define(modules, function (mdc, Node) {
 					const destinationNode = destinationNodes[i];
 
                     if (me.definition["next"].endsWith(destinationNode["id"])) {
-						$("[data-node-id='" + destinationNode["id"] + "']").css("background-color", "#ffffff");
+						$("[data-node-id='" + destinationNode["id"] + "']").css("background-color", "#8dbcb4);
 					} else {
-						$("[data-node-id='" + destinationNode["id"] + "']").css("background-color", "#e0e0e0");
+						$("[data-node-id='" + destinationNode["id"] + "']").css("background-color", "#d65858");
 					}
 				}
 			});
