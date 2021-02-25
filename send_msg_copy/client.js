@@ -170,7 +170,7 @@ define(modules, function (mdc, Node) {
 				"name": cardName, 
 				"context": "(Context goes here...)", 
 				"message": "(Message goes here...)", 
-				"type": "send-message", 
+				"type": "send-msg-copy", 
 				"id": Node.uuidv4(),
 				"next": null
 			}; 
