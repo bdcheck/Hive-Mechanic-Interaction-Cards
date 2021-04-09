@@ -79,7 +79,7 @@
 			"sha512-hash": "851c4cbcb5e6e7d59b510b22a00982bfe5f4eb0aab8cc7b6bb8814d8836d4214b03ca7983f0761d2b9180158bfc788bedd8cac5916a4930d0f4a811bb7855d4a",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/evaluate.py",
-			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0./http_request/client.js"
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/client.js"
 		}]
 	},
 	"pause": {
