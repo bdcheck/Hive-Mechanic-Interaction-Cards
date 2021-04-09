@@ -38,7 +38,7 @@ result['details'] = {}
 result['actions'] = []
 result['next_id'] = None
 
-logger.info('PROCESS RESP: %s -- %s', response, str(type(response)))
+logger.info('PROCESS RESP: %s', response)
 
 if response is not None:
     result['details']['response'] = response

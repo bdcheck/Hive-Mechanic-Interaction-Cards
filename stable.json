@@ -11,6 +11,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/branch/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.830813+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/branch/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/branch/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/branch/client.js",
+			"sha512-hash": "eb16c00162178c6f30456be5e3c831e2554c496eeb16142b72c2b34beaa097132128c3849a798a526d29e752fcf892ae047eec40916f6ff41ad26dd8840bca62"
 		}]
 	},
 	"comment": {
@@ -25,6 +34,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/comment/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.830469+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/client.js",
+			"sha512-hash": "c1ab336c476582b4253506b09164ed009ffcf6636c5b1e5a6974035897eade179d2eec80df0b47d3edb85723633ecdc9d3fdf7d9877b22adbf31e83280dd89ad"
 		}]
 	},
 	"game-over": {
@@ -39,6 +57,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/game_over/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.831497+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/game_over/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/game_over/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/game_over/client.js",
+			"sha512-hash": "fdb98f485855bf9d9cf646a1bdbe27c2f6926d97161b193ba6d35cefdf75a207fd8e2ab19a91cc16a62ff7a1093d3f590855b49a5a17b265dc4dd0d5490c6588"
 		}]
 	},
 	"http-request": {
@@ -52,7 +79,7 @@
 			"sha512-hash": "851c4cbcb5e6e7d59b510b22a00982bfe5f4eb0aab8cc7b6bb8814d8836d4214b03ca7983f0761d2b9180158bfc788bedd8cac5916a4930d0f4a811bb7855d4a",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/evaluate.py",
-			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/http_request/client.js"
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0./http_request/client.js"
 		}]
 	},
 	"pause": {
@@ -67,6 +94,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/pause/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/pause/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/pause/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.832077+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/pause/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/pause/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/pause/client.js",
+			"sha512-hash": "3136cce370714c64823cdf8b2ad1bf26e4f34aa6fa63e2eda1857c8056fdbd593e585f41d7d9450c9d1b1850378e8dc58ab1ce5978536a9899f651ab470a7dd9"
 		}]
 	},
 	"process_response": {
@@ -81,6 +117,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.3/process_response/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.830261+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/client.js",
+			"sha512-hash": "8974455d747a36a796bd3a1c8a0f7f2b228a009e82a2854e738732c52e5b45c636c5a0cfdc7c63c2c59bbcf1aedd42196f4068a28a8af28604a9eb541381b439"
 		}]
 	},
 	"process_variable": {
@@ -95,6 +140,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_variable/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_variable/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/process_variable/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.831912+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_variable/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_variable/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_variable/client.js",
+			"sha512-hash": "eb70d97cc54fec49f4f1d02c5e0661761c72ff9e790c78cf47f6508e0988103249bada4264bdb8d3e5151c4770d21c2d6bf4a4295bf4cdd29b660cafe9cf0c77"
 		}]
 	},
 	"response_contains_image": {
@@ -109,6 +163,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.831094+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/client.js",
+			"sha512-hash": "e154872bd2ecc5f5d41385fe819ebb20e6f60a1722354ce42c68dc1cde2264790342d8e3e6b222d655222c4fb668bb7af9423fe67af6d6f3c9af4faf17726274"
 		}]
 	},
 	"send_message": {
@@ -123,6 +186,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_message/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_message/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_message/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.829816+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_message/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_message/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_message/client.js",
+			"sha512-hash": "c14998a26807ce54c8867c6bb26ba5278312b4da5d6fc00bf13e7fa6488dae05a18503eaccf875071476f379e363faf9183ed2954ffb68140a5b8337a87fca2a"
 		}]
 	},
 	"send_picture": {
@@ -137,6 +209,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/client.js"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.831792+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_picture/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_picture/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_picture/client.js",
+			"sha512-hash": "328456a18cdb7b4843c68cdcbb453e336fcf66cdf20587b76acca9d4587e32321ab530931098ee0dd508a80a0da66cbf6ccc0340389733cc9a3b3480c70ef9c2"
 		}]
 	},
 	"set_variable": {
@@ -147,10 +228,19 @@
 			"name": "0.1",
 			"created": "2020-11-06T18:11:51.987813+00:00",
 			"notes": "Initial version.",
-			"sha512-hash": "f7dd3e4ae6dc043636a6876e45e89994c57a0a98f4115951633d178862614819703d81fb723e0a8c97bdba610834e883553a9cb1d4df9057fd3e36395b381f85",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/set_variable/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/set_variable/evaluate.py",
-			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/set_variable/client.js"
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/set_variable/client.js",
+			"sha512-hash": "f7dd3e4ae6dc043636a6876e45e89994c57a0a98f4115951633d178862614819703d81fb723e0a8c97bdba610834e883553a9cb1d4df9057fd3e36395b381f85"
+		}, {
+			"version": 0.5,
+			"name": "0.5",
+			"created": "2021-04-09T15:46:30.831238+00:00",
+			"notes": "Uses declarative definitions.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/client.js",
+			"sha512-hash": "3bc622e868b7326da6a4d502839275637d3d04f40e78184680ecd88de8c1a5a0cd45a07160cd5b18badbfed69e2163fd50e40dda78d03fc6d9fb2b0ee51c1bed"
 		}]
 	},
 	"voice_message": {
