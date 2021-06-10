@@ -11,7 +11,7 @@ define(modules, function (mdc, Node) {
         }
 
         cardFields() {
-            var defaultCard = SendMessageNode.createCard('');
+            var defaultCard = CommentNode.createCard('');
 
             return [{
                 'field': 'comment',
