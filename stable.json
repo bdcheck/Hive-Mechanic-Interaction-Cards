@@ -60,7 +60,7 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/client.js",
-			"sha512-hash": "c1ab336c476582b4253506b09164ed009ffcf6636c5b1e5a6974035897eade179d2eec80df0b47d3edb85723633ecdc9d3fdf7d9877b22adbf31e83280dd89ad"
+			"sha512-hash": "0a53419d4590f204018b7fe503b987329bde88031579c03fc5e69d9fdcb7d5ccdf3e95b038797ae3006bc1d243e2e03e1afff3e25e14a45ee5be70dadf81e04e"
 		}]
 	},
 	"game-over": {
@@ -250,7 +250,7 @@
 			"name": "0.1",
 			"created": "2020-11-06T18:11:51.987813+00:00",
 			"notes": "Initial version.",
-			"sha512-hash": "640b2d4bfa6f7ea264475bc550cbd3fdd93f2ab9ab31d8f523b16bc4ceb25ee0ed1bc86c3b39fc0e2cf8b3c6e352d2c24483d5461ad4501bfeae91aa7fa9f733",
+			"sha512-hash": "62457162f7991a769becf1dbd2e597c86facf26bcf386fa6eff3fb90e23ea51e604656c66e730a923dc1e03ab9c0efe01a7c47a7e830e4e4a71b59bec79a21da",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.1/send_picture/client.js"
@@ -271,7 +271,7 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/client.js",
-			"sha512-hash": "328456a18cdb7b4843c68cdcbb453e336fcf66cdf20587b76acca9d4587e32321ab530931098ee0dd508a80a0da66cbf6ccc0340389733cc9a3b3480c70ef9c2"
+			"sha512-hash": "640b2d4bfa6f7ea264475bc550cbd3fdd93f2ab9ab31d8f523b16bc4ceb25ee0ed1bc86c3b39fc0e2cf8b3c6e352d2c24483d5461ad4501bfeae91aa7fa9f733"
 		}]
 	},
 	"set_variable": {
