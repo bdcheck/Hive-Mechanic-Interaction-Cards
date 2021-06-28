@@ -265,7 +265,7 @@
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.6/voice_message/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.6/voice_message/client.js"
 		}]
-	}
+	},
 	"data_query": {
 		"identifier": "data-query",
 		"name": "Data Query Card",
