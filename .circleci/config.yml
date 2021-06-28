@@ -1,0 +1,79 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2
+
+workflows:
+  build:
+    jobs:
+      - build-38
+      - build-27
+
+jobs:
+  build-38:
+    docker:
+      - image: cimg/python:3.8
+    steps:
+      - checkout
+      - restore_cache:
+          key: venv-38-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          name: Build and validate
+          command: |
+            pip install -r requirements.txt --progress-bar off
+            pylint branch
+            pylint comment
+            pylint game_over
+            pylint http_request
+            pylint process_response
+            pylint process_variable
+            pylint send_message
+            pylint send_picture
+            pylint send_picture
+            pylint set_variable
+            pylint voice_message
+            pylint response_contains_image
+            bandit -r .      
+      - save_cache:
+          key: venv-38-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
+          paths:
+            - "/home/circleci/venv"
+      - store_test_results:
+          path: test-results/
+      - store_artifacts:
+          path: test-reports/
+          destination: python_app
+
+  build-27:
+    docker:
+      - image: cimg/python:2.7
+    steps:
+      - checkout
+      - restore_cache:
+          key: venv-27-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          name: Build and validate
+          command: |
+            pip install -r requirements.txt --progress-bar off
+            pylint branch
+            pylint comment
+            pylint game_over
+            pylint http_request
+            pylint process_response
+            pylint process_variable
+            pylint send_message
+            pylint send_picture
+            pylint send_picture
+            pylint set_variable
+            pylint voice_message
+            pylint response_contains_image
+            bandit -r .
+      - save_cache:
+          key: venv-27-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
+          paths:
+            - "/home/circleci/venv"
+      - store_test_results:
+          path: test-results/
+      - store_artifacts:
+          path: test-reports/
+          destination: python_app
