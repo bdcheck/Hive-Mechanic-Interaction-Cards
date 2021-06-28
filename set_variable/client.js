@@ -11,8 +11,6 @@ define(modules, function (mdc, Node) {
         }
 
         cardFields() {
-            var defaultCard = SetVariableNode.createCard('');
-
             return [{
                 'field': 'variable',
                 'type': 'text',

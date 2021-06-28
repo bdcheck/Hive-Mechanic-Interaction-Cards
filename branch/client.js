@@ -118,8 +118,6 @@ define(modules, function (mdc, Node) {
         }
 
         cardFields() {
-            var defaultCard = BranchNode.createCard('');
-
             return [{
                 'field': 'mode',
                 'type': 'choice',

@@ -38,19 +38,12 @@ result['details'] = {}
 result['actions'] = []
 result['next_id'] = None
 
-logger.info('PROCESS RESP: %s', response)
-
 if response is not None:
     result['details']['response'] = response
     result['actions'] = []
     result['next_id'] = None
 
     for pattern_def in definition['patterns']:
-        logger.info('MATCH?')
-        logger.info(str(pattern_def['pattern']))
-        logger.info(str(response))
-        logger.info(str(re.match(pattern_def['pattern'], response)))
-
         pattern = re.compile(pattern_def['pattern'], re.IGNORECASE)
 
         if result['next_id'] is None and pattern.match(response) is not None:
@@ -62,8 +55,6 @@ if response is not None:
         result['matched_pattern'] = 'no-matches-found'
 elif 'timeout' in definition:
     test = timezone.now()
-
-    logger.info('NOW: %s', test.isoformat())
 
     if 'units' in definition['timeout'] and 'duration' in definition['timeout']:
         duration = int(definition['timeout']['duration'])
@@ -77,9 +68,7 @@ elif 'timeout' in definition:
         elif definition['timeout']['units'] == 'day':
             test = test - datetime.timedelta(days=duration)
         else:
-            logger.info('CANNOT TEST WITH DURATION = %d, AND UNITS = %s', str(duration), str(definition['timeout']['units']))
-
-    logger.info('TEST: %s >? %s', last_transition.isoformat(), test.isoformat())
+            logger.info('Invalid duration = %d, and units = %s', str(duration), str(definition['timeout']['units']))
 
     if last_transition < test:
         result['next_id'] = definition['timeout']['action']

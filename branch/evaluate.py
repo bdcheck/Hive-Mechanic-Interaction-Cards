@@ -20,10 +20,6 @@ import random
 
 logger = logging.getLogger('db')
 
-
-logger.info('DEF: %s', json.dumps(definition, indent=2))
-logger.info('EXTRAS: %s', extras)
-
 result['details'] = {}
 
 result['actions'] = []
@@ -50,26 +46,18 @@ next_index = 0
 if past_branches:
     visits = past_branches.split(';')
 
-logger.info('VISITS: %s', visits)
-
 if definition["mode"] == "random":
     next_index = random.randint(0, len(definition["branches"]) - 1) # nosec
 elif definition["mode"] == "random-no-repeat":
     options = list(range(0, len(definition["branches"])))
 
-    logger.info('OPTIONS 1: %s', options)
-
     for visit in sorted(visits, reverse=True):
         if int(visit) < len(options):
             del options[int(visit)]
 
-    logger.info('OPTIONS 2: %s', options)
-
     if len(options) == 0: # pylint: disable=len-as-condition
         options = range(0, len(definition["branches"]))
         visits = []
-
-    logger.info('OPTIONS 3: %s', options)
 
     next_index = random.choice(options) # nosec
 else: # Sequential

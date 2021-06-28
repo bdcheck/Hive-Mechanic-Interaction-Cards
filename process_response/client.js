@@ -103,8 +103,6 @@ define(modules, function (mdc, Node) {
         }
 
         cardFields() {
-            var defaultCard = ProcessResponseNode.createCard('');
-            
             return [{
                 'field': 'patterns',
                 'type': 'list',

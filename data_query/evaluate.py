@@ -39,11 +39,7 @@ if processor is not None:
             'context': context
         }
 
-        logger.info('START EVAL: %s', processor.processor_function)
-
         eval(code, {}, local_env) # nosec # pylint: disable=eval-used
-
-        logger.info('END EVAL')
 
         for key in context:
             if key in original_context and context[key] == original_context[key]:

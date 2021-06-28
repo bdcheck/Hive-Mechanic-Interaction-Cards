@@ -7,8 +7,6 @@ import arrow
 
 logger = logging.getLogger('db')
 
-logger.info('DEF: ' + json.dumps(definition, indent=2))
-
 variable = definition['id'] + '-pause-duration'
 
 value = extras['session'].fetch_variable(variable)
@@ -26,8 +24,6 @@ else:
     now = arrow.get()
     
     if now > pause_end:
-        logger.info('TIME TO GO!')
-
         extras['session'].set_variable(variable, '')
 
         result['details'] = {
@@ -41,8 +37,6 @@ else:
         if ('#' in result['next_id']) is False:
             result['next_id'] = definition['sequence_id'] + '#' + result['next_id']
     else:
-        logger.info('NOT YET: ' + str(now) + ' < ' + str(pause_end))
-
         result['actions'] = []
 
         result['next_id'] = None

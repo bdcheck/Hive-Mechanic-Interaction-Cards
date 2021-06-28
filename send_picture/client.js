@@ -14,8 +14,6 @@ define(modules, function (mdc, Node) {
         }
 
         cardFields() {
-            var defaultCard = SendPictureNode.createCard('');
-
             return [{
                 'field': 'image',
                 'type': 'image-url',
