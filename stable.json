@@ -341,7 +341,7 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/client.js"
-		} {
+		}, {
 			"version": 0.8,
 			"name": "0.8",
 			"created": "2021-06-28T13:00:00.000000+00:00",
