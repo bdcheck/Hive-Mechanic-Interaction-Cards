@@ -20,6 +20,15 @@
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/branch/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/branch/client.js",
 			"sha512-hash": "eb16c00162178c6f30456be5e3c831e2554c496eeb16142b72c2b34beaa097132128c3849a798a526d29e752fcf892ae047eec40916f6ff41ad26dd8840bca62"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.830813+00:00",
+			"notes": "Code cleanup",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/branch/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/branch/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/branch/client.js",
+			"sha512-hash": "eb16c00162178c6f30456be5e3c831e2554c496eeb16142b72c2b34beaa097132128c3849a798a526d29e752fcf892ae047eec40916f6ff41ad26dd8840bca62"
 		}]
 	},
 	"comment": {
@@ -42,6 +51,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/comment/client.js",
+			"sha512-hash": "c1ab336c476582b4253506b09164ed009ffcf6636c5b1e5a6974035897eade179d2eec80df0b47d3edb85723633ecdc9d3fdf7d9877b22adbf31e83280dd89ad"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.830469+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/comment/client.js",
 			"sha512-hash": "c1ab336c476582b4253506b09164ed009ffcf6636c5b1e5a6974035897eade179d2eec80df0b47d3edb85723633ecdc9d3fdf7d9877b22adbf31e83280dd89ad"
 		}]
 	},
@@ -103,6 +121,15 @@
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/pause/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/pause/client.js",
 			"sha512-hash": "3136cce370714c64823cdf8b2ad1bf26e4f34aa6fa63e2eda1857c8056fdbd593e585f41d7d9450c9d1b1850378e8dc58ab1ce5978536a9899f651ab470a7dd9"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.832077+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/pause/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/pause/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/pause/client.js",
+			"sha512-hash": "3136cce370714c64823cdf8b2ad1bf26e4f34aa6fa63e2eda1857c8056fdbd593e585f41d7d9450c9d1b1850378e8dc58ab1ce5978536a9899f651ab470a7dd9"
 		}]
 	},
 	"process_response": {
@@ -125,6 +152,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/process_response/client.js",
+			"sha512-hash": "8974455d747a36a796bd3a1c8a0f7f2b228a009e82a2854e738732c52e5b45c636c5a0cfdc7c63c2c59bbcf1aedd42196f4068a28a8af28604a9eb541381b439"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-04-09T15:46:30.830261+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/process_response/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/process_response/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/process_response/client.js",
 			"sha512-hash": "8974455d747a36a796bd3a1c8a0f7f2b228a009e82a2854e738732c52e5b45c636c5a0cfdc7c63c2c59bbcf1aedd42196f4068a28a8af28604a9eb541381b439"
 		}]
 	},
@@ -172,6 +208,15 @@
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/client.js",
 			"sha512-hash": "e154872bd2ecc5f5d41385fe819ebb20e6f60a1722354ce42c68dc1cde2264790342d8e3e6b222d655222c4fb668bb7af9423fe67af6d6f3c9af4faf17726274"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.831094+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/client.js",
+			"sha512-hash": "e154872bd2ecc5f5d41385fe819ebb20e6f60a1722354ce42c68dc1cde2264790342d8e3e6b222d655222c4fb668bb7af9423fe67af6d6f3c9af4faf17726274"
 		}]
 	},
 	"send_message": {
@@ -218,6 +263,15 @@
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_picture/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/send_picture/client.js",
 			"sha512-hash": "328456a18cdb7b4843c68cdcbb453e336fcf66cdf20587b76acca9d4587e32321ab530931098ee0dd508a80a0da66cbf6ccc0340389733cc9a3b3480c70ef9c2"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.831792+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/send_picture/client.js",
+			"sha512-hash": "328456a18cdb7b4843c68cdcbb453e336fcf66cdf20587b76acca9d4587e32321ab530931098ee0dd508a80a0da66cbf6ccc0340389733cc9a3b3480c70ef9c2"
 		}]
 	},
 	"set_variable": {
@@ -240,6 +294,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.5/set_variable/client.js",
+			"sha512-hash": "3bc622e868b7326da6a4d502839275637d3d04f40e78184680ecd88de8c1a5a0cd45a07160cd5b18badbfed69e2163fd50e40dda78d03fc6d9fb2b0ee51c1bed"
+		}, {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T15:46:30.831238+00:00",
+			"notes": "Code cleanup.",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/set_variable/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/set_variable/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/set_variable/client.js",
 			"sha512-hash": "3bc622e868b7326da6a4d502839275637d3d04f40e78184680ecd88de8c1a5a0cd45a07160cd5b18badbfed69e2163fd50e40dda78d03fc6d9fb2b0ee51c1bed"
 		}]
 	},
@@ -278,6 +341,15 @@
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.7/data_query/client.js"
+		} {
+			"version": 0.8,
+			"name": "0.8",
+			"created": "2021-06-28T13:00:00.000000+00:00",
+			"notes": "Code cleanup.",
+        	"sha512-hash": "798170a914d641f1f8a21535d13bba265c5a8c11e1f7b525e7766fbfe41a6cad4d87af76174fd5a4bfcbfeda0b7e4b5109aa9ab904157447bb1fed7eb758f9e8",
+			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/data_query/entry.py",
+			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/data_query/evaluate.py",
+			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.8/data_query/client.js"
 		}]
 	}
 }
