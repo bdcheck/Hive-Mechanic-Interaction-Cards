@@ -260,7 +260,7 @@
 			"name": "0.6",
 			"created": "2021-06-28T12:00:00.000000+00:00",
 			"notes": "Updates user interface to use updated Material Design library",
-	        "sha512-hash": "0a31dbd1d86dedd855734ae549157d70ae123b9ee77e15cffb1d0a0bdafcf7f9765fe77518746317dd11b8796d4046e0e6d32df1ecf4deffbcd6a3396ad41917",
+	        	"sha512-hash": "0a31dbd1d86dedd855734ae549157d70ae123b9ee77e15cffb1d0a0bdafcf7f9765fe77518746317dd11b8796d4046e0e6d32df1ecf4deffbcd6a3396ad41917",
 			"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.6/voice_message/entry.py",
 			"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.6/voice_message/evaluate.py",
 			"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.6/voice_message/client.js"
