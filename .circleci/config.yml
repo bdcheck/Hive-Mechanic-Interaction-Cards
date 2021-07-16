@@ -35,10 +35,10 @@ jobs:
             pylint cards/voice_message
             pylint cards/response_contains_image
 
-            pylint --dummy-variables="context,metadata" data_processors/positionstack
-            pylint --dummy-variables="context,metadata" data_processors/yelp
-            pylint --dummy-variables="context,metadata" data_processors/openweather
-            pylint --dummy-variables="context,metadata" data_processors/wmata
+            pylint data_processors/positionstack
+            pylint data_processors/yelp
+            pylint data_processors/openweather
+            pylint data_processors/wmata
 
             bandit -r .      
       - save_cache:
@@ -76,10 +76,10 @@ jobs:
             pylint cards/voice_message
             pylint cards/response_contains_image
 
-            pylint --dummy-variables="context,metadata" data_processors/positionstack
-            pylint --dummy-variables="context,metadata" data_processors/yelp
-            pylint --dummy-variables="context,metadata" data_processors/openweather
-            pylint --dummy-variables="context,metadata" data_processors/wmata
+            pylint data_processors/positionstack
+            pylint data_processors/yelp
+            pylint data_processors/openweather
+            pylint data_processors/wmata
 
             bandit -r .
       - save_cache:
