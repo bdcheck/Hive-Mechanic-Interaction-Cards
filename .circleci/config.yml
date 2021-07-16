@@ -34,6 +34,12 @@ jobs:
             pylint cards/set_variable
             pylint cards/voice_message
             pylint cards/response_contains_image
+
+            pylint data_processors/positionstack
+            pylint data_processors/yelp
+            pylint data_processors/openweather
+            pylint data_processors/wmata
+
             bandit -r .      
       - save_cache:
           key: venv-38-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
@@ -69,6 +75,12 @@ jobs:
             pylint cards/set_variable
             pylint cards/voice_message
             pylint cards/response_contains_image
+
+            pylint data_processors/positionstack
+            pylint data_processors/yelp
+            pylint data_processors/openweather
+            pylint data_processors/wmata
+
             bandit -r .
       - save_cache:
           key: venv-27-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
