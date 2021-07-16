@@ -22,18 +22,18 @@ jobs:
           command: |
             pip install -r requirements.txt --progress-bar off
             python validate_manifest.py stable.json
-            pylint branch
-            pylint comment
-            pylint game_over
-            pylint http_request
-            pylint process_response
-            pylint process_variable
-            pylint send_message
-            pylint send_picture
-            pylint send_picture
-            pylint set_variable
-            pylint voice_message
-            pylint response_contains_image
+            pylint cards/branch
+            pylint cards/comment
+            pylint cards/game_over
+            pylint cards/http_request
+            pylint cards/process_response
+            pylint cards/process_variable
+            pylint cards/send_message
+            pylint cards/send_picture
+            pylint cards/send_picture
+            pylint cards/set_variable
+            pylint cards/voice_message
+            pylint cards/response_contains_image
             bandit -r .      
       - save_cache:
           key: venv-38-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
@@ -57,18 +57,18 @@ jobs:
           command: |
             pip install -r requirements.txt --progress-bar off
             python validate_manifest.py stable.json
-            pylint branch
-            pylint comment
-            pylint game_over
-            pylint http_request
-            pylint process_response
-            pylint process_variable
-            pylint send_message
-            pylint send_picture
-            pylint send_picture
-            pylint set_variable
-            pylint voice_message
-            pylint response_contains_image
+            pylint cards/branch
+            pylint cards/comment
+            pylint cards/game_over
+            pylint cards/http_request
+            pylint cards/process_response
+            pylint cards/process_variable
+            pylint cards/send_message
+            pylint cards/send_picture
+            pylint cards/send_picture
+            pylint cards/set_variable
+            pylint cards/voice_message
+            pylint cards/response_contains_image
             bandit -r .
       - save_cache:
           key: venv-27-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}
