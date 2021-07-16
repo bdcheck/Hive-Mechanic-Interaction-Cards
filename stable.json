@@ -38,7 +38,7 @@
 				"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/client.js",
-				"sha512-hash": "f40a31b73248b6c00f0de67041a2adac8114a1d092ed9a0bc7670f51d9e06a4f05c4f506c37c8caba7eb68504703c0c0fbb00ea4a6e4a993d4279e704d6718ad"
+				"sha512-hash": "b4f5a8c89f73f3420116ade0397d38ca5ac1328d923e0e55961c1d9156b8752083d85b14ec31ca9e76f88a8777fa9cd451090dc9efafe44084f508fd31b1e2a0"
 			}]
 		},
 		"comment": {
@@ -480,7 +480,7 @@
 				"name": "0.9",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "foobar",
+				"sha512-hash": "86148ce82e68036bad7e91d44ecb54225b3f4442396fa764d2048e205f5016cb0659c13b23a6ca5323a91174c3ca2adeb65d82529fd6c68ef56f4f45293dbce5",
 				"implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/data_processors/openweather/current_weather.py"
 			}]
 		},
@@ -492,7 +492,7 @@
 				"name": "0.9",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "foobar",
+				"sha512-hash": "2356c9bb6a48212d471fdc9d8029f2ec6b1c2ec184d3fdb9f6384dcdd57179de341cf5c2c0e4bc1d47148c8480a5483f9f2dff6a4a695f930c95c8536e5ba4ba",
 				"implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/data_processors/positionstack/geocoder.py"
 			}]
 		},
@@ -504,7 +504,7 @@
 				"name": "0.9",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "foobar",
+				"sha512-hash": "a534474149acb387d854bc47f701673ebaf928d4bc19a7ceb5fc663f3a7a7fd4274c8eef79adcdacc8b61a7fb4d5999f9b5b62e9c4597cda4be46c2e6b39b493",
 				"implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/data_processors/wmata/next_bus_arrival.py"
 			}]
 		},
@@ -516,7 +516,7 @@
 				"name": "0.9",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "foobar",
+				"sha512-hash": "716c9e9178fda9039de0005f658b2ac94087790a9c7e14c0a08d27d5611038d071f082a00a13203d7997469e9d990edd52fdce365138988ab1c65fa0f377bdde",
 				"implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/data_processors/wmata/nearest_bus_stop.py"
 			}]
 		},
@@ -528,7 +528,7 @@
 				"name": "0.9",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "foobar",
+				"sha512-hash": "fe707f56c397c77f99bf5a25c16acf33cbf408e22e21eb52b92997f8d2b0a12a0ec19110883e342ae24f463e7021b62707cfc7386617e34db3ac7701c6bd4061",
 				"implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/data_processors/yelp/nearest_open_restaurant.py"
 			}]
 		}
