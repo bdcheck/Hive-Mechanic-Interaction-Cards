@@ -1,8 +1,5 @@
 # pylint: disable=line-too-long
 
-import json
-
-import arrow
 import requests
 
 # Provided variables: context, metadata
@@ -10,7 +7,7 @@ import requests
 
 url = 'https://api.openweathermap.org/data/2.5/weather'
 
-global store_structure
+global store_structure # pylint: disable=global-at-module-level
 
 def store_structure(context, content, prefix=''):
     if isinstance(content, dict):
@@ -21,8 +18,8 @@ def store_structure(context, content, prefix=''):
                 new_prefix = new_prefix[1:]
 
             store_structure(context, value, prefix=new_prefix)
-    elif isinstance(content, list) or isinstance(content, tuple):
-        for i in range(0, len(content)):
+    elif isinstance(content, (list, tuple,):
+        for i in range(0, len(content)): # pylint: disable=consider-using-enumerate
             list_item = content[i]
 
             new_prefix = prefix + '_' + str(i)
