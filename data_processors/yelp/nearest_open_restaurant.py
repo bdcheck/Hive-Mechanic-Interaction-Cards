@@ -1,3 +1,5 @@
+# pylint: disable=line-too-long
+
 import requests
 
 url = 'https://api.yelp.com/v3/businesses/search'
