@@ -223,7 +223,7 @@ notes=FIXME,XXX,TODO
 
 # List of additional names supposed to be defined in builtins. Remember that
 # you should avoid to define new builtins when possible.
-additional-builtins=actions,definition,extras,result,logger,response,last_transition
+additional-builtins=logger,response,context,metadata
 
 # Tells whether unused global variables should be treated as a violation.
 allow-global-unused-variables=yes
@@ -234,7 +234,7 @@ callbacks=cb_,_cb
 
 # A regular expression matching the name of dummy variables (i.e. expectedly
 # not used).
-dummy-variables-rgx=_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_|context|metadata
+dummy-variables-rgx=_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy|^ignored_|^unused_
 
 # Argument names that match this expression will be ignored. Default to name
 # with leading underscore

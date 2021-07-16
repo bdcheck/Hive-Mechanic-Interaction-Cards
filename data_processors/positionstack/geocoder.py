@@ -2,7 +2,6 @@
 
 import logging
 
-import arrow
 import requests
 
 logger = logging.getLogger('db')
