@@ -18,7 +18,7 @@ def store_structure(context, content, prefix=''):
                 new_prefix = new_prefix[1:]
 
             store_structure(context, value, prefix=new_prefix)
-    elif isinstance(content, (list, tuple,):
+    elif isinstance(content, (list, tuple,)):
         for i in range(0, len(content)): # pylint: disable=consider-using-enumerate
             list_item = content[i]
 
