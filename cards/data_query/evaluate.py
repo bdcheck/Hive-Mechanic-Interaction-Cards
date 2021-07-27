@@ -34,8 +34,13 @@ if processor is not None:
 
         code = compile(smart_str(processor.processor_function), '<string>', 'exec')
 
+        metadata = {}
+
+        if processor.metadata is not None:
+            metadata = json.loads(processor.metadata)
+
         local_env = {
-            'metadata': json.loads(processor.metadata),
+            'metadata': metadata,
             'context': context
         }
 
