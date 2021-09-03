@@ -190,9 +190,9 @@
 				"name": "1.0",
 				"created": "2021-09-03T12:00:00.000000+00:00",
 				"notes": "Updated to work better with other components",
-				"entry-actions": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/main/cards/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/main/cards/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/audacious-software/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/client.js",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/pause/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/pause/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/pause/client.js",
 				"sha512-hash": "061ddfe836e9bdaf2e9812dbbad644c97c3dcd1b8769074e269ab40832cb723b221b6ec617ad8c72a3b6a235688c665e247fc9c7d76e7e78733d6cf583dca564"
 			}]
 		},
