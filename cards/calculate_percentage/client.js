@@ -1,13 +1,40 @@
 var modules = ["material", 'cards/node', 'jquery', ];
 
 define(modules, function (mdc, Node) {
+    // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
+    //https://stackoverflow.com/questions/6177975/how-to-validate-date-with-format-mm-dd-yyyy-in-javascript
+function isValidDate(dateString)
+{
+    // First check for the pattern
+    if(!/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateString))
+        return false;
+
+    // Parse the date parts to integers
+    var parts = dateString.split("/");
+    var day = parseInt(parts[1], 10);
+    var month = parseInt(parts[0], 10);
+    var year = parseInt(parts[2], 10);
+
+    // Check the ranges of month and year
+    if(year < 1000 || year > 3000 || month == 0 || month > 12)
+        return false;
+
+    var monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
+    // Adjust for leap years
+    if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0))
+        monthLength[1] = 29;
+
+    // Check the range of the day
+    return day > 0 && day <= monthLength[month - 1];
+};
     class CalculatePercentageNode extends Node {
         constructor(definition, sequence) {
             super(definition, sequence);
         }
 
         cardIcon() {
-            return '<i class="fas fa-download" style="margin-right: 16px; font-size: 20px; "></i>';
+            return '<i class="fas fa-calculator" style="margin-right: 16px; font-size: 20px; "></i>';
         }
 
         cardFields() {
@@ -19,6 +46,7 @@ define(modules, function (mdc, Node) {
                     'en': 'Name'
                 }
             },
+
               {
                 'field': 'scope',
                 'type': 'choice',
@@ -39,7 +67,37 @@ define(modules, function (mdc, Node) {
                     'label': {
                         'en': 'Game'
                     }
-                }]},{
+                }],
+
+              },{
+                    'field': 'start_time',
+                    'type': 'text',
+                    'multiline':false,
+                    'label': {
+                        'en':'Start Date in (mm/dd/yyyy) format (optional)'
+                    }
+                },{
+                   'field': 'player_latest_answer',
+                    'type': 'choice',
+                    'label': {
+                        'en': 'Restrict Player to latest answer (optional)'
+                     },
+                    'options': [
+                        {
+                            'value':'True',
+                            'label': {
+                                'en':'Yes'
+                            }
+                        },{
+                            'value':'False',
+                            'label': {
+                                'en': 'No'
+                            }
+                        }
+                    ]
+
+                },
+                {
                 'field': 'description',
                 'type': 'readonly',
                 'value': {
@@ -57,7 +115,15 @@ define(modules, function (mdc, Node) {
 
 
         viewBody() {
-            return '<div class="mdc-typography--body1" style="margin: 16px;">' + this.definition['variable'] + ' = ' + this.definition['value'] + '</div>';
+            return '<div class="mdc-typography--body1" style="margin: 16px;">'
+                + this.definition['variable']
+                + 'returns '
+                + this.definition['variable']
+                +'_cp_total, '
+                + this.definition['variable']
+                + '_cp_matched, and '
+                + this.definition['variable']
+                + '_cp_percentage </div>';
         }
 
         initialize() {
@@ -72,7 +138,9 @@ define(modules, function (mdc, Node) {
             if (this.definition['variable'] == undefined || this.definition['variable'].trim().length == 0) {
                 issues.push(['No variable name provided.', 'node', this.definition['id'], this.cardName()]);
             }
-
+            if(this.definition['variable'] &&!isValidDate(this.definition['start_time'])) {
+                issues.push(["Date is invalid" , 'node', this.definition['id'],this.cardName()]);
+            }
             if (this.definition['next'] == undefined || this.definition['next'] == null || this.definition['next'].trim().length == 0) {
                 issues.push(['No next destination node selected.', 'node', this.definition['id'], this.cardName()]);
             }
