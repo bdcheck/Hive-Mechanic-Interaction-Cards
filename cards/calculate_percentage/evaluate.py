@@ -10,7 +10,11 @@ else:
     l_scope = definition['scope']
 
 variable_name = definition['variable']
-point_list = DataPoint.objects.filter(secondary_identifier=variable_name)
+
+game = extras['session'].game_version.game
+slug = game.slug
+
+point_list = DataPoint.objects.filter(secondary_identifier=variable_name, properties__scope=l_scope, properties__game=slug)
 total = point_list.count()
 
 logger.info("total points %d",total)
@@ -20,7 +24,7 @@ else:
     if l_scope == "player":
         context = extras['session'].player
     elif l_scope == 'game':
-        context = extras['session'].game_version.game
+        context = game
     else:
         context = extras['session']
 
