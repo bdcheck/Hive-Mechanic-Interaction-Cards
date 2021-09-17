@@ -138,7 +138,7 @@ function isValidDate(dateString)
             if (this.definition['variable'] == undefined || this.definition['variable'].trim().length == 0) {
                 issues.push(['No variable name provided.', 'node', this.definition['id'], this.cardName()]);
             }
-            if(this.definition['variable'] &&!isValidDate(this.definition['start_time'])) {
+            if(this.definition['start_time'] &&!isValidDate(this.definition['start_time'])) {
                 issues.push(["Date is invalid" , 'node', this.definition['id'],this.cardName()]);
             }
             if (this.definition['next'] == undefined || this.definition['next'] == null || this.definition['next'].trim().length == 0) {
@@ -199,7 +199,6 @@ function isValidDate(dateString)
                 "name": cardName,
                 "type": "calculate-percentage",
                 "variable": "variable-name",
-                "value": "variable-value",
                 "id": Node.uuidv4()
             };
 
