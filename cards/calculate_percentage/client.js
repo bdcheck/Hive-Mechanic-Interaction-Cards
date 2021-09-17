@@ -117,7 +117,7 @@ function isValidDate(dateString)
         viewBody() {
             return '<div class="mdc-typography--body1" style="margin: 16px;">'
                 + this.definition['variable']
-                + 'returns '
+                + ' returns '
                 + this.definition['variable']
                 +'_cp_total, '
                 + this.definition['variable']
