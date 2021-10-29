@@ -57,47 +57,48 @@ if var1.isnumeric() and var2.isnumeric():
     var2 = int_or_float(var2)
 # this is checking for date types and special keyword "now"
 else:
+    # special keyboard "now" for a dynamic time
+    now = arrow.now()
     if var1 == "now":
-        var1 = arrow.now()
+        var1 = now
     if var2 == "now":
-        var2 = arrow.now()
+        var2 = now
     try:
-        if not isinstance(var1, arrow):
-            var1 = arrow.get(var1, "MM/DD/YYYY HH:MM:ss")
-        if not isinstance(var2, arrow):
-            var2 = arrow.get(var2, "MM/DD/YYYY HH:MM:ss")
-
-        if isinstance(var1, arrow) and isinstance(var2, arrow):
-            type = "time"
+        if not isinstance(var1, arrow.arrow.Arrow):
+            var1 = arrow.get(var1, "MM/DD/YYYY")
+        if not isinstance(var2, arrow.arrow.Arrow):
+            var2 = arrow.get(var2, "MM/DD/YYYY")
+        type = "date"
     except TypeError:
         error = "Not a supported type"
 
 #comparison operators
-result_op = True
+result_op = False
 if not error:
     if definition['operator'] == "equals":
         if var1 == var2:
             result_op = True
-    if definition['operator'] == "not_equals":
+    elif definition['operator'] == "not_equals":
         if var1 != var2:
             result_op = True
-    if definition['operator'] == "less_than":
+    elif definition['operator'] == "less_than":
         if var1 < var2:
             result_op = True
-    if definition['operator'] == "greater_than":
+    elif definition['operator'] == "greater_than":
         if var1 > var2:
             result_op = True
 else:
+    #if and error occurs it sets the variable that can looked up
     variable = {
         'type': 'set-variable',
         'name': definition['name'],
-        'variable': 'logic_error',
+        'variable': 'comparison_error',
         'value': error,
         'scope': "session"
     }
 
     result['actions'].append(variable)
-
+# the next card is based on true false or error codes are set
 if error:
     result['next_id'] = definition['next_error']
 elif result_op:
