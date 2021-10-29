@@ -1,7 +1,7 @@
 var modules = ["material", 'cards/node', 'jquery', ];
 
 define(modules, function (mdc, Node) {
-    class LogicNode extends Node {
+    class ComparisonCardsNode extends Node {
         constructor(definition, sequence) {
             super(definition, sequence);
             this.nextCardFields = ["next_true", "next_false", "next_error"]
@@ -102,7 +102,7 @@ define(modules, function (mdc, Node) {
                 'field': 'description',
                 'type': 'readonly',
                 'value': {
-                    'en': 'Compares two variables with given logic operators.'
+                    'en': 'Compares two variables with given logic operators.  Numbers and dates are allowed'
                 },
                 'width': 7,
                 'is_help': true
@@ -219,20 +219,20 @@ define(modules, function (mdc, Node) {
             return nodes;
         }
         cardType() {
-            return 'logic-operator  ';
+            return 'comparison-operator';
         }
 
         static cardName() {
-            return 'Logic Operator';
+            return 'Comparison Operator';
         }
 
         static createCard(cardName) {
             var card = {
                 "name": cardName,
-                "type": "logic-operator",
+                "type": "comparison-operator",
                 "first_variable": "variable-name",
                 "second_variable": "variable-name",
-                "operator": "logic-operator",
+                "operator": "comparison-operator",
                 "first_scope": "scope",
                 "second_scope": "scope",
                 "id": Node.uuidv4()
@@ -242,7 +242,7 @@ define(modules, function (mdc, Node) {
         }
     }
 
-    Node.registerCard('logic-operator', LogicNode);
+    Node.registerCard('comparison-operator', ComparisonCardsNode);
 
-    return LogicNode;
+    return ComparisonCardsNode;
 });
