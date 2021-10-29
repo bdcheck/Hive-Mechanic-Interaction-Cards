@@ -65,7 +65,7 @@ define(modules, function (mdc, Node) {
                 {
                     'value': 'greater_than',
                     'label': {
-                        'en': 'Less Than (>)'
+                        'en': 'Greater Than (>)'
                     }
                 }]
             },
