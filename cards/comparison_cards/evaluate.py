@@ -50,10 +50,12 @@ type = None
 if not var1 or not var2:
     error = "Missing values"
 # determine the types
+# this is a numeric type
 if var1.isnumeric() and var2.isnumeric():
     type = "numeric"
     var1 = int_or_float(var1)
     var2 = int_or_float(var2)
+# this is checking for date types and special keyword "now"
 else:
     if var1 == "now":
         var1 = arrow.now()
@@ -70,6 +72,7 @@ else:
     except TypeError:
         error = "Not a supported type"
 
+#comparison operators
 result_op = True
 if not error:
     if definition['operator'] == "equals":
