@@ -21,27 +21,6 @@ define(modules, function (mdc, Node) {
                     'en': 'Name'
                 }
             },  {
-                'field': 'first_scope',
-                'type': 'choice',
-                'label': {
-                    'en': 'Scope'
-                }, 'options': [{
-                    'value': 'session',
-                    'label': {
-                        'en': 'Session'
-                    }
-                }, {
-                    'value': 'player',
-                    'label': {
-                        'en': 'Player'
-                    }
-                }, {
-                    'value': 'game',
-                    'label': {
-                        'en': 'Game'
-                    }
-                }]
-            }, {
                 'field': 'operator',
                 'type': 'choice',
                 'label': {
@@ -76,27 +55,6 @@ define(modules, function (mdc, Node) {
                 'label': {
                     'en': 'Value'
                 }
-            },{
-                'field': 'second_scope',
-                'type': 'choice',
-                'label': {
-                    'en': 'Scope'
-                }, 'options': [{
-                    'value': 'session',
-                    'label': {
-                        'en': 'Session'
-                    }
-                }, {
-                    'value': 'player',
-                    'label': {
-                        'en': 'Player'
-                    }
-                }, {
-                    'value': 'game',
-                    'label': {
-                        'en': 'Game'
-                    }
-                }]
             },
                 {
                 'field': 'description',
