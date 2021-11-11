@@ -6,11 +6,11 @@ logger = logging.getLogger('db')
 result['actions'] = []
 
 # a function to get the context of the variable
-def get_context(scope_name,define,extras):
+def get_context(variable_name,define,extras):
     game = extras['session'].game_version.game
     player = extras['session'].player
     session = extras['session']
-    if scope_name not in define:
+    if 'scope_name' not in define:
         scope = 'player'
     else:
         scope = define[scope_name]
@@ -22,6 +22,26 @@ def get_context(scope_name,define,extras):
     else:
         context = session
     return context
+
+#tries to get variable in order session, player game and returns none if no variable
+def get_variable_in_order(variable_name):
+    game = extras['session'].game_version.game
+    player = extras['session'].player
+    session = extras['session']
+
+    var = session.fetch_variable(variable_name)
+    if not var:
+        var = player.fetch_variable(variable_name)
+
+    if not var:
+        var = game.fetch_variable(variable_name)
+
+    if not var:
+        return None
+
+
+    return var
+
 # return int or float representation of the string
 # https://stackoverflow.com/questions/5608702/how-can-i-convert-a-string-to-either-int-or-float-with-priority-on-int
 def int_or_float(string):
@@ -36,11 +56,9 @@ def int_or_float(string):
             return f
 
 # retrieve the two variables from the defined context
-context1 = get_context('first_scope',definition, extras)
-context2 = get_context('second_scope',definition, extras)
+var1 = get_variable_in_order(definition['first_variable'])
+var2 = get_variable_in_order(definition['second_variable'])
 
-var1 = context1.fetch_variable(definition['first_variable'])
-var2 = context2.fetch_variable(definition['second_variable'])
 
 #calculate the possible error conditions that will push into the error branch
 

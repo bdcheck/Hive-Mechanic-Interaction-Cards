@@ -20,27 +20,6 @@ define(modules, function (mdc, Node) {
                 'label': {
                     'en': 'Name'
                 }
-            },  {
-                'field': 'first_scope',
-                'type': 'choice',
-                'label': {
-                    'en': 'Scope'
-                }, 'options': [{
-                    'value': 'session',
-                    'label': {
-                        'en': 'Session'
-                    }
-                }, {
-                    'value': 'player',
-                    'label': {
-                        'en': 'Player'
-                    }
-                }, {
-                    'value': 'game',
-                    'label': {
-                        'en': 'Game'
-                    }
-                }]
             }, {
                 'field': 'operator',
                 'type': 'choice',
@@ -76,29 +55,28 @@ define(modules, function (mdc, Node) {
                 'label': {
                     'en': 'Value'
                 }
-            },{
-                'field': 'second_scope',
-                'type': 'choice',
-                'label': {
-                    'en': 'Scope'
-                }, 'options': [{
-                    'value': 'session',
-                    'label': {
-                        'en': 'Session'
-                    }
-                }, {
-                    'value': 'player',
-                    'label': {
-                        'en': 'Player'
-                    }
-                }, {
-                    'value': 'game',
-                    'label': {
-                        'en': 'Game'
-                    }
-                }]
             },
+
                 {
+                    'field' : 'next_true',
+                    'type': 'card',
+
+                },
+                {
+                    'field' : 'next_false',
+                    'type': 'card',
+                    'label' : {
+                        'en' : 'Where to go if false'
+                    }
+                },
+ {
+                    'field' : 'next_error',
+                    'type': 'card',
+                    'label' : {
+                        'en' : 'Where to go if an error occurs'
+                    }
+                },
+                  {
                 'field': 'description',
                 'type': 'readonly',
                 'value': {
@@ -108,21 +86,6 @@ define(modules, function (mdc, Node) {
                 'is_help': true
             },
 
-                {
-                'field': 'next_true',
-                'type': 'card',
-                'width': 5
-            },
-                {
-                    'field':'next_false',
-                    "type": 'card',
-                    'width': 5
-                },
-                  {
-                    'field':'next_error',
-                    "type": 'card',
-                    'width': 5
-                }
             ];
         }
         viewBody() {
@@ -233,8 +196,6 @@ define(modules, function (mdc, Node) {
                 "first_variable": "variable-name",
                 "second_variable": "variable-name",
                 "operator": "comparison-operator",
-                "first_scope": "scope",
-                "second_scope": "scope",
                 "id": Node.uuidv4()
             };
 
