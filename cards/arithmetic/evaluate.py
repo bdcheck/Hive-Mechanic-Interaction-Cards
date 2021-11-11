@@ -37,6 +37,7 @@ def get_variable_in_order(variable_name,extras):
 
     if not var:
         return None
+
 # return int or float representation of the string
 # https://stackoverflow.com/questions/5608702/how-can-i-convert-a-string-to-either-int-or-float-with-priority-on-int
 def int_or_float(string):
