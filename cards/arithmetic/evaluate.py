@@ -23,7 +23,7 @@ def get_context(scope_name,define,extras):
     return context
 
 #tries to get variable in order session, player game and returns none if no variable
-def get_variable_in_order(variable_name):
+def get_variable_in_order(variable_name,extras):
     game = extras['session'].game_version.game
     player = extras['session'].player
     session = extras['session']
@@ -50,8 +50,8 @@ def int_or_float(string):
         else:
             return f
 
-var1 = get_variable_in_order(definition['first_variable'])
-var2 = get_variable_in_order(definition['second_variable'])
+var1 = get_variable_in_order(definition['first_variable'],extras)
+var2 = get_variable_in_order(definition['second_variable'],extras)
 
 # initial error checking
 error = ""

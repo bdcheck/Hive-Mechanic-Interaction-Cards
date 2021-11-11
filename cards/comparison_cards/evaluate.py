@@ -5,15 +5,16 @@ import arrow
 logger = logging.getLogger('db')
 result['actions'] = []
 
+
 # a function to get the context of the variable
-def get_context(variable_name,define,extras):
+def get_context(define, extras):
     game = extras['session'].game_version.game
     player = extras['session'].player
     session = extras['session']
     if 'scope_name' not in define:
         scope = 'player'
     else:
-        scope = define[scope_name]
+        scope = define['scope_name']
 
     if scope == "player":
         context = player
@@ -23,13 +24,14 @@ def get_context(variable_name,define,extras):
         context = session
     return context
 
+
 #tries to get variable in order session, player game and returns none if no variable
-def get_variable_in_order(variable_name):
+def get_variable_in_order(variable_name,extras):
     game = extras['session'].game_version.game
     player = extras['session'].player
     session = extras['session']
-
     var = session.fetch_variable(variable_name)
+
     if not var:
         var = player.fetch_variable(variable_name)
 
@@ -38,8 +40,6 @@ def get_variable_in_order(variable_name):
 
     if not var:
         return None
-
-
     return var
 
 # return int or float representation of the string
@@ -55,16 +55,17 @@ def int_or_float(string):
         else:
             return f
 
+print("start")
+
 # retrieve the two variables from the defined context
-var1 = get_variable_in_order(definition['first_variable'])
-var2 = get_variable_in_order(definition['second_variable'])
+var1 = get_variable_in_order(definition['first_variable'],extras)
+var2 = get_variable_in_order(definition['second_variable'],extras)
 
 
-#calculate the possible error conditions that will push into the error branch
+# calculate the possible error conditions that will push into the error branch
 
 error = ""
 type = None
-
 if not var1 or not var2:
     error = "Missing values"
 # determine the types
@@ -90,7 +91,7 @@ else:
     except TypeError:
         error = "Not a supported type"
 
-#comparison operators
+# comparison operators
 result_op = False
 if not error:
     if definition['operator'] == "equals":
@@ -106,7 +107,7 @@ if not error:
         if var1 > var2:
             result_op = True
 else:
-    #if and error occurs it sets the variable that can looked up
+    # if and error occurs it sets the variable that can looked up
     variable = {
         'type': 'set-variable',
         'name': definition['name'],
