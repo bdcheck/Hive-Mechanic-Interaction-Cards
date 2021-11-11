@@ -55,8 +55,6 @@ def int_or_float(string):
         else:
             return f
 
-print("start")
-
 # retrieve the two variables from the defined context
 var1 = get_variable_in_order(definition['first_variable'],extras)
 var2 = get_variable_in_order(definition['second_variable'],extras)
