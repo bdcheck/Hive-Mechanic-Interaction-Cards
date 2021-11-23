@@ -1,4 +1,6 @@
-define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
+const modules = ['material', 'cards/node', 'jquery']
+
+define(modules, function (mdc, Node) {
   class VoiceMessageNode extends Node {
     cardIcon () {
       return '<i class="fas fa-phone-alt" style="margin-right: 16px; font-size: 20px; "></i>'
