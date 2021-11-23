@@ -1,11 +1,11 @@
-import datetime
+# pylint: disable=line-too-long
+
 import json
 import logging
-import re
 
 from django.utils.encoding import smart_str
 
-from builder.models import DataProcessor
+from builder.models import DataProcessor # pylint: disable=import-error
 
 logger = logging.getLogger('db')
 

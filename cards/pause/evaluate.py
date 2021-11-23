@@ -1,3 +1,4 @@
+# pylint: disable=consider-using-f-string
 import logging
 
 import arrow
@@ -13,7 +14,7 @@ value = extras['session'].fetch_variable(variable)
 result['actions'] = []
 
 if value is None or value == '':
-    logger.info('No variable set: ' + variable + '!')
+    logger.info('No variable set: %s', variable)
 else:
     pause_start = arrow.get(value)
     pause_end = pause_start.shift(seconds=int(definition['duration']))

@@ -1,6 +1,9 @@
+# pylint: disable=line-too-long
+
 # Incoming globals: definition, response, last_transition, previous_state
+
 import logging
-from builder.models import DataPoint
+from passive_data_kit.models import DataPoint # pylint: disable=import-error
 import arrow
 logger = logging.getLogger('db')
 
@@ -12,13 +15,13 @@ else:
 
 if 'start_time' in definition:
     date = arrow.get(definition['start_time'], "MM/DD/YYYY").datetime
+
     if not date:
         date = False
-
 else:
     date = False
 
-if 'player_latest_answer' in definition and definition['player_latest_answer'] == 'True':
+if definition.get('player_latest_answer', None) == 'True': # pylint: disable=simplifiable-if-statement
     restrict_player = True
 else:
     restrict_player = False

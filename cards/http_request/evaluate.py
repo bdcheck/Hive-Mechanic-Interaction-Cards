@@ -60,7 +60,7 @@ elif response.status_code == 404:
 elif response.status_code == 500:
     result['next_id'] = definition['server_error_action']
 
-logger.info(u'RESPONSE TEXT: ' + str(len(response.text)))
+logger.info('RESPONSE TEXT: ' + str(len(response.text)))
 
 result['details']['url'] = response.url
 result['details']['method'] = definition['http_method']

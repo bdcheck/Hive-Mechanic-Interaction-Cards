@@ -29,14 +29,14 @@ def get_variable_in_order(variable_name,extras):
     session = extras['session']
 
     var = session.fetch_variable(variable_name)
-    if not var:
+
+    if var is None:
         var = player.fetch_variable(variable_name)
 
-    if not var:
+    if var is None:
         var = game.fetch_variable(variable_name)
 
-    if not var:
-        return None
+    return var
 
 # return int or float representation of the string
 # https://stackoverflow.com/questions/5608702/how-can-i-convert-a-string-to-either-int-or-float-with-priority-on-int
@@ -46,10 +46,11 @@ def int_or_float(string):
     except ValueError:
         f = float(string)
         i = int(f)
+
         if f == i:
             return i
-        else:
-            return f
+
+        return f
 
 var1 = get_variable_in_order(definition['first_variable'],extras)
 var2 = get_variable_in_order(definition['second_variable'],extras)
@@ -75,7 +76,7 @@ if not error:
             result_num = num1 * num2
         elif definition['operator'] == "division":
             result_num = num1 / num2
-    except Exception as e:
+    except BaseException as e:
         error = str(e)
 
 result['actions'] = []
