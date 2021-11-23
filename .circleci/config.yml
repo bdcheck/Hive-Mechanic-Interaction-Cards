@@ -15,6 +15,7 @@ jobs:
     docker:
       - image: cimg/python:3.8
     steps:
+      - node/install
       - checkout
       - restore_cache:
           key: venv-38-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
@@ -62,6 +63,7 @@ jobs:
     docker:
       - image: cimg/python:2.7
     steps:
+      - node/install
       - checkout
       - restore_cache:
           key: venv-27-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
