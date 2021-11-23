@@ -1,3 +1,4 @@
+import difflib
 import hashlib
 import json
 import sys
@@ -14,9 +15,9 @@ for key in repository['cards'].keys():
     
     latest_version = sorted(versions, key=lambda version: version['version'], reverse=True)[0]
     
-    remote_entry_content = requests.get(latest_version['entry-actions']).content
-    remote_evaluate_content = requests.get(latest_version['evaluate-function']).content
-    remote_client_content = requests.get(latest_version['client-implementation']).content
+    remote_entry_content = requests.get(latest_version['entry-actions']).text
+    remote_evaluate_content = requests.get(latest_version['evaluate-function']).text
+    remote_client_content = requests.get(latest_version['client-implementation']).text
     
     prefix_index = latest_version['entry-actions'].index('/cards/') + 1
     
@@ -41,12 +42,23 @@ for key in repository['cards'].keys():
         
     if remote_entry_content != local_entry_content:
         print('[Card: ' + key + ' / entry-actions] Local file differs from remote file.')
+        print(remote_entry_content)
+        print('-----')
+        print(local_entry_content)
 
     if remote_evaluate_content != local_evaluate_content:
         print('[Card: ' + key + ' / evaluate-function] Local file differs from remote file.')
+        print(remote_evaluate_content)
+        print(str(len(remote_evaluate_content)))
+        print('-----')
+        print(local_evaluate_content)
+        print(str(len(local_evaluate_content)))
 
     if remote_client_content != local_client_content:
         print('[Card: ' + key + ' / client-implementation] Local file differs from remote file.')
+        print(remote_client_content)
+        print('-----')
+        print(local_client_content)
 
     computed_hash = hashlib.sha512()
 
