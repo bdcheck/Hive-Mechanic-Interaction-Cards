@@ -30,4 +30,3 @@ if result['next_id'] is not None and ('#' in result['next_id']) is False:
 
 if 'extras' in extras and extras['extras'] is None:
     result['next_id'] = None
-    
