@@ -263,32 +263,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         me.sequence.markChanged(me.id)
       })
 
-      me.sequence.initializeDestinationMenu(me.cardId, function (selected) {
-        if (me.selectedPattern >= 0 && event.detail.action === 'remove') {
-          me.definition.patterns.splice(me.selectedPattern, 1)
-
-          me.sequence.markChanged(me.id)
-
-          me.sequence.loadNode(me.definition)
-        } else {
-          if (me.selectedPattern >= 0) {
-            me.definition.patterns[me.selectedPattern].action = selected
-
-            me.sequence.markChanged(me.id)
-            me.sequence.loadNode(me.definition)
-          } else if (me.selectedPattern === -1) { // Not found
-            me.definition.not_found_action = selected
-
-            me.sequence.markChanged(me.id)
-            me.sequence.loadNode(me.definition)
-          } else if (me.selectedPattern === -2) { // Not found
-            me.definition.server_error_action = selected
-
-            me.sequence.markChanged(me.id)
-            me.sequence.loadNode(me.definition)
-          }
-        }
-      })
+      window.setTimeout(me.sequence.initializeDestinationMenu, 250)
 
       const dialog = mdc.dialog.MDCDialog.attachTo(document.getElementById(me.cardId + '-edit-dialog'))
 

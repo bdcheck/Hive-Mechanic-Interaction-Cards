@@ -175,27 +175,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
 
       const me = this
 
-      me.sequence.initializeDestinationMenu(me.cardId, function (selected) {
-        if (me.selectedPattern >= 0 && event.detail.action === 'remove') {
-          me.definition.patterns.splice(me.selectedPattern, 1)
-
-          me.sequence.markChanged(me.id)
-
-          me.sequence.loadNode(me.definition)
-        } else {
-          if (me.selectedPattern >= 0) {
-            me.definition.patterns[me.selectedPattern].action = selected
-
-            me.sequence.markChanged(me.id)
-            me.sequence.loadNode(me.definition)
-          } else { // Not found
-            me.definition.not_found_action = selected
-
-            me.sequence.markChanged(me.id)
-            me.sequence.loadNode(me.definition)
-          }
-        }
-      })
+      window.setTimeout(me.sequence.initializeDestinationMenu, 250)
 
       //          const destination = mdc.select.MDCSelect.attachTo(document.getElementById(me.cardId + '_destination'));
       //
