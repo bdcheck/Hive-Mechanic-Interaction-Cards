@@ -59,7 +59,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           field: 'description',
           type: 'readonly',
           value: {
-            en: 'Evaluates an arthimetic operation'
+            en: 'Evaluates an arithmetic operation'
           },
           width: 7,
           is_help: true
@@ -99,7 +99,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         issues.push(['Second variable name was not provided.', 'node', this.definition.id, this.cardName()])
       }
       if (this.definition.operator === undefined || this.definition.operator.trim().length === 0) {
-        issues.push(['Arithemtic operator was not provided.', 'node', this.definition.id, this.cardName()])
+        issues.push(['Arithmetic operator was not provided.', 'node', this.definition.id, this.cardName()])
       }
 
       if (this.definition.next === undefined || this.definition.next === null || this.definition.next.trim().length === 0) {
