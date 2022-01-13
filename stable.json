@@ -3,6 +3,7 @@
 		"branch": {
 			"identifier": "branch",
 			"name": "Branching Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -53,6 +54,7 @@
 		"comment": {
 			"identifier": "comment",
 			"name": "Comment Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -102,7 +104,8 @@
 		},
 		"game-over": {
 			"identifier": "game-over",
-			"name": "Game Over Card",
+			"name": "Activity Complete Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -144,6 +147,7 @@
 		"http-request": {
 			"identifier": "http-request",
 			"name": "HTTP Request Card",
+			"category": "Network and Third Party Communication",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -176,6 +180,7 @@
 		"pause": {
 			"identifier": "pause",
 			"name": "Pause Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -244,6 +249,7 @@
 		"process_response": {
 			"identifier": "process-response",
 			"name": "Keyword Response (SMS)",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.4,
 				"name": "0.4",
@@ -294,6 +300,7 @@
 		"process_variable": {
 			"identifier": "process-variable",
 			"name": "Process Variable Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -335,6 +342,7 @@
 		"response_contains_image": {
 			"identifier": "response-contains-image",
 			"name": "Response Contains Image Card",
+			"category": "Advanced Messaging",
 			"versions": [{
 				"version": 0.2,
 				"name": "0.2",
@@ -412,6 +420,7 @@
 		"send_message": {
 			"identifier": "send-message",
 			"name": "Send Message Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -453,6 +462,7 @@
 		"send_picture": {
 			"identifier": "send-picture",
 			"name": "Send Picture Card",
+			"category": "Advanced Messaging",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -503,6 +513,7 @@
 		"set_variable": {
 			"identifier": "set-variable",
 			"name": "Set Variable Card",
+			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -553,6 +564,7 @@
 		"voice_message": {
 			"identifier": "voice-message",
 			"name": "Voice Line Command",
+			"category": "Phone Calls and Voice Messaging",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
@@ -594,6 +606,7 @@
 		"data_query": {
 			"identifier": "data-query",
 			"name": "Data Query Card",
+			"category": "Network and Third Party Communication",
 			"versions": [{
 				"version": 0.1,
 				"name": "0.1",
