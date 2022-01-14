@@ -1,14 +1,11 @@
 # Incoming globals: definition, response, last_transition, previous_state
 
-result['details'] = {
-    'image': definition['image'],
-    'sound': definition['value'],
-}
 image = {
     'type': 'set-variable',
     'name': definition['name'],
-    'variable': 'current_image',
-    'value': definition['image']
+    'value': 'current_image',
+    'variable': definition['image']
+
 }
 
 if 'scope' in definition:
@@ -19,16 +16,14 @@ result['actions'].append(image)
 sound = {
     'type': 'set-variable',
     'name': definition['name'],
-    'variable': 'current_sound',
-    'value': definition['sound']
+    'value': 'current_sound',
+    'variable': definition['sound']
 }
 
 if 'scope' in definition:
     sound['scope'] = definition['scope']
 
 result['actions'].append(sound)
-
-
 
 result['next_id'] = definition['next']
 
