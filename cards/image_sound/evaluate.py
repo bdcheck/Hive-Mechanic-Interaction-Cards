@@ -3,8 +3,8 @@
 image = {
     'type': 'set-variable',
     'name': definition['name'],
-    'value': 'current_image',
-    'variable': definition['image']
+    'variable': 'current_image',
+    'value': definition['image']
 
 }
 
@@ -16,8 +16,8 @@ result['actions'].append(image)
 sound = {
     'type': 'set-variable',
     'name': definition['name'],
-    'value': 'current_sound',
-    'variable': definition['sound']
+    'variable': 'current_sound',
+    'value': definition['sound']
 }
 
 if 'scope' in definition:

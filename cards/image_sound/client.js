@@ -1,5 +1,5 @@
 define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
-  class SendPictureNode extends Node {
+  class SetImageSound extends Node {
     constructor(definition, sequence) {
       super(definition, sequence)
 
@@ -21,10 +21,40 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
       },
       {
         field: 'sound',
-        type: 'image-url',
+        type: 'sound-url',
         label: {
-          en: 'Image URL'
+          en: 'Sound URL'
         }
+      },{
+        field: 'scope',
+        type: 'choice',
+        label: {
+          en: 'Scope'
+        },
+        options: [{
+          value: 'session',
+          label: {
+            en: 'Session'
+          }
+        }, {
+          value: 'player',
+          label: {
+            en: 'Player'
+          }
+        }, {
+          value: 'game',
+          label: {
+            en: 'Game'
+          }
+        }]
+      }, {
+        field: 'description',
+        type: 'readonly',
+        value: {
+          en: 'Sets a variable in the given scope, then proceeds to the next card.'
+        },
+        width: 7,
+        is_help: true
       },
       {
         field: 'next',
@@ -97,11 +127,11 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
     }
 
     cardType() {
-      return 'Send Picture'
+      return 'set-image-sound'
     }
 
     static cardName() {
-      return 'Send Picture'
+      return 'Set Image Sound'
     }
 
     static createCard(cardName) {
@@ -116,5 +146,5 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
     }
   }
 
-  Node.registerCard('send-picture', SendPictureNode)
+  Node.registerCard('set-image-sound', SetImageSound)
 })
