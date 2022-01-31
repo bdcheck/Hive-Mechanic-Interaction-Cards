@@ -2,11 +2,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
   class ProcessVariableNode extends Node {
     cardFields () {
       return [{
-          field: 'variable',
-          type: 'text',
-          label: {
-            en: 'Variable'
-          }
+        field: 'variable',
+        type: 'text',
+        label: {
+          en: 'Variable'
+        }
       }, {
         field: 'patterns',
         type: 'list',
@@ -83,7 +83,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
 
     initialize () {
       super.initialize()
-      
+
       this.initializeFields()
     }
 
