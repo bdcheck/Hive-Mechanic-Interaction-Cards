@@ -670,7 +670,7 @@
 			}]
 		},
 		"arithmetic": {
-			"identifier": "arithmetic",
+			"identifier": "arithmetic-operator",
 			"name": "Arithmetic Operators",
 			"category": "Core Messaging and Control",
 			"versions": [{
