@@ -46,36 +46,47 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
               en: 'Greater Than (>)'
             }
           }]
-        },
-        {
+        }, {
           field: 'second_variable',
           type: 'text',
           multiline: false,
           label: {
             en: 'Value'
           }
-        },
-
-        {
+        }, {
+          field: 'true_label',
+          type: 'readonly',
+          value: {
+            en: 'Comparison is true:'
+          },
+          width: 7
+        }, {
           field: 'next_true',
+          width: 5,
           type: 'card'
-
-        },
-        {
+        }, {
+          field: 'false_label',
+          type: 'readonly',
+          value: {
+            en: 'Comparison is false:'
+          },
+          width: 7
+        }, {
           field: 'next_false',
           type: 'card',
-          label: {
-            en: 'Where to go if false'
-          }
-        },
-        {
+          width: 5
+        }, {
+          field: 'error_label',
+          type: 'readonly',
+          value: {
+            en: 'Error:'
+          },
+          width: 7
+        }, {
           field: 'next_error',
           type: 'card',
-          label: {
-            en: 'Where to go if an error occurs'
-          }
-        },
-        {
+          width: 5
+        }, {
           field: 'description',
           type: 'readonly',
           value: {
@@ -84,7 +95,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           width: 7,
           is_help: true
         }
-
       ]
     }
 
