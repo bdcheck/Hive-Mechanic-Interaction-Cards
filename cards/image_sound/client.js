@@ -1,17 +1,17 @@
-define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
+define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
   class SetImageSound extends Node {
-    constructor(definition, sequence) {
+    constructor (definition, sequence) {
       super(definition, sequence)
 
       this.messageId = Node.uuidv4()
       this.nextButtonId = Node.uuidv4()
     }
 
-    cardIcon() {
+    cardIcon () {
       return '<i class="fas fa-image" style="margin-right: 16px; font-size: 20px; "></i>'
     }
 
-    cardFields() {
+    cardFields () {
       return [{
         field: 'image',
         type: 'image-url',
@@ -25,7 +25,7 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
         label: {
           en: 'Sound URL'
         }
-      },{
+      }, {
         field: 'scope',
         type: 'choice',
         label: {
@@ -51,7 +51,7 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
         field: 'description',
         type: 'readonly',
         value: {
-          en: 'Sets a variable in the given scope, then proceeds to the next card.'
+          en: 'Set a image variable (current_image) and a sound variable (current_sound) from given URLs'
         },
         width: 7,
         is_help: true
@@ -62,17 +62,17 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
       }]
     }
 
-    viewBody() {
+    viewBody () {
       return '<div class="mdc-typography--body1" style="margin: 16px;"><img src="' + this.definition.image + '" style="max-width: 100%;"><audio src="' + this.definition.sound + '"</div>'
     }
 
-    initialize() {
+    initialize () {
       super.initialize()
 
       this.initializeFields()
     }
 
-    issues(sequence) {
+    issues (sequence) {
       const issues = super.issues(sequence)
 
       if (this.definition.image === undefined || this.definition.image.trim().length === 0) {
@@ -88,7 +88,7 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
       return issues
     }
 
-    destinationNodes(sequence) {
+    destinationNodes (sequence) {
       const nodes = super.destinationNodes(sequence)
 
       const id = this.definition.next
@@ -116,7 +116,7 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
       return nodes
     }
 
-    updateReferences(oldId, newId) {
+    updateReferences (oldId, newId) {
       if (this.definition.next === oldId) {
         this.definition.next = newId
 
@@ -126,15 +126,15 @@ define(['material', 'cards/node', 'jquery'], function(mdc, Node) {
       }
     }
 
-    cardType() {
+    cardType () {
       return 'set-image-sound'
     }
 
-    static cardName() {
-      return 'Set Image Sound'
+    static cardName () {
+      return 'Set Image/Sound Variables'
     }
 
-    static createCard(cardName) {
+    static createCard (cardName) {
       const card = {
         name: cardName,
         type: 'set-image-sound',
