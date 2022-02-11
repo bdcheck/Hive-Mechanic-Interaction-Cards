@@ -337,6 +337,15 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/client.js",
 				"sha512-hash": "2bc1717bd1ea4f4cf1ca9bf4eb7620dfc5fafd6e7c1f299d5baa7abae25ca53b3d678371b9545a0c5d0dc7961f972339e086c3353f8a7cf6337e1d363d81fb19"
+			}, {
+				"version": 1.7,
+				"name": "1.7",
+				"created": "2022-02-11T12:00:00.000000+00:00",
+				"notes": "Updated card for new modern declarative style",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/1.7/process_variable/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/1.7/process_variable/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/1.7/process_variable/client.js",
+				"sha512-hash": "847d5977a2f11a9e7dfc5e388b10f27ef074a30bcceb632f73a6ba734aa32255eb53ad65689b53a0720d458ff429aac00ad63f41420de80cbb7467abc440fae1"
 			}]
 		},
 		"response_contains_image": {
