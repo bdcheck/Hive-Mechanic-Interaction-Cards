@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "generator-eslint": "^3.0.1",
+    "npm": "^8.5.0",
     "yo": "^4.3.0"
   }
 }
