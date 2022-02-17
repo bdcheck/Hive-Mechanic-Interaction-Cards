@@ -337,6 +337,15 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/client.js",
 				"sha512-hash": "2bc1717bd1ea4f4cf1ca9bf4eb7620dfc5fafd6e7c1f299d5baa7abae25ca53b3d678371b9545a0c5d0dc7961f972339e086c3353f8a7cf6337e1d363d81fb19"
+			}, {
+				"version": 1.8,
+				"name": "1.8",
+				"created": "2022-02-11T12:00:00.000000+00:00",
+				"notes": "Updated card for new modern declarative style",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/client.js",
+				"sha512-hash": "847d5977a2f11a9e7dfc5e388b10f27ef074a30bcceb632f73a6ba734aa32255eb53ad65689b53a0720d458ff429aac00ad63f41420de80cbb7467abc440fae1"
 			}]
 		},
 		"response_contains_image": {
@@ -610,6 +619,15 @@
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/client.js"
+			}, {
+				"version": 1.6,
+				"name": "1.6",
+				"created": "2022-02-10T12:00:00.000000+00:00",
+				"notes": "Fixed issue where default next_action wasn't recognized.",
+				"sha512-hash": "dca9a3a79c216867dcdb72b6a6ce8d1aa0c2bb4fc85b84f3df4c1b3ef34a84c91cf555d635d45007c36874d3b70752aa58f0160fdea3286966de776d7354ec0b",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/client.js"
 			}]
 		},
 		"data_query": {
