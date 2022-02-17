@@ -2,7 +2,6 @@
 import logging
 
 logger = logging.getLogger('db')
-print("here")
 
 #return the context of the variables
 def get_context(scope_name,define,extras):
