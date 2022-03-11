@@ -17,7 +17,7 @@ result['next_id'] = None
 if 'extras' in extras:
     if extras['extras'] is not None and 'last_message' in extras['extras']:
         if extras['extras']['last_message'] is not None:
-            image_count = extras['extras']['last_message'].media.filter(content_type__startswith='image/').count()
+            image_count = extras['extras']['last_message']['raw_object'].media.filter(content_type__startswith='image/').count()
 
             if image_count > 0:
                 result['next_id'] = definition['has_image_action']
