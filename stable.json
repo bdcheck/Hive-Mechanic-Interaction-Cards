@@ -424,6 +424,15 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.4/cards/response_contains_image/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.4/cards/response_contains_image/client.js",
 				"sha512-hash": "9980991b527ace0c27f8f0bde8e146965c984c90f7f897b5b50b472da1372a39c75091e6618594c334fca97ef1bafc7cb1b9a7640f363c62124004b510de80f8"
+			}, {
+				"version": 1.9,
+				"name": "1.9",
+				"created": "2022-03-14T12:00:00.000000+00:00",
+				"notes": "Bug fix",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/response_contains_image/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/response_contains_image/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/response_contains_image/client.js",
+				"sha512-hash": "046c06283a6c52d271873ff2efad0697a2da4448ce81f988af314e73ba228187878bd3de63c2b2a1466db81b0345630ba8d1eb30ab6a6928d7f083d875676911"
 			}]
 		},
 		"send_message": {
@@ -700,6 +709,15 @@
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/client.js"
+			}, {
+				"version": 1.9,
+				"name": "1.9",
+				"created": "2022-03-14T12:00:00.000000+00:00",
+				"notes": "Logging cleanup",
+				"sha512-hash": "15d113da70276367ed313752930f6505214e633d9e9cd920ca839af7bf9b8fedc05fff3b5682577e34f0e31c4b7efcaf9a57b683c3a155fe9f7e3e784f67357a",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/client.js"
 			}]
 		},
 		"calculate_percentages": {
