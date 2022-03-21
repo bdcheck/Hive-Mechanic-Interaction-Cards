@@ -92,7 +92,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           value: {
             en: 'Compares two variables with given logic operators.  Numbers and dates are allowed'
           },
-          width: 7,
+          width: 12,
           is_help: true
         }
       ]
@@ -130,7 +130,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         issues.push(['No setup if statement evaluates to false', 'node', this.definition.id, this.cardName()])
       }
       if (this.definition.next_error === undefined || this.definition.next_error === null || this.definition.next_error.trim().length === 0) {
-        issues.push(['No setup ff statement evaluates to false', 'node', this.definition.id, this.cardName()])
+        issues.push(['No setup if statement evaluates to false', 'node', this.definition.id, this.cardName()])
       }
 
       return issues
