@@ -114,7 +114,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }, {
         type: 'readonly',
         value: {
-          en: 'Processes response to prior message and proceeds to the first action to match response'
+          en: 'Finds the variable value and proceeds to the first action to match value. First checks the session, then the player, then the game if the variable cannot be found.'
         },
         is_help: true,
         width: 12
