@@ -16,7 +16,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           type: 'text',
           multiline: false,
           label: {
-            en: 'Name'
+            en: 'Input #1'
           }
         }, {
           field: 'operator',
@@ -52,8 +52,42 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           type: 'text',
           multiline: false,
           label: {
-            en: 'Value'
+            en: 'Input #2'
           }
+        },
+        {
+          field: 'variable_to_save',
+          type: 'text',
+          multiline: false,
+          label: {
+            en: 'Destination variable'
+          }
+        },
+        {
+          field: 'next_desc',
+          type: 'readonly',
+          value: {
+            en: 'Next Card'
+          },
+          width: 7
+        },
+        {
+          field: 'next',
+          type: 'card',
+          width: 5
+        },
+        {
+          field: 'next_error_desc',
+          type: 'readonly',
+          value: {
+            en: 'OPTIONAL: Evaluation encountered an error'
+          },
+          width: 7
+        },
+        {
+          field: 'next_error',
+          type: 'card',
+          width: 5
         },
         {
           field: 'description',
@@ -63,17 +97,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           },
           width: 7,
           is_help: true
-        },
-
-        {
-          field: 'next',
-          type: 'card',
-          width: 5
-        },
-        {
-          field: 'next_error',
-          type: 'card',
-          width: 5
         }
       ]
     }
@@ -101,12 +124,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       if (this.definition.operator === undefined || this.definition.operator.trim().length === 0) {
         issues.push(['Arithmetic operator was not provided.', 'node', this.definition.id, this.cardName()])
       }
-
+      if (this.definition.variable_to_save === undefined || this.definition.variable_to_save.trim().length === 0) {
+        issues.push(['Variable name to save was not provided.', 'node', this.definition.id, this.cardName()])
+      }
       if (this.definition.next === undefined || this.definition.next === null || this.definition.next.trim().length === 0) {
         issues.push(['No setup if statement evaluates to true destination node selected.', 'node', this.definition.id, this.cardName()])
-      }
-      if (this.definition.next_error === undefined || this.definition.next_error === null || this.definition.next_error.trim().length === 0) {
-        issues.push(['No setup ff statement evaluates to false', 'node', this.definition.id, this.cardName()])
       }
 
       return issues
@@ -179,10 +201,9 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         name: cardName,
         type: 'arithmetic-operator',
         first_variable: 'variable-name',
-        first_scope: 'scope',
         second_variable: 'variable-name',
-        second_scope: 'scope',
         operator: 'arithmetic-operator',
+        variable_to_save: 'variable-name',
         id: Node.uuidv4()
       }
 
