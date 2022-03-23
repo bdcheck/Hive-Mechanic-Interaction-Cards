@@ -6,7 +6,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         value: {
           en: 'Response DOES contain image:'
         },
-        is_help: true,
         width: 8
       }, {
         field: 'has_image_action',
@@ -17,7 +16,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         value: {
           en: 'Response DOES NOT contain image:'
         },
-        is_help: true,
         width: 8
       }, {
         field: 'no_image_action',

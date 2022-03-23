@@ -95,7 +95,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '    <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">' +
                        '      <ul class="mdc-list" role="listbox">' +
-                       '          <li class="mdc-list-item" data-value="dmtf" role="option">' +
+                       '          <li class="mdc-list-item" data-value="dtmf" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Touch Tone<span>' +
                        '          </li>' +
@@ -103,7 +103,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Speech<span>' +
                        '          </li>' +
-                       '          <li class="mdc-list-item" data-value="dtmf_speech" role="option">' +
+                       '          <li class="mdc-list-item" data-value="dtmf speech" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Touch Tone or Speech<span>' +
                        '          </li>' +
