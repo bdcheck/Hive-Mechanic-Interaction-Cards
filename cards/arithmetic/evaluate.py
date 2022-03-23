@@ -23,17 +23,9 @@ def get_context(scope_name,define,extras):
 
 #tries to get variable in order session, player game and returns none if no variable
 def get_variable_in_order(variable_name,extras):
-    game = extras['session'].game_version.game
-    player = extras['session'].player
     session = extras['session']
 
     var = session.fetch_variable(variable_name)
-
-    if var is None:
-        var = player.fetch_variable(variable_name)
-
-    if var is None:
-        var = game.fetch_variable(variable_name)
 
     return var
 
@@ -51,12 +43,13 @@ def int_or_float(string):
 
         return f
 
-var1 = get_variable_in_order(definition['first_variable'],extras)
-var2 = get_variable_in_order(definition['second_variable'],extras)
+var1 = get_variable_in_order(definition['first_variable'], extras)
+var2 = get_variable_in_order(definition['second_variable'], extras)
+save_var = definition["variable_to_save"]
 
 # initial error checking
 error = ""
-if not var1 or not var2:
+if not var1 or not var2 or not save_var:
     error = "Missing values"
 elif not var1.isnumeric() or not var2.isnumeric():
     error = "Variables are not numeric"
@@ -80,7 +73,7 @@ if not error:
 
 result['actions'] = []
 #set error variable if there is an error and set next card to the error card
-if error:
+if error and 'next_error' in definition:
     result['next_id'] = definition['next_error']
     variable = {
         'type': 'set-variable',
@@ -96,8 +89,8 @@ else:
     variable = {
         'type': 'set-variable',
         'name': definition['name'],
-        'variable': 'arithmetic_result',
-        'value': result_num,
+        'variable': save_var,
+        'value': str(result_num),
         'scope': "session"
     }
 
