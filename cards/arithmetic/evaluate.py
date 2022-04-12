@@ -51,11 +51,18 @@ save_var = definition["variable_to_save"]
 error = ""
 if not var1 or not var2 or not save_var:
     error = "Missing values"
-elif not var1.isnumeric() or not var2.isnumeric():
-    error = "Variables are not numeric"
 
-num1 = int_or_float(var1)
-num2 = int_or_float(var2)
+try:
+    float(var1)
+    float(var2)
+    are_numbers = True
+except ValueError:
+    error = "Variables are not numeric"
+    are_numbers = False
+
+if are_numbers:
+    num1 = int_or_float(var1)
+    num2 = int_or_float(var2)
 result_num = 0
 #if initial error checking is done try to run operation
 if not error:
@@ -67,14 +74,20 @@ if not error:
         elif definition['operator'] == "multiplication":
             result_num = num1 * num2
         elif definition['operator'] == "division":
-            result_num = num1 / num2
+            if isinstance(num1,int) and isinstance(num2, int):
+                result_num = num1 // num2
+            else:
+                result_num = num1 / num2
     except BaseException as e:
         error = str(e)
 
 result['actions'] = []
 #set error variable if there is an error and set next card to the error card
-if error and 'next_error' in definition:
-    result['next_id'] = definition['next_error']
+if error:
+    if 'next_error' in definition:
+        result['next_id'] = definition['next_error']
+    else:
+        result['next_id'] = definition['next']
     variable = {
         'type': 'set-variable',
         'name': definition['name'],
@@ -83,6 +96,8 @@ if error and 'next_error' in definition:
         'scope': "session"
     }
     result['actions'].append(variable)
+
+
 #or if it ran correctly set result card
 else:
     result['next_id'] = definition['next']
