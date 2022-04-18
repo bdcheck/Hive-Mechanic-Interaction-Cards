@@ -29,12 +29,6 @@ define(['material', 'cards/node', 'marked', 'purify', 'jquery'], function (mdc, 
     }
 
     updateCommentDisplay (commentText) {
-      console.log('COMMENT FIELD: ' + commentText + ' ---> ' + '.' + this.definition.id + '_view_comment')
-
-      console.log($('.' + this.definition.id + '_view_comment').length)
-
-      console.log('HTML: ' + purify.sanitize(marked.parse(commentText)))
-
       $('.' + this.definition.id + '_view_comment').html('<div>' + purify.sanitize(marked.parse(commentText)) + '</div>')
 
       super.updateCommentDisplay(commentText)
