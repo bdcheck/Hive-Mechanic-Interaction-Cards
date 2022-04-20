@@ -86,6 +86,8 @@ if error:
 else:
     if result_num - int(result_num) == 0:
         result_num = int(result_num)
+    else:
+        result_num = round(result_num,3)
     result['next_id'] = definition['next']
     variable = {
         'type': 'set-variable',
