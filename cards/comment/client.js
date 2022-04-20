@@ -1,4 +1,4 @@
-define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
+define(['material', 'cards/node', 'marked', 'purify', 'jquery'], function (mdc, Node, marked, purify) {
   class CommentNode extends Node {
     cardIcon () {
       return '<i class="fas fa-sticky-note" style="margin-right: 16px; font-size: 20px; "></i>'
@@ -7,16 +7,17 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     cardFields () {
       return [{
         field: 'comment',
-        type: 'text',
-        multiline: true,
-        label: {
-          en: 'Comment'
-        }
+        type: 'readonly',
+        style: 'body1',
+        value: {
+          en: purify.sanitize(marked.parse(this.definition.comment))
+        },
+        add_class: this.definition.id + '_view_comment'
       }, {
-        field: 'comment_description',
+        field: 'next_field',
         type: 'readonly',
         value: {
-          en: 'This card provides a comment within your game.'
+          en: 'Next:'
         },
         width: 7,
         is_help: true
@@ -27,8 +28,26 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }]
     }
 
+    updateCommentDisplay (commentText) {
+      $('.' + this.definition.id + '_view_comment').html('<div>' + purify.sanitize(marked.parse(commentText)) + '</div>')
+
+      super.updateCommentDisplay(commentText)
+    }
+
+    style () {
+      return 'background-color: #FDFEDE; margin-bottom: 10px;'
+    }
+
+    readOnlyStyle () {
+      return 'background-color: #FDFEDE;'
+    }
+
+    showComment () {
+      return false
+    }
+
     viewBody () {
-      return '<div class="mdc-typography--body1" style="margin: 16px;">Comment: ' + this.definition.comment + '</div>'
+      return '<div class="mdc-typography--body1" style="margin: 16px;">Comment: ' + purify.sanitize(marked.parse(this.definition.comment)) + '</div>'
     }
 
     initialize () {
@@ -90,11 +109,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Comment'
+      return 'Editor\'s Note'
     }
 
     static cardName () {
-      return 'Comment'
+      return 'Editor\'s Note'
     }
 
     static createCard (cardName) {

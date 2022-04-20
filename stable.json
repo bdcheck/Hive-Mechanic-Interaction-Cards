@@ -53,7 +53,7 @@
 		},
 		"comment": {
 			"identifier": "comment",
-			"name": "Comment Card",
+			"name": "Editor's Note",
 			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 0.1,
@@ -100,6 +100,15 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/comment/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/comment/client.js",
 				"sha512-hash": "3c44089f7edff7cb45f24c4e7bcab9a34f62d542c3602d524705c5b1be6dfd1dbca25effda4578afc4378d694945ab30a23f1f41f557319a19a7684571c8aaa8"
+			}, {
+				"version": 2.1,
+				"name": "2.1",
+				"created": "2022-04-18T12:00:00.000000+00:00",
+				"notes": "Revised look and feel",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/client.js",
+				"sha512-hash": "245e261a98eb9c5c1552433f944470954f16d6d449984768474a62875126e80e62a003b5577618090804a07d86494442afd560582f1fe48100f4b6341b0c9907"
 			}]
 		},
 		"game-over": {
