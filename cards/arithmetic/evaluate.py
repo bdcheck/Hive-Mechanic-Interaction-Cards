@@ -29,20 +29,6 @@ def get_variable_in_order(variable_name,extras):
 
     return var
 
-# return int or float representation of the string
-# https://stackoverflow.com/questions/5608702/how-can-i-convert-a-string-to-either-int-or-float-with-priority-on-int
-def int_or_float(string):
-    try:
-        return int(string)
-    except ValueError:
-        f = float(string)
-        i = int(f)
-
-        if f == i:
-            return i
-
-        return f
-
 var1 = get_variable_in_order(definition['first_variable'], extras)
 var2 = get_variable_in_order(definition['second_variable'], extras)
 save_var = definition["variable_to_save"]
@@ -53,16 +39,14 @@ if not var1 or not var2 or not save_var:
     error = "Missing values"
 
 try:
-    float(var1)
-    float(var2)
+    num1 = float(var1)
+    num2 = float(var2)
     are_numbers = True
 except ValueError:
     error = "Variables are not numeric"
     are_numbers = False
 
-if are_numbers:
-    num1 = int_or_float(var1)
-    num2 = int_or_float(var2)
+
 result_num = 0
 #if initial error checking is done try to run operation
 if not error:
@@ -100,6 +84,8 @@ if error:
 
 #or if it ran correctly set result card
 else:
+    if result_num - int(result_num) == 0:
+        result_num = int(result_num)
     result['next_id'] = definition['next']
     variable = {
         'type': 'set-variable',
