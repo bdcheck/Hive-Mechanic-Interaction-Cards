@@ -48,7 +48,7 @@ if 'hive_physical_location_latitude' in context and 'hive_physical_location_long
         J['data'][ii].append(Distance_from_sensor)
         List_of_distances.append(Distance_from_sensor)
 
-    if len(List_of_distances) > 0:
+    if List_of_distances:
         index_of_closest_sensor = List_of_distances.index(min(List_of_distances))
 
         # TO DO: Use confidence column to eliminate the closest sensor if the next nearest sensor has higher confidence...
