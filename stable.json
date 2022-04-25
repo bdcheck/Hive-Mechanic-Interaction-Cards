@@ -56,51 +56,6 @@
 			"name": "Editor's Note",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "f7a960773df4e045381d7e77749d2f25da1d09fdd20c2f03d2e9dee211eb0be7d28f5c195a23761f84f6fb0bf71859babe0fed4f932ccce119c73240a0f622f1",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/comment/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.830469+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/comment/client.js",
-				"sha512-hash": "c1ab336c476582b4253506b09164ed009ffcf6636c5b1e5a6974035897eade179d2eec80df0b47d3edb85723633ecdc9d3fdf7d9877b22adbf31e83280dd89ad"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.830469+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/comment/client.js",
-				"sha512-hash": "0a53419d4590f204018b7fe503b987329bde88031579c03fc5e69d9fdcb7d5ccdf3e95b038797ae3006bc1d243e2e03e1afff3e25e14a45ee5be70dadf81e04e"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/comment/client.js",
-				"sha512-hash": "0a53419d4590f204018b7fe503b987329bde88031579c03fc5e69d9fdcb7d5ccdf3e95b038797ae3006bc1d243e2e03e1afff3e25e14a45ee5be70dadf81e04e"
-			}, {
-				"version": 1.1,
-				"name": "1.1",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleaup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/comment/client.js",
-				"sha512-hash": "3c44089f7edff7cb45f24c4e7bcab9a34f62d542c3602d524705c5b1be6dfd1dbca25effda4578afc4378d694945ab30a23f1f41f557319a19a7684571c8aaa8"
-			}, {
 				"version": 2.1,
 				"name": "2.1",
 				"created": "2022-04-18T12:00:00.000000+00:00",
@@ -109,6 +64,15 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/client.js",
 				"sha512-hash": "245e261a98eb9c5c1552433f944470954f16d6d449984768474a62875126e80e62a003b5577618090804a07d86494442afd560582f1fe48100f4b6341b0c9907"
+			}, {
+				"version": 2.4,
+				"name": "2.4",
+				"created": "2022-04-18T12:00:00.000000+00:00",
+				"notes": "Revised default comment text",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.4/cards/comment/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.4/cards/comment/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.4/cards/comment/client.js",
+				"sha512-hash": "24760a731628d52d5acb622281100ef1da46ce344a8fb8e19fdb6fbc764e3acc8dede4dca6c5e7b7cfdf5a9dffcad9b8c45fbe7cb56626f5e7c94a4320642a74"
 			}]
 		},
 		"game-over": {
@@ -819,11 +783,11 @@
 			"identifier": "purpleair",
 			"name": "Purple Air",
 			"versions": [{
-				"version": 2.3,
-				"name": "2.3",
+				"version": 2.4,
+				"name": "2.4",
 				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"sha512-hash": "425557f80cc0505749f2f27e6be437e79af573c47301d7d9ac5765d2ef90defbfc5a76494c109509b2c660064aea1780252dce829070e8042e0aa3d8f7037b42",
+				"notes": "Purple Air data processor deployment",
+				"sha512-hash": "ad57dbd9ede65529261963dd9bd0163e08969916a15017e19425d7c3c860d6472fde7937ecc66c9c99d4aaa8ef097b3cb70d28266734dc86d32662fc5cdf8f4e",
 				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.3/data_processors/purpleair/purpleair.py"
 			}]
 		}
