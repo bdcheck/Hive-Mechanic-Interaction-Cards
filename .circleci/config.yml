@@ -47,6 +47,7 @@ jobs:
             pylint data_processors/yelp
             pylint data_processors/openweather
             pylint data_processors/wmata
+            pylint data_processors/purpleair
 
             bandit -r . -x ./node_modules/
       - save_cache:
@@ -94,6 +95,7 @@ jobs:
             pylint data_processors/yelp
             pylint data_processors/openweather
             pylint data_processors/wmata
+            pylint data_processors/purpleair
 
             bandit -r . -x ./node_modules/
       - save_cache:

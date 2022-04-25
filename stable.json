@@ -823,8 +823,8 @@
 				"name": "2.3",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "fe707f56c397c77f99bf5a25c16acf33cbf408e22e21eb52b92997f8d2b0a12a0ec19110883e342ae24f463e7021b62707cfc7386617e34db3ac7701c6bd4061",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/purpleair/purpleair.py"
+				"sha512-hash": "425557f80cc0505749f2f27e6be437e79af573c47301d7d9ac5765d2ef90defbfc5a76494c109509b2c660064aea1780252dce829070e8042e0aa3d8f7037b42",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.3/data_processors/purpleair/purpleair.py"
 			}]
 		}
 	}
