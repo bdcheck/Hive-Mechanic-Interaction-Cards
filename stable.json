@@ -727,6 +727,15 @@
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/client.js"
+			}, {
+				"version": 2.2,
+				"name": "2.2",
+				"created": "2022-03-14T12:00:00.000000+00:00",
+				"notes": "Bug fixes",
+				"sha512-hash": "f8fcafd6b4fc2450d266de1f27f633f9900e3b9a92f053b7b21eea720b0f2ee4594f6276d747f7e858c094e5e845f702a89170d2c5ef113aa1ca7599dcfb7ce1",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.2/cards/arithmetic/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.2/cards/arithmetic/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.2/cards/arithmetic/client.js"
 			}]
 		},
 		"calculate_percentages": {
