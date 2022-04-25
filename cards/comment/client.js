@@ -120,7 +120,7 @@ define(['material', 'cards/node', 'marked', 'purify', 'jquery'], function (mdc, 
       const card = {
         name: cardName,
         context: '(Context goes here...)',
-        comment: '(Comment goes here...)',
+        comment: 'To edit this note-to-self, use the three dots at top right and edit the card comment. (All other cards also have "comment" abilities too, by the way!)',
         type: 'comment',
         id: Node.uuidv4(),
         next: null
