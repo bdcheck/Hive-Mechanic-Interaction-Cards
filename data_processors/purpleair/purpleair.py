@@ -1,34 +1,30 @@
+# pylint: disable=line-too-long
+
 import requests
+
+# Input: Diameter (in miles)
+# Output: Coordinates of edges of square boundary around player
+def generateSquareBoundary(SEARCH_RANGE):
+    """Calculates a square boundary around the player's current location.
+    Then generates a url to search for PurpleAir sensors in that area.
+    """
+
+    DEG_IN_ONE_MILE = 1 / float(69)  # Each degree of latitude is approximately 69 miles apart.
+    SEARCH_RADIUS = SEARCH_RANGE / 2 * DEG_IN_ONE_MILE
+
+    nwlat = float(LAT) + SEARCH_RADIUS
+    selat = float(LAT) - SEARCH_RADIUS
+    nwlng = float(LON) - SEARCH_RADIUS
+    selng = float(LON) + SEARCH_RADIUS
+
+    return 'https://www.purpleair.com/data.json?opt=1/i/mAQI/a10/cC0&fetch=true&nwlat=%f&selat=%f&nwlng=%f&selng=%f&fields=pm_2' % (nwlat, selat, nwlng, selng)
 
 # Ensure that Hive has successfully gathered the user's coordinates before proceeding.
 # If data isn't found, record the error to Hive.
 
-global LAT
-global LON
-
 if 'hive_physical_location_latitude' in context and 'hive_physical_location_longitude' in context:
     LAT = str(context['hive_physical_location_latitude'])
     LON = str(context['hive_physical_location_longitude'])
-
-    # Input: Diameter (in miles)
-    # Output: Coordinates of edges of square boundary around player
-    def generateSquareBoundary(SEARCH_RANGE):
-        """Calculates a square boundary around the player's current location.
-        Then generates a url to search for PurpleAir sensors in that area.
-        """
-
-        DEG_IN_ONE_MILE = 1 / float(69)  # Each degree of latitude is approximately 69 miles apart.
-        SEARCH_RADIUS = SEARCH_RANGE / 2 * DEG_IN_ONE_MILE
-
-        nwlat = float(LAT) + SEARCH_RADIUS
-        selat = float(LAT) - SEARCH_RADIUS
-        nwlng = float(LON) - SEARCH_RADIUS
-        selng = float(LON) + SEARCH_RADIUS
-
-        full_url = 'https://www.purpleair.com/data.json?opt=1/i/mAQI/a10/cC0&fetch=true&nwlat=' \
-            + str(nwlat) + '&selat=' + str(selat) + '&nwlng=' \
-            + str(nwlng) + '&selng=' + str(selng) + '&fields=pm_2'
-        return full_url
 
     full_url = generateSquareBoundary(50)
 
