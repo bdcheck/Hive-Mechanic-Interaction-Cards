@@ -73,7 +73,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--caption ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-typography--caption ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-select mdc-select--outlined" id="' + this.cardId + '_gather_input_method" style="width: 100%; margin-top: 4px;">' +
                        '    <div class="mdc-select__anchor">' +
                        '      <span class="mdc-notched-outline">' +
@@ -95,7 +95,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '    <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">' +
                        '      <ul class="mdc-list" role="listbox">' +
-                       '          <li class="mdc-list-item" data-value="dtmf" role="option">' +
+                       '          <li class="mdc-list-item" data-value="dmtf" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Touch Tone<span>' +
                        '          </li>' +
@@ -103,7 +103,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Speech<span>' +
                        '          </li>' +
-                       '          <li class="mdc-list-item" data-value="dtmf speech" role="option">' +
+                       '          <li class="mdc-list-item" data-value="dtmf_speech" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Touch Tone or Speech<span>' +
                        '          </li>' +
@@ -111,7 +111,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--caption ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-typography--caption ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-select mdc-select--outlined" id="' + this.cardId + '_gather_speech_model" style="width: 100%; margin-top: 4px;">' +
                        '    <div class="mdc-select__anchor">' +
                        '      <span class="mdc-notched-outline">' +
@@ -149,7 +149,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_timeout" style="width: 100%; margin-top: 4px;">' +
                        '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_timeout_value" />' +
                        '    <div class="mdc-notched-outline">' +
@@ -161,13 +161,13 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 ' + this.cardId + '_gather_container">' +
-                       '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_speech_timeout" style="width: 100%; margin-top: 4px;">' +
-                       '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_speech_timeout_value" />' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 ' + this.cardId + '_gather_container">' +
+                       '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_loop" style="width: 100%; margin-top: 4px;">' +
+                       '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_loop_value" type="number" min="0" />' +
                        '    <div class="mdc-notched-outline">' +
                        '      <div class="mdc-notched-outline__leading"></div>' +
                        '      <div class="mdc-notched-outline__notch">' +
-                       '        <label for="' + this.cardId + '_gather_speech_timeout_value" class="mdc-floating-label">Speech Timeout (Seconds)</label>' +
+                       '        <label for="' + this.cardId + '_gather_loop_value" class="mdc-floating-label">Repeat Loops</label>' +
                        '      </div>' +
                        '      <div class="mdc-notched-outline__trailing"></div>' +
                        '    </div>' +
@@ -268,18 +268,18 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         me.sequence.markChanged(me.id)
       })
 
-      const speechTimeout = mdc.textField.MDCTextField.attachTo(document.getElementById(this.cardId + '_gather_speech_timeout'))
+      const gatherLoop = mdc.textField.MDCTextField.attachTo(document.getElementById(this.cardId + '_gather_loop'))
 
-      if (this.definition.speech_timeout !== undefined) {
-        speechTimeout.value = this.definition.speech_timeout
+      if (this.definition.loop !== undefined) {
+        gatherLoop.value = this.definition.loop
       } else {
-        speechTimeout.value = ''
+        gatherLoop.value = '1'
       }
 
-      $('#' + this.cardId + '_gather_speech_timeout_value').on('change keyup paste', function () {
-        const value = speechTimeout.value
+      $('#' + this.cardId + '_gather_loop_value').on('change keyup paste', function () {
+        const value = gatherLoop.value
 
-        me.definition.speech_timeout = value
+        me.definition.loop = value
 
         me.sequence.markChanged(me.id)
       })
@@ -458,6 +458,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         name: cardName,
         context: '(Context goes here...)',
         message: '(Message goes here...)',
+        loop: '1',
         type: 'voice-message',
         id: Node.uuidv4(),
         next: null
