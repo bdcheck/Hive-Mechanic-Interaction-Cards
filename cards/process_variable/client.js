@@ -29,9 +29,17 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       for (let i = 0; i < this.definition.patterns.length; i++) {
         const patternDef = this.definition.patterns[i]
 
-        const humanized = this.humanizePattern(patternDef.pattern, patternDef.action)
+        if (patternDef.pattern !== undefined) {
+          const humanized = this.humanizePattern(patternDef.pattern, patternDef.action)
 
-        summary += '<div class="mdc-typography--body1" style="margin: 16px;">' + humanized + '</div>'
+          summary += '<div class="mdc-typography--body1" style="margin: 16px;">' + humanized + '</div>'
+        }
+      }
+
+      if (summary === '') {
+        summary += '<div class="mdc-typography--body1" style="margin: 16px;">'
+        summary += 'No patterns defined.'
+        summary += '</div>'
       }
 
       if (this.definition.not_found_action !== undefined && this.definition.not_found_action !== '') {
@@ -85,6 +93,9 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         }],
         add_item_label: {
           en: 'Add Pattern'
+        },
+        add_item_text: {
+          en: 'Backspace over an empty pattern to remove it.'
         }
       }, {
         type: 'readonly',
@@ -114,7 +125,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }, {
         type: 'readonly',
         value: {
-          en: 'Finds the variable value and proceeds to the first action to match value. First checks the session, then the player, then the game if the variable cannot be found.'
+          en: 'Processes response to prior message and proceeds to the first action to match response'
         },
         is_help: true,
         width: 12
@@ -363,8 +374,10 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       for (let i = 0; i < this.definition.patterns.length; i++) {
         const pattern = this.definition.patterns[i]
 
-        if (pattern.action === undefined || pattern.action.trim().length === 0) {
-          cardIssues.push(['No action provided for pattern "' + pattern.pattern + '".', 'node', this.definition.id, this.cardName()])
+        if (pattern.pattern !== undefined && pattern.pattern !== '') {
+          if (pattern.action === undefined || pattern.action.trim().length === 0) {
+            cardIssues.push(['No action provided for pattern "' + pattern.pattern + '".', 'node', this.definition.id, this.cardName()])
+          }
         }
       }
 

@@ -19,11 +19,12 @@ else:
     result['next_id'] = None
 
     for pattern_def in definition['patterns']:
-        pattern = re.compile(pattern_def['pattern'], re.IGNORECASE)
+        if pattern_def['pattern'] is not None and pattern_def['pattern'] != '':
+            pattern = re.compile(pattern_def['pattern'], re.IGNORECASE)
 
-        if result['next_id'] is None and pattern.match(value) is not None:
-            result['next_id'] = pattern_def['action']
-            result['matched_pattern'] = pattern_def['pattern']
+            if result['next_id'] is None and pattern.match(value) is not None:
+                result['next_id'] = pattern_def['action']
+                result['matched_pattern'] = pattern_def['pattern']
 
     if result['next_id'] is None and definition['not_found_action'] is not None:
         result['next_id'] = definition['not_found_action']
