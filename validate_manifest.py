@@ -1,13 +1,14 @@
 # pylint: disable=line-too-long
 
 import hashlib
+import io
 import json
 import sys
 
 import arrow
 import requests
 
-with open(sys.argv[1], mode='r', encoding='utf-8') as repo_file:
+with io.open(sys.argv[1], mode='r', encoding='utf-8') as repo_file:
     repository = json.load(repo_file)
 
     for key in repository['cards'].keys():
