@@ -73,7 +73,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-typography--caption ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--caption ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-select mdc-select--outlined" id="' + this.cardId + '_gather_input_method" style="width: 100%; margin-top: 4px;">' +
                        '    <div class="mdc-select__anchor">' +
                        '      <span class="mdc-notched-outline">' +
@@ -111,7 +111,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-typography--caption ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--caption ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-select mdc-select--outlined" id="' + this.cardId + '_gather_speech_model" style="width: 100%; margin-top: 4px;">' +
                        '    <div class="mdc-select__anchor">' +
                        '      <span class="mdc-notched-outline">' +
@@ -149,7 +149,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 ' + this.cardId + '_gather_container">' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_timeout" style="width: 100%; margin-top: 4px;">' +
                        '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_timeout_value" />' +
                        '    <div class="mdc-notched-outline">' +
@@ -161,13 +161,13 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    </div>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 ' + this.cardId + '_gather_container">' +
-                       '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_loop" style="width: 100%; margin-top: 4px;">' +
-                       '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_loop_value" type="number" min="0" />' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 ' + this.cardId + '_gather_container">' +
+                       '  <div class="mdc-text-field mdc-text-field--outlined" id="' + this.cardId + '_gather_speech_timeout" style="width: 100%; margin-top: 4px;">' +
+                       '    <input class="mdc-text-field__input"style="width: 100%" id="' + this.cardId + '_gather_speech_timeout_value" />' +
                        '    <div class="mdc-notched-outline">' +
                        '      <div class="mdc-notched-outline__leading"></div>' +
                        '      <div class="mdc-notched-outline__notch">' +
-                       '        <label for="' + this.cardId + '_gather_loop_value" class="mdc-floating-label">Repeat Loops</label>' +
+                       '        <label for="' + this.cardId + '_gather_speech_timeout_value" class="mdc-floating-label">Speech Timeout (Seconds)</label>' +
                        '      </div>' +
                        '      <div class="mdc-notched-outline__trailing"></div>' +
                        '    </div>' +
@@ -268,18 +268,18 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         me.sequence.markChanged(me.id)
       })
 
-      const gatherLoop = mdc.textField.MDCTextField.attachTo(document.getElementById(this.cardId + '_gather_loop'))
+      const speechTimeout = mdc.textField.MDCTextField.attachTo(document.getElementById(this.cardId + '_gather_speech_timeout'))
 
-      if (this.definition.loop !== undefined) {
-        gatherLoop.value = this.definition.loop
+      if (this.definition.speech_timeout !== undefined) {
+        speechTimeout.value = this.definition.speech_timeout
       } else {
-        gatherLoop.value = '1'
+        speechTimeout.value = ''
       }
 
-      $('#' + this.cardId + '_gather_loop_value').on('change keyup paste', function () {
-        const value = gatherLoop.value
+      $('#' + this.cardId + '_gather_speech_timeout_value').on('change keyup paste', function () {
+        const value = speechTimeout.value
 
-        me.definition.loop = value
+        me.definition.speech_timeout = value
 
         me.sequence.markChanged(me.id)
       })
@@ -386,8 +386,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       $('.' + this.cardId + '_gather_container').hide()
 
       nextActionField.listen('MDCSelect:change', () => {
-        console.log('Selected option at index ' + nextActionField.selectedIndex + ' with value "' + nextActionField.value + '"')
-
         me.definition.next_action = nextActionField.value
 
         $('#' + this.cardId + '_pause_container').hide()
@@ -445,6 +443,39 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    issues (sequence) {
+      const issues = super.issues(sequence)
+
+      if (this.definition.next_action === 'gather') {
+        const timeout = parseInt(this.definition.timeout)
+        const speechTimeout = parseInt(this.definition.speech_timeout)
+
+        let checkNextProcess = false
+
+        if (isNaN(timeout) === false || isNaN(speechTimeout) === false) {
+          checkNextProcess = true
+        }
+
+        if (checkNextProcess) {
+          const nextId = this.definition.next
+
+          if (nextId !== undefined) {
+            const nextNode = sequence.resolveNode(nextId)
+
+            if (nextNode.definition.type === 'process-response') {
+              const nextTimeout = parseInt(nextNode.definition.timeout.duration)
+
+              if (isNaN(nextTimeout) || nextTimeout > 0) {
+                issues.push(['Voice input (gather) card followed by a card with a non-existent or greater-than-zero timeout.', 'node', this.definition.id, this.cardName()])
+              }
+            }
+          }
+        }
+      }
+
+      return issues
+    }
+
     cardType () {
       return 'Voice Message'
     }
@@ -458,7 +489,6 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         name: cardName,
         context: '(Context goes here...)',
         message: '(Message goes here...)',
-        loop: '1',
         type: 'voice-message',
         id: Node.uuidv4(),
         next: null
