@@ -629,14 +629,14 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/client.js"
 			}, {
-				"version": 1.7,
-				"name": "1.7",
+				"version": 2.6,
+				"name": "2.6",
 				"created": "2022-06-24T12:00:00.000000+00:00",
 				"notes": "Addressed timeout-related issues and UI.",
-				"sha512-hash": "dca9a3a79c216867dcdb72b6a6ce8d1aa0c2bb4fc85b84f3df4c1b3ef34a84c91cf555d635d45007c36874d3b70752aa58f0160fdea3286966de776d7354ec0b",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/voice_message/client.js"
+				"sha512-hash": "39770668623062726250b53a25230ee3c4f14ff2e1f51dd573975b948241ab54dc0c46604a506343a524302748b6c9bea7ddfa23d2bcf2e033827c13a53b2e8f",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.6/cards/voice_message/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.6/cards/voice_message/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.6/cards/voice_message/client.js"
 			}]
 		},
 		"data_query": {
