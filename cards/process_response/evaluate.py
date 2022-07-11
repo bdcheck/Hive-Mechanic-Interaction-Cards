@@ -54,26 +54,30 @@ if response is not None:
         result['next_id'] = definition['not_found_action']
         result['matched_pattern'] = 'no-matches-found'
 elif 'timeout' in definition:
-    test = timezone.now()
+    units = definition['timeout'].get('units', None)
+    duration = int(definition['timeout'].get('duration', '0'))
 
-    if 'units' in definition['timeout'] and 'duration' in definition['timeout']:
-        duration = int(definition['timeout']['duration'])
+    if units is not None and duration > 0:
+        test = timezone.now()
 
-        if definition['timeout']['units'] == 'second':
-            test = test - datetime.timedelta(seconds=duration)
-        elif definition['timeout']['units'] == 'minute':
-            test = test - datetime.timedelta(seconds=(duration * 60))
-        elif definition['timeout']['units'] == 'hour':
-            test = test - datetime.timedelta(seconds=(duration * 60 * 60))
-        elif definition['timeout']['units'] == 'day':
-            test = test - datetime.timedelta(days=duration)
+        if 'units' in definition['timeout'] and 'duration' in definition['timeout']:
+            duration = int(definition['timeout']['duration'])
+
+            if definition['timeout']['units'] == 'second':
+                test = test - datetime.timedelta(seconds=duration)
+            elif definition['timeout']['units'] == 'minute':
+                test = test - datetime.timedelta(seconds=(duration * 60))
+            elif definition['timeout']['units'] == 'hour':
+                test = test - datetime.timedelta(seconds=(duration * 60 * 60))
+            elif definition['timeout']['units'] == 'day':
+                test = test - datetime.timedelta(days=duration)
+            else:
+                logger.info('Invalid duration = %d, and units = %s', str(duration), str(definition['timeout']['units']))
+
+        if last_transition < test:
+            result['next_id'] = definition['timeout']['action']
         else:
-            logger.info('Invalid duration = %d, and units = %s', str(duration), str(definition['timeout']['units']))
-
-    if last_transition < test:
-        result['next_id'] = definition['timeout']['action']
-    else:
-        result['next_id'] = definition['id']
+            result['next_id'] = definition['id']
 
 if result['next_id'] is not None and ('#' in result['next_id']) is False:
     result['next_id'] = definition['sequence_id'] + '#' + result['next_id']
