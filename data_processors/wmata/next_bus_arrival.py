@@ -17,7 +17,7 @@ if 'wtama_bus_stop_id' in context:
         'api_key': metadata['api_key']
     }
 
-    response = requests.get(url, params=params, headers=headers)
+    response = requests.get(url, params=params, headers=headers, timeout=300)
 
     response.raise_for_status()
 
