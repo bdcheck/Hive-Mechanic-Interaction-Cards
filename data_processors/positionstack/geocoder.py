@@ -17,7 +17,7 @@ if 'hive_physical_location_description' in context:
         'query': context['hive_physical_location_description']
     }
 
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=300)
 
     response.raise_for_status()
 

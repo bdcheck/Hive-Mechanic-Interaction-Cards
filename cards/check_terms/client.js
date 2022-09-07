@@ -95,7 +95,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         }
       }
 
-      if (found == false) {
+      if (found === false) {
         const acceptedNode = this.sequence.resolveNode(acceptedId)
 
         if (acceptedNode != null) {
@@ -119,7 +119,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         }
       }
 
-      if (found == false) {
+      if (found === false) {
         const notAcceptedNode = this.sequence.resolveNode(notAcceptedId)
 
         if (notAcceptedNode != null) {
