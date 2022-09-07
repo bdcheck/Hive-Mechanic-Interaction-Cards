@@ -5,42 +5,6 @@
 			"name": "Branching Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "9eea4202a87de1ecceec77f6ebd3f64fc9c1f69250a22b19b30fc3c5da164ee091920342e57821dbc62dbb0265461146bae54007dd8f5f27eb5f63059fe5ce11",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/branch/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/branch/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/branch/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.830813+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/branch/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/branch/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/branch/client.js",
-				"sha512-hash": "eb16c00162178c6f30456be5e3c831e2554c496eeb16142b72c2b34beaa097132128c3849a798a526d29e752fcf892ae047eec40916f6ff41ad26dd8840bca62"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.830813+00:00",
-				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/branch/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/branch/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/branch/client.js",
-				"sha512-hash": "f40a31b73248b6c00f0de67041a2adac8114a1d092ed9a0bc7670f51d9e06a4f05c4f506c37c8caba7eb68504703c0c0fbb00ea4a6e4a993d4279e704d6718ad"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/branch/client.js",
-				"sha512-hash": "b4f5a8c89f73f3420116ade0397d38ca5ac1328d923e0e55961c1d9156b8752083d85b14ec31ca9e76f88a8777fa9cd451090dc9efafe44084f508fd31b1e2a0"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -56,15 +20,6 @@
 			"name": "Editor's Note",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 2.1,
-				"name": "2.1",
-				"created": "2022-04-18T12:00:00.000000+00:00",
-				"notes": "Revised look and feel",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.1/cards/comment/client.js",
-				"sha512-hash": "245e261a98eb9c5c1552433f944470954f16d6d449984768474a62875126e80e62a003b5577618090804a07d86494442afd560582f1fe48100f4b6341b0c9907"
-			}, {
 				"version": 2.4,
 				"name": "2.4",
 				"created": "2022-04-18T12:00:00.000000+00:00",
@@ -80,33 +35,6 @@
 			"name": "Activity Complete Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "29e496def6bac38307926bab0f7891dda2e572a32733720ab74447d0ecb5e5a6586c8d26d07e47b0a32082d195f2f37c954a9c4db3941bcc6549374803f736bd",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/game_over/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/game_over/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/game_over/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.831497+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/game_over/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/game_over/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/game_over/client.js",
-				"sha512-hash": "fdb98f485855bf9d9cf646a1bdbe27c2f6926d97161b193ba6d35cefdf75a207fd8e2ab19a91cc16a62ff7a1093d3f590855b49a5a17b265dc4dd0d5490c6588"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/game_over/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/game_over/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/game_over/client.js",
-				"sha512-hash": "fdb98f485855bf9d9cf646a1bdbe27c2f6926d97161b193ba6d35cefdf75a207fd8e2ab19a91cc16a62ff7a1093d3f590855b49a5a17b265dc4dd0d5490c6588"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -122,24 +50,6 @@
 			"name": "HTTP Request Card",
 			"category": "Network and Third Party Communication",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "851c4cbcb5e6e7d59b510b22a00982bfe5f4eb0aab8cc7b6bb8814d8836d4214b03ca7983f0761d2b9180158bfc788bedd8cac5916a4930d0f4a811bb7855d4a",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/http_request/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/http_request/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/http_request/client.js"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"sha512-hash": "851c4cbcb5e6e7d59b510b22a00982bfe5f4eb0aab8cc7b6bb8814d8836d4214b03ca7983f0761d2b9180158bfc788bedd8cac5916a4930d0f4a811bb7855d4a",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/http_request/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/http_request/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/http_request/client.js"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -155,60 +65,6 @@
 			"name": "Pause Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial versions.",
-				"sha512-hash": "3601655039d93b4025fb6c4ce5e4cdc505ad5a53572666fe49f20d5df08ea8f73ba58541f9d5de4b77bd66abc4e7b43b5815c7975113e55171db1075fe00081b",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/pause/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.832077+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/pause/client.js",
-				"sha512-hash": "3136cce370714c64823cdf8b2ad1bf26e4f34aa6fa63e2eda1857c8056fdbd593e585f41d7d9450c9d1b1850378e8dc58ab1ce5978536a9899f651ab470a7dd9"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.832077+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/pause/client.js",
-				"sha512-hash": "061ddfe836e9bdaf2e9812dbbad644c97c3dcd1b8769074e269ab40832cb723b221b6ec617ad8c72a3b6a235688c665e247fc9c7d76e7e78733d6cf583dca564"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/client.js",
-				"sha512-hash": "061ddfe836e9bdaf2e9812dbbad644c97c3dcd1b8769074e269ab40832cb723b221b6ec617ad8c72a3b6a235688c665e247fc9c7d76e7e78733d6cf583dca564"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/pause/client.js",
-				"sha512-hash": "061ddfe836e9bdaf2e9812dbbad644c97c3dcd1b8769074e269ab40832cb723b221b6ec617ad8c72a3b6a235688c665e247fc9c7d76e7e78733d6cf583dca564"
-			}, {
-				"version": 1.0,
-				"name": "1.0",
-				"created": "2021-09-03T12:00:00.000000+00:00",
-				"notes": "Updated to work better with other components",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.0/cards/pause/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.0/cards/pause/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.0/cards/pause/client.js",
-				"sha512-hash": "4d289bd84a7440565d78c401d54706b0289fa99f064accfa14a64ad2eb7da321eb0abbeb51f051303c83127c157e56abcfac209d4b076e02dbf8739a04b40dc1"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -224,59 +80,14 @@
 			"name": "Keyword Response (SMS)",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.4,
-				"name": "0.4",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Updates human-readable card name",
-				"sha512-hash": "3a70ec072a4992088ea29a104a6fc725169d1464f0b2f1c7f1753dbf86f3f0662e51f8a452c9e89379dcb0b271099e4e625854e2e4f6f6fe55d22464e61bac9d",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.3/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.3/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.3/process_response/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.830261+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_response/client.js",
-				"sha512-hash": "8974455d747a36a796bd3a1c8a0f7f2b228a009e82a2854e738732c52e5b45c636c5a0cfdc7c63c2c59bbcf1aedd42196f4068a28a8af28604a9eb541381b439"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-04-09T15:46:30.830261+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/process_response/client.js",
-				"sha512-hash": "d8348774e53952a4c28306f2d2020d2c8ad93453494f273a8a0e843ee43c519ef45571c30aeb642bfb939ec2fe38b304036cf3d2a8e6c2c1c8b103a649b88fe1"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_response/client.js",
-				"sha512-hash": "d8348774e53952a4c28306f2d2020d2c8ad93453494f273a8a0e843ee43c519ef45571c30aeb642bfb939ec2fe38b304036cf3d2a8e6c2c1c8b103a649b88fe1"
-			}, {
-				"version": 1.1,
-				"name": "1.1",
-				"created": "2021-11-23T12:00:00.000000+00:00",
+				"version": 2.7,
+				"name": "2.7",
+				"created": "2022-09-06T12:00:00.000000+00:00",
 				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_response/client.js",
-				"sha512-hash": "56e1e6b04c82759bf27a538ae1194f2eabd516f599324dad69080d7c31cfef94ef20abfed87d2b666f95a3466c3587b6a0e5ab8b8135d1a753f13d0460d0722a"
-			}, {
-				"version": 2.5,
-				"name": "2.5",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.5/cards/process_response/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.5/cards/process_response/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.5/cards/process_response/client.js",
-				"sha512-hash": "fd3dd83956c0dc8ee2190a01949b4d5b9962c5e268e27c7fbb16173f11d8b205101abd616a52d8716a83da44bbbb562a94331fc4369b8c314f8112c70ec93391"
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/process_response/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/process_response/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/process_response/client.js",
+				"sha512-hash": "d8b5b26d659a7ff24ca6ef3e7f8225fc6e9afabe3753f126e8ccd2b1f08b2c690f337dfdceec2e93c3cd5849f512b4265397b40325aad17c71593f3f1caef228"
 			}]
 		},
 		"process_variable": {
@@ -284,51 +95,6 @@
 			"name": "Process Variable Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "eb70d97cc54fec49f4f1d02c5e0661761c72ff9e790c78cf47f6508e0988103249bada4264bdb8d3e5151c4770d21c2d6bf4a4295bf4cdd29b660cafe9cf0c77",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/process_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/process_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/process_variable/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.831912+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/process_variable/client.js",
-				"sha512-hash": "eb70d97cc54fec49f4f1d02c5e0661761c72ff9e790c78cf47f6508e0988103249bada4264bdb8d3e5151c4770d21c2d6bf4a4295bf4cdd29b660cafe9cf0c77"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/process_variable/client.js",
-				"sha512-hash": "eb70d97cc54fec49f4f1d02c5e0661761c72ff9e790c78cf47f6508e0988103249bada4264bdb8d3e5151c4770d21c2d6bf4a4295bf4cdd29b660cafe9cf0c77"
-			}, {
-				"version": 1.1,
-				"name": "1.1",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/process_variable/client.js",
-				"sha512-hash": "2bc1717bd1ea4f4cf1ca9bf4eb7620dfc5fafd6e7c1f299d5baa7abae25ca53b3d678371b9545a0c5d0dc7961f972339e086c3353f8a7cf6337e1d363d81fb19"
-			}, {
-				"version": 1.8,
-				"name": "1.8",
-				"created": "2022-02-11T12:00:00.000000+00:00",
-				"notes": "Updated card for new modern declarative style",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.8/cards/process_variable/client.js",
-				"sha512-hash": "847d5977a2f11a9e7dfc5e388b10f27ef074a30bcceb632f73a6ba734aa32255eb53ad65689b53a0720d458ff429aac00ad63f41420de80cbb7467abc440fae1"
-			}, {
 				"version": 2.5,
 				"name": "2.5",
 				"created": "2022-02-11T12:00:00.000000+00:00",
@@ -344,78 +110,6 @@
 			"name": "Response Contains Image Card",
 			"category": "Advanced Messaging",
 			"versions": [{
-				"version": 0.2,
-				"name": "0.2",
-				"created": "2020-12-05T00:00:00.000000+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "29f0fc9f8931a8b39ad7d79789bf4c457692307cc3e9052f7fd270796313ac8ac11acae71134a2867f3b885b624e4f724ebca07b19711b0f380cc89e89f3e972",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.2/response_contains_image/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.831094+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/response_contains_image/client.js",
-				"sha512-hash": "e154872bd2ecc5f5d41385fe819ebb20e6f60a1722354ce42c68dc1cde2264790342d8e3e6b222d655222c4fb668bb7af9423fe67af6d6f3c9af4faf17726274"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.831094+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/response_contains_image/client.js",
-				"sha512-hash": "cdced2ad3b06fcc71f511de825d020fae6fd8e02a00a4504ed0d7215428ff2f2726825d1f216c6286dac8bebd1d05d46dfe1ba3ce6d0fdec6cee9346330c48b9"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/response_contains_image/client.js",
-				"sha512-hash": "cdced2ad3b06fcc71f511de825d020fae6fd8e02a00a4504ed0d7215428ff2f2726825d1f216c6286dac8bebd1d05d46dfe1ba3ce6d0fdec6cee9346330c48b9"
-			}, {
-				"version": 1.1,
-				"name": "1.1",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/response_contains_image/client.js",
-				"sha512-hash": "78d6290d723b95cce75f71e1529b4edb7b868255798b9f2acc322cc4535a668d080d45c9228b88995ab7e2b52f4003a06c8848ce26cd7486bd2e55b6eeae6ce3"
-			}, {
-				"version": 1.2,
-				"name": "1.2",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.2/cards/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.2/cards/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.2/cards/response_contains_image/client.js",
-				"sha512-hash": "d919e98250591d27aa6c5f578915c41f0054557894e5be0e0250da1252fd5269eafc71b1fcc049541eefba01329246890bed64b6594ca5f90783fcb38bbfa359"
-			}, {
-				"version": 1.3,
-				"name": "1.3",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.3/cards/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.3/cards/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.3/cards/response_contains_image/client.js",
-				"sha512-hash": "78d6290d723b95cce75f71e1529b4edb7b868255798b9f2acc322cc4535a668d080d45c9228b88995ab7e2b52f4003a06c8848ce26cd7486bd2e55b6eeae6ce3"
-			}, {
-				"version": 1.4,
-				"name": "1.4",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Newline cleanup",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.4/cards/response_contains_image/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.4/cards/response_contains_image/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.4/cards/response_contains_image/client.js",
-				"sha512-hash": "9980991b527ace0c27f8f0bde8e146965c984c90f7f897b5b50b472da1372a39c75091e6618594c334fca97ef1bafc7cb1b9a7640f363c62124004b510de80f8"
-			}, {
 				"version": 1.9,
 				"name": "1.9",
 				"created": "2022-03-14T12:00:00.000000+00:00",
@@ -431,33 +125,6 @@
 			"name": "Send Message Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "993379fb12bc80c98b2e2b4ad5766c1101cc744638812dc26269e7d64d267506e6e151d88fd848b1c9fc3ae3f1022d9582451eb1a02221817f2a51bedc093e3c",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_message/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.829816+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_message/client.js",
-				"sha512-hash": "c14998a26807ce54c8867c6bb26ba5278312b4da5d6fc00bf13e7fa6488dae05a18503eaccf875071476f379e363faf9183ed2954ffb68140a5b8337a87fca2a"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_message/client.js",
-				"sha512-hash": "c14998a26807ce54c8867c6bb26ba5278312b4da5d6fc00bf13e7fa6488dae05a18503eaccf875071476f379e363faf9183ed2954ffb68140a5b8337a87fca2a"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -473,42 +140,6 @@
 			"name": "Send Picture Card",
 			"category": "Advanced Messaging",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "62457162f7991a769becf1dbd2e597c86facf26bcf386fa6eff3fb90e23ea51e604656c66e730a923dc1e03ab9c0efe01a7c47a7e830e4e4a71b59bec79a21da",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_picture/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_picture/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/send_picture/client.js"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.831792+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_picture/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_picture/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/send_picture/client.js",
-				"sha512-hash": "328456a18cdb7b4843c68cdcbb453e336fcf66cdf20587b76acca9d4587e32321ab530931098ee0dd508a80a0da66cbf6ccc0340389733cc9a3b3480c70ef9c2"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.831792+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/send_picture/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/send_picture/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/send_picture/client.js",
-				"sha512-hash": "640b2d4bfa6f7ea264475bc550cbd3fdd93f2ab9ab31d8f523b16bc4ceb25ee0ed1bc86c3b39fc0e2cf8b3c6e352d2c24483d5461ad4501bfeae91aa7fa9f733"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_picture/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_picture/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/send_picture/client.js",
-				"sha512-hash": "640b2d4bfa6f7ea264475bc550cbd3fdd93f2ab9ab31d8f523b16bc4ceb25ee0ed1bc86c3b39fc0e2cf8b3c6e352d2c24483d5461ad4501bfeae91aa7fa9f733"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -524,42 +155,6 @@
 			"name": "Set Variable Card",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/set_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/set_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/set_variable/client.js",
-				"sha512-hash": "f7dd3e4ae6dc043636a6876e45e89994c57a0a98f4115951633d178862614819703d81fb723e0a8c97bdba610834e883553a9cb1d4df9057fd3e36395b381f85"
-			}, {
-				"version": 0.5,
-				"name": "0.5",
-				"created": "2021-04-09T15:46:30.831238+00:00",
-				"notes": "Uses declarative definitions.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/set_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/set_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.5/set_variable/client.js",
-				"sha512-hash": "3bc622e868b7326da6a4d502839275637d3d04f40e78184680ecd88de8c1a5a0cd45a07160cd5b18badbfed69e2163fd50e40dda78d03fc6d9fb2b0ee51c1bed"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T15:46:30.831238+00:00",
-				"notes": "Code cleanup.",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/set_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/set_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/set_variable/client.js",
-				"sha512-hash": "4e85d46a4cb74b209a1ff9e6cdedb6b80b5d6a63e8ea8f5efc25b78b9e437ad12ecf4d334d12ae468d39765c92b6a0640f1549c73da2bf762dc02d2a1772db3f"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/set_variable/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/set_variable/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/set_variable/client.js",
-				"sha512-hash": "4e85d46a4cb74b209a1ff9e6cdedb6b80b5d6a63e8ea8f5efc25b78b9e437ad12ecf4d334d12ae468d39765c92b6a0640f1549c73da2bf762dc02d2a1772db3f"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -575,60 +170,6 @@
 			"name": "Voice Line Command",
 			"category": "Phone Calls and Voice Messaging",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2020-11-06T18:11:51.987813+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "a1b8ebb5d0f0a722f9f10fcc7a55de4864f7d6c23d4a539f36e0606c77fc50ccd7a49e679d89398840183452c6789fd5ead2cf46d0aea5b07ae48e3e5df82a99",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.1/voice_message/client.js"
-			}, {
-				"version": 0.6,
-				"name": "0.6",
-				"created": "2021-06-28T12:00:00.000000+00:00",
-				"notes": "Updates user interface to use updated Material Design library",
-				"sha512-hash": "0a31dbd1d86dedd855734ae549157d70ae123b9ee77e15cffb1d0a0bdafcf7f9765fe77518746317dd11b8796d4046e0e6d32df1ecf4deffbcd6a3396ad41917",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.6/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.6/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.6/voice_message/client.js"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"sha512-hash": "0a31dbd1d86dedd855734ae549157d70ae123b9ee77e15cffb1d0a0bdafcf7f9765fe77518746317dd11b8796d4046e0e6d32df1ecf4deffbcd6a3396ad41917",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/voice_message/client.js"
-			}, {
-				"version": 1.1,
-				"name": "1.1",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"sha512-hash": "7c2a71be92f917bde37fe4362f094bb454a2e772e0fe2bedaaa111ab17a340ae294a6120e6b6fbc36353ec55aa5528be7fa8510a319568bd57fd33a850567e24",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.1/cards/voice_message/client.js"
-			}, {
-				"version": 1.5,
-				"name": "1.5",
-				"created": "2021-11-23T12:00:00.000000+00:00",
-				"notes": "Code cleanup",
-				"sha512-hash": "6feae3bda1802c78dc8038f459c3eab080f13aba1cd4816223ea7512dd304fc7e7148af72800c294be24ad4e2acd14c4ef1c619f451238ea1ad63ff1a736c8f3",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/voice_message/client.js"
-			}, {
-				"version": 1.6,
-				"name": "1.6",
-				"created": "2022-02-10T12:00:00.000000+00:00",
-				"notes": "Fixed issue where default next_action wasn't recognized.",
-				"sha512-hash": "dca9a3a79c216867dcdb72b6a6ce8d1aa0c2bb4fc85b84f3df4c1b3ef34a84c91cf555d635d45007c36874d3b70752aa58f0160fdea3286966de776d7354ec0b",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.6/cards/voice_message/client.js"
-			}, {
 				"version": 2.6,
 				"name": "2.6",
 				"created": "2022-06-24T12:00:00.000000+00:00",
@@ -644,33 +185,6 @@
 			"name": "Data Query Card",
 			"category": "Network and Third Party Communication",
 			"versions": [{
-				"version": 0.1,
-				"name": "0.1",
-				"created": "2021-06-28T12:00:00.000000+00:00",
-				"notes": "Initial version.",
-					"sha512-hash": "798170a914d641f1f8a21535d13bba265c5a8c11e1f7b525e7766fbfe41a6cad4d87af76174fd5a4bfcbfeda0b7e4b5109aa9ab904157447bb1fed7eb758f9e8",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.7/data_query/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.7/data_query/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.7/data_query/client.js"
-			}, {
-				"version": 0.8,
-				"name": "0.8",
-				"created": "2021-06-28T13:00:00.000000+00:00",
-				"notes": "Code cleanup.",
-				"sha512-hash": "a275dea1c0e89b51c8be2f02c120f1dd9fd7da95a9ab30e10ff74ff925fdd769537592d7cc2e2a495d6f8d713f4f6f471eb3b52f72aba52b045fcddb2bb9ef72",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/data_query/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/data_query/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.8/data_query/client.js"
-			}, {
-				"version": 0.9,
-				"name": "0.9",
-				"created": "2021-07-16T12:00:00.000000+00:00",
-				"notes": "Repository reorganization",
-				"sha512-hash": "a275dea1c0e89b51c8be2f02c120f1dd9fd7da95a9ab30e10ff74ff925fdd769537592d7cc2e2a495d6f8d713f4f6f471eb3b52f72aba52b045fcddb2bb9ef72",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/data_query/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/data_query/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/cards/data_query/client.js"
-			}, {
 				"version": 1.1,
 				"name": "1.1",
 				"created": "2021-11-23T12:00:00.000000+00:00",
@@ -686,14 +200,14 @@
 			"name": "Comparison Operators",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 1.5,
-				"name": "1.5",
-				"created": "2022-01-31T12:00:00.000000+00:00",
+				"version": 2.7,
+				"name": "2.7",
+				"created": "2022-09-06T12:00:00.000000+00:00",
 				"notes": "Initial version.",
-				"sha512-hash": "acada6285cc817bcb63ee9463119d0af05653bb6326f3a101f9e541a6f0efdce5057bda8550a5fa6e0a454bb8915ff407208fb29a2d6d44f5135b2d30f3f108b",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/comparison_cards/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/comparison_cards/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/comparison_cards/client.js"
+				"sha512-hash": "3f753ebd8a370adfb4bae91a5865e8d95911fd1f37ad946001c8fcbdd687f94b50ca140a9b114ffc1188945fdd5ddaeaafd02bc72d92903d6717fa40f67d5e26",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/comparison_cards/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/comparison_cards/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/comparison_cards/client.js"
 			}]
 		},
 		"arithmetic": {
@@ -701,24 +215,6 @@
 			"name": "Arithmetic Operators",
 			"category": "Core Messaging and Control",
 			"versions": [{
-				"version": 1.5,
-				"name": "1.5",
-				"created": "2022-01-31T12:00:00.000000+00:00",
-				"notes": "Initial version.",
-				"sha512-hash": "e5959561b475e957192df3b04c256cc7a9bc4450f64126a5fe7bc69a72f75abd32b48658667c4df1e2589780d0fe90d32092564345e3628b5c88bd65746d22c8",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/arithmetic/client.js"
-			}, {
-				"version": 1.9,
-				"name": "1.9",
-				"created": "2022-03-14T12:00:00.000000+00:00",
-				"notes": "Logging cleanup",
-				"sha512-hash": "15d113da70276367ed313752930f6505214e633d9e9cd920ca839af7bf9b8fedc05fff3b5682577e34f0e31c4b7efcaf9a57b683c3a155fe9f7e3e784f67357a",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.9/cards/arithmetic/client.js"
-			}, {
 				"version": 2.2,
 				"name": "2.2",
 				"created": "2022-03-14T12:00:00.000000+00:00",
@@ -743,6 +239,36 @@
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/calculate_percentage/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/1.5/cards/calculate_percentage/client.js"
 			}]
+		},
+		"accept_terms": {
+			"identifier": "accept-terms",
+			"name": "Accept Terms",
+			"category": "Core Messaging and Control",
+			"versions": [{
+				"version": 2.7,
+				"name": "2.7",
+				"created": "2022-09-06T12:00:00.000000+00:00",
+				"notes": "Initial version.",
+				"sha512-hash": "1a14372ff91a1b9a70b7fdf9d1602e714c1ec23b9a434cba92f2b134727d896bca8aa207cb650687aa641d89b5a56ecf5616b52bff1f770c8f157c3721e6025d",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/accept_terms/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/accept_terms/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/accept_terms/client.js"
+			}]
+		},
+		"check_terms": {
+			"identifier": "check-terms",
+			"name": "Check Terms",
+			"category": "Core Messaging and Control",
+			"versions": [{
+				"version": 2.7,
+				"name": "2.7",
+				"created": "2022-09-06T12:00:00.000000+00:00",
+				"notes": "Initial version.",
+				"sha512-hash": "3464c0aecad946b14c7cb96065371c1ac1f4545fac0608927c79f4cf7ee6c473286086a85b0f61072de100f73292f9122a241c9440044eea9b2686693fab65c0",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/check_terms/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/check_terms/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/cards/check_terms/client.js"
+			}]
 		}
 	},
 	"data_processors": {
@@ -750,72 +276,72 @@
 			"identifier": "openweather-current",
 			"name": "Open Weather: Current Weather",
 			"versions": [{
-				"version": 0.9,
-				"name": "0.9",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "86148ce82e68036bad7e91d44ecb54225b3f4442396fa764d2048e205f5016cb0659c13b23a6ca5323a91174c3ca2adeb65d82529fd6c68ef56f4f45293dbce5",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/data_processors/openweather/current_weather.py"
+				"sha512-hash": "42da193964363e96a1dd94a903170947dff162d53ed815fff4a2bf0887c00bac13b062a823dddb3feed40db2295ce94cead6dc539a0a45cc966e050d95559385",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/openweather/current_weather.py"
 			}]
 		},
 		"positionstack-geocoder": {
 			"identifier": "positionstack-geocoder",
 			"name": "positionstack: Geocoder",
 			"versions": [{
-				"version": 0.9,
-				"name": "0.9",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "2356c9bb6a48212d471fdc9d8029f2ec6b1c2ec184d3fdb9f6384dcdd57179de341cf5c2c0e4bc1d47148c8480a5483f9f2dff6a4a695f930c95c8536e5ba4ba",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/data_processors/positionstack/geocoder.py"
+				"sha512-hash": "8a721a88f82510b9e62995b13a59646e6cf26e78f83923cb97cc1651ac8c48e1cc3510797391649e04022318c414e6d64794e3ae89d505630ba71dd5286748af",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/positionstack/geocoder.py"
 			}]
 		},
 		"wmata-next-bus-arrival": {
 			"identifier": "wmata-next-bus-arrival",
 			"name": "WMATA: Next Bus Arrival",
 			"versions": [{
-				"version": 0.9,
-				"name": "0.9",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "a534474149acb387d854bc47f701673ebaf928d4bc19a7ceb5fc663f3a7a7fd4274c8eef79adcdacc8b61a7fb4d5999f9b5b62e9c4597cda4be46c2e6b39b493",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/data_processors/wmata/next_bus_arrival.py"
+				"sha512-hash": "8d85e88f106fd18c7ab8829017a601963b137f4f8491504d0e15dbd86821494cf9778958479e2d52a15a53a7182ed876c7c995769431e61432ca089265551be5",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/wmata/next_bus_arrival.py"
 			}]
 		},
 		"wmata-nearest-bus-stop": {
 			"identifier": "wmata-nearest-bus-stop",
 			"name": "WMATA: Nearest Bus Stop",
 			"versions": [{
-				"version": 0.9,
-				"name": "0.9",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "716c9e9178fda9039de0005f658b2ac94087790a9c7e14c0a08d27d5611038d071f082a00a13203d7997469e9d990edd52fdce365138988ab1c65fa0f377bdde",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/data_processors/wmata/nearest_bus_stop.py"
+				"sha512-hash": "75b900bfd8395522179977c07a32d515ddc894d693d07f2a3185ba5d7c92f214f693eda0fc3aa5ddd1a0b0809825705ab7a7517a163bc415598ad1e2b9454130",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/wmata/nearest_bus_stop.py"
 			}]
 		},
 		"yelp-nearest-open-restaurant": {
 			"identifier": "yelp-nearest-open-restaurant",
 			"name": "Yelp: Nearest Open Restaurant",
 			"versions": [{
-				"version": 0.9,
-				"name": "0.9",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Repository reorganization",
-				"sha512-hash": "fe707f56c397c77f99bf5a25c16acf33cbf408e22e21eb52b92997f8d2b0a12a0ec19110883e342ae24f463e7021b62707cfc7386617e34db3ac7701c6bd4061",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/0.9/data_processors/yelp/nearest_open_restaurant.py"
+				"sha512-hash": "787311065b05f9dcf33862cc788f44d2f8422f0acfc55653514d41f0699635031c90b91c8f9359056a8ddb9aea9268ce1de040a7bef2cad1c9dca497b7fb586f",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/yelp/nearest_open_restaurant.py"
 			}]
 		},
 		"purpleair": {
 			"identifier": "purpleair",
 			"name": "Purple Air",
 			"versions": [{
-				"version": 2.4,
-				"name": "2.4",
+				"version": 2.7,
+				"name": "2.7",
 				"created": "2021-07-16T12:00:00.000000+00:00",
 				"notes": "Purple Air data processor deployment",
-				"sha512-hash": "ad57dbd9ede65529261963dd9bd0163e08969916a15017e19425d7c3c860d6472fde7937ecc66c9c99d4aaa8ef097b3cb70d28266734dc86d32662fc5cdf8f4e",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.3/data_processors/purpleair/purpleair.py"
+				"sha512-hash": "95f4753d7f3d4a4038e643031a255595d2c1217ae8ef9689ae24832be0f0cfbd009651df0b52381716979c294210a13c1d57445510d2abeef3469553efb381fc",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.7/data_processors/purpleair/purpleair.py"
 			}]
 		}
 	}

@@ -59,7 +59,7 @@ with io.open(sys.argv[1], mode='r', encoding='utf-8') as repo_file:
             implemementation_request = requests.get(version['implementation'])
 
             if implemementation_request.status_code != 200:
-                print('%d error retrieving %s' % (implemementation_request.status_code, version['entry-actions']))
+                print('%d error retrieving %s' % (implemementation_request.status_code, version['implementation']))
 
             implemementation_content = implemementation_request.content
 
