@@ -43,12 +43,20 @@ if response is not None:
     result['actions'] = []
     result['next_id'] = None
 
-    for pattern_def in definition['patterns']:
-        pattern = re.compile(pattern_def['pattern'], re.IGNORECASE)
+    next_id = None
 
-        if result['next_id'] is None and pattern.match(response) is not None:
-            result['next_id'] = pattern_def['action']
-            result['matched_pattern'] = pattern_def['pattern']
+    for pattern_def in definition['patterns']:
+        action = pattern_def.get('action', '')
+        pattern_str = pattern_def.get('pattern', '')
+
+        raw_pattern = pattern_str.replace('$', '').replace('^', '').replace('[', '').replace(']', '').replace('*', '').strip()
+
+        if action != '' and raw_pattern != '':
+            pattern = re.compile(pattern_str, re.IGNORECASE)
+
+            if result['next_id'] is None and pattern.match(response) is not None:
+                result['next_id'] = action
+                result['matched_pattern'] = pattern_str
 
     if result['next_id'] is None and definition['not_found_action'] is not None:
         result['next_id'] = definition['not_found_action']

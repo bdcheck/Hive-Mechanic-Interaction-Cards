@@ -42,6 +42,8 @@ jobs:
             pylint cards/set_variable
             pylint cards/voice_message
             pylint cards/response_contains_image
+            pylint cards/check_terms
+            pylint cards/accept_terms
 
             pylint data_processors/positionstack
             pylint data_processors/yelp
@@ -90,6 +92,8 @@ jobs:
             pylint cards/set_variable
             pylint cards/voice_message
             pylint cards/response_contains_image
+            pylint cards/check_terms
+            pylint cards/accept_terms
 
             pylint data_processors/positionstack
             pylint data_processors/yelp
