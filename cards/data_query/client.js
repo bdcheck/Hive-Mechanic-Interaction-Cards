@@ -186,6 +186,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.next = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.next
+      }
+    }
+
     /*
      * Identifies any outstanding issues with the configuration of the node that might
      * impair expected operation. Used to populate the warning issues list when saving

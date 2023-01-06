@@ -47,6 +47,10 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       // Do nothing.
     }
 
+    setDefaultDestination (defaultId) {
+      // Do nothing.
+    }
+
     cardType () {
       return 'Game Over'
     }

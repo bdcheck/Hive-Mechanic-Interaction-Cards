@@ -87,9 +87,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
             }
           }
         ]
-
-      },
-      {
+      }, {
         field: 'description',
         type: 'readonly',
         value: {
@@ -148,6 +146,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
 
           delete this.definition.next
         }
+      }
+    }
+
+    setDefaultDestination (defaultId) {
+      this.definition.next = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.next
       }
     }
 

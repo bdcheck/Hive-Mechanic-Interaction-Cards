@@ -103,6 +103,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.has_image_action = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.has_image_action
+      }
+    }
+
     cardType () {
       return 'Response Contains Image?'
     }

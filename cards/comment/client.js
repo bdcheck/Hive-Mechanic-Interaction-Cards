@@ -112,6 +112,14 @@ define(['material', 'cards/node', 'marked', 'purify', 'jquery'], function (mdc, 
       return 'Editor\'s Note'
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.next = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.next
+      }
+    }
+
     static cardName () {
       return 'Editor\'s Note'
     }

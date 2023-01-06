@@ -62,6 +62,12 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.branches.append({
+        action: defaultId
+      })
+    }
+
     /* Error / validity checking */
     issues (sequence) {
       const issues = super.issues(sequence)

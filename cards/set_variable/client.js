@@ -96,6 +96,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.next = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.next
+      }
+    }
+
     destinationNodes (sequence) {
       const nodes = super.destinationNodes(sequence)
 
