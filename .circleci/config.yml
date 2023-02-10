@@ -76,8 +76,8 @@ jobs:
           name: Validate Javascript code
           command: |
             npm install
-            nvm install 16.19.0
-            nvm use 16.19.0
+            nvm install 17.9.1
+            nvm use 17.9.1
             npx eslint cards
       - run:
           name: Build and validate
