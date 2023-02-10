@@ -8,7 +8,6 @@ workflows:
   build:
     jobs:
       - build-38
-      - build-27
 
 jobs:
   build-38:
@@ -56,58 +55,6 @@ jobs:
             bandit -r . -x ./node_modules/
       - save_cache:
           key: venv-38-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}-{{ checksum "/home/circleci/project/package-lock.json" }}
-          paths:
-            - "/home/circleci/venv"
-      - store_test_results:
-          path: test-results/
-      - store_artifacts:
-          path: test-reports/
-          destination: python_app
-
-  build-27:
-    docker:
-      - image: cimg/python:2.7
-    steps:
-      - node/install
-      - checkout
-      - restore_cache:
-          key: venv-27-{{ .Branch }}-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
-      - run:
-          name: Validate Javascript code
-          command: |
-            npm install
-            nvm install 17.9.1
-            nvm use 17.9.1
-            npx eslint cards
-      - run:
-          name: Build and validate
-          command: |
-            pip install -r requirements.txt --progress-bar off
-            python validate_manifest.py stable.json
-            pylint cards/branch
-            pylint cards/comment
-            pylint cards/game_over
-            pylint cards/http_request
-            pylint cards/process_response
-            pylint cards/process_variable
-            pylint cards/send_message
-            pylint cards/send_picture
-            pylint cards/send_picture
-            pylint cards/set_variable
-            pylint cards/voice_message
-            pylint cards/response_contains_image
-            pylint cards/check_terms
-            pylint cards/accept_terms
-
-            pylint data_processors/positionstack
-            pylint data_processors/yelp
-            pylint data_processors/openweather
-            pylint data_processors/wmata
-            pylint data_processors/purpleair
-
-            bandit -r . -x ./node_modules/
-      - save_cache:
-          key: venv-27-{{ .Branch }}-{{ checksum "/home/circleci/project/requirements.txt" }}-{{ checksum "/home/circleci/project/package-lock.json" }}
           paths:
             - "/home/circleci/venv"
       - store_test_results:
