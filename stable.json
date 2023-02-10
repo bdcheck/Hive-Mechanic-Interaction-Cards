@@ -174,7 +174,7 @@
 				"name": "2.8",
 				"created": "2023-02-10T12:00:00.000000+00:00",
 				"notes": "DTMF bug fix.",
-				"sha512-hash": "39770668623062726250b53a25230ee3c4f14ff2e1f51dd573975b948241ab54dc0c46604a506343a524302748b6c9bea7ddfa23d2bcf2e033827c13a53b2e8f",
+				"sha512-hash": "4bdefa24c1337bc59ce7c18e95a794520208769c122e1c7b8079cce96da7c0be58183469128144046595a5c4a66848d612bbd1c6fe420eac5bc055d82de802ca",
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/voice_message/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/voice_message/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/voice_message/client.js"
