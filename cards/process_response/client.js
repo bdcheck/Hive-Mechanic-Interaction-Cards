@@ -47,6 +47,15 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       return 'Process Response'
     }
 
+    setDefaultDestination (defaultId) {
+      if (defaultId !== null) {
+        this.definition.patterns.push({
+          pattern: 'CHANGEME',
+          action: defaultId
+        })
+      }
+    }
+
     /*
          * Provides HTML necessary to populate the card icon portion of the interface.
          */

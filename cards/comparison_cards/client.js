@@ -198,6 +198,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       return 'Comparison Operator'
     }
 
+    setDefaultDestination (defaultId) {
+      if (defaultId !== null) {
+        this.definition.next_true = defaultId
+      } else {
+        delete this.definition.next_true
+      }
+    }
+
     static createCard (cardName) {
       const card = {
         name: cardName,

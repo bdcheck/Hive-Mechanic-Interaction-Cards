@@ -568,6 +568,15 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
     }
 
+    setDefaultDestination (defaultId) {
+      if (defaultId !== null) {
+        this.definition.patterns.push({
+          pattern: 'CHANGEME',
+          action: defaultId
+        })
+      }
+    }
+
     static cardName () {
       return 'HTTP Request'
     }

@@ -476,6 +476,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       return issues
     }
 
+    setDefaultDestination (defaultId) {
+      this.definition.next = defaultId
+
+      if (defaultId === null) {
+        delete this.definition.next
+      }
+    }
+
     cardType () {
       return 'Voice Message'
     }

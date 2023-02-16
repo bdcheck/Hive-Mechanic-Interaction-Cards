@@ -23,6 +23,15 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       return '<i class="fa fa-list-alt" style="margin-right: 16px; font-size: 20px;"></i>'
     }
 
+    setDefaultDestination (defaultId) {
+      if (defaultId !== null) {
+        this.definition.patterns.push({
+          pattern: 'CHANGEME',
+          action: defaultId
+        })
+      }
+    }
+
     viewBody () {
       let summary = ''
 
