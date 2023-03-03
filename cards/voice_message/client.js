@@ -72,6 +72,19 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '      <div class="mdc-notched-outline__trailing"></div>' +
                        '    </div>' +
                        '  </div>' +
+                       '    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       '      Once the message is finished playing, the system will pause for a user defined amount of time before moving on to the next card.' +
+                       '    </div>' +
+                       '</div>' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" id="' + this.cardId + '_continue_container">' +
+                       '  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       '    Once the message is finished playing, the system will immediately proceed to the next card without hanging up the call.' +
+                       '  </div>' +
+                       '</div>' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" id="' + this.cardId + '_hangup_container">' +
+                       '  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       '    Once the message is finished playing, the system will hang up the phone call before moving on to the next card.' +
+                       '  </div>' +
                        '</div>' +
                        '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-typography--caption ' + this.cardId + '_gather_container">' +
                        '  <div class="mdc-select mdc-select--outlined" id="' + this.cardId + '_gather_input_method" style="width: 100%; margin-top: 4px;">' +
@@ -135,7 +148,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '      <ul class="mdc-list" role="listbox">' +
                        '          <li class="mdc-list-item" data-value="default" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
-                       '            <span class="mdc-list-item__text">Default<span>' +
+                       '            <span class="mdc-list-item__text">Default (use this unless you are an expert)<span>' +
                        '          </li>' +
                        '          <li class="mdc-list-item" data-value="numbers_and_commands" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
@@ -201,9 +214,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    <label for="' + this.cardId + '_gather_action_empty">Action on Empty Result</label>' +
                        '  </div>' +
                        '</div>' +
-                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
-                       '  The message above will be spoken to the user and the system will proceed to the next card.' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 ' + this.cardId + '_gather_container">' +
+                       '  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       '    Once the message is finished playing, the system will expect input from the player through voice or through the keypad. The next card should be a Process Response card. If no input is received after timeout countdown, hangs up the call.' +
+                       '  </div>' +
                        '</div>' +
+                       //'<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       //'  The message contents will be spoken to the user. The continue, pause, and hang up next call actions move to the next card, with hang up ending the call instead of leaving it running. The gather response action waits for the player leave a message vocally or with the keypad.' +
+                       //'</div>' +
                        '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5" style="padding-top: 8px; text-align: right;">' +
                        '  <button class="mdc-icon-button" id="' + this.cardId + '_next_edit">' +
                        '    <i class="material-icons mdc-icon-button__icon" aria-hidden="true">link</i>' +
@@ -383,18 +401,26 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
 
       $('#' + this.cardId + '_pause_container').hide()
+      //$('#' + this.cardId + '_continue_container').hide()
+      $('#' + this.cardId + '_hangup_container').hide()
       $('.' + this.cardId + '_gather_container').hide()
 
       nextActionField.listen('MDCSelect:change', () => {
         me.definition.next_action = nextActionField.value
 
         $('#' + this.cardId + '_pause_container').hide()
+        $('#' + this.cardId + '_continue_container').hide()
+        $('#' + this.cardId + '_hangup_container').hide()
         $('.' + this.cardId + '_gather_container').hide()
 
         if (me.definition.next_action === 'pause') {
           $('#' + this.cardId + '_pause_container').show()
         } else if (me.definition.next_action === 'gather') {
           $('.' + this.cardId + '_gather_container').show()
+        } else if (me.definition.next_action === 'continue') {
+          $('#' + this.cardId + '_continue_container').show()
+        } else if (me.definition.next_action === 'hangup') {
+          $('#' + this.cardId + '_hangup_container').show()
         }
 
         me.sequence.markChanged(me.id)
@@ -404,6 +430,10 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         $('#' + this.cardId + '_pause_container').show()
       } else if (me.definition.next_action === 'gather') {
         $('.' + this.cardId + '_gather_container').show()
+      } else if (me.definition.next_action === 'continue') {
+        $('#' + this.cardId + '_continue_container').show()
+      } else if (me.definition.next_action === 'hangup') {
+        $('#' + this.cardId + '_hangup_container').show()
       }
     }
 
@@ -485,18 +515,18 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Voice Message'
+      return 'Phone Call Actions'
     }
 
     static cardName () {
-      return 'Voice Message'
+      return 'Phone Call Actions'
     }
 
     static createCard (cardName) {
       const card = {
         name: cardName,
         context: '(Context goes here...)',
-        message: '(Message goes here...)',
+        message: '(MP3 url and or text-to-voice message goes here...)',
         type: 'voice-message',
         id: Node.uuidv4(),
         next: null
