@@ -219,9 +219,9 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    Once the message is finished playing, the system will expect input from the player through voice or through the keypad. The next card should be a Process Response card. If no input is received after timeout countdown, hangs up the call.' +
                        '  </div>' +
                        '</div>' +
-                       //'<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
-                       //'  The message contents will be spoken to the user. The continue, pause, and hang up next call actions move to the next card, with hang up ending the call instead of leaving it running. The gather response action waits for the player leave a message vocally or with the keypad.' +
-                       //'</div>' +
+                       // '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       // '  The message contents will be spoken to the user. The continue, pause, and hang up next call actions move to the next card, with hang up ending the call instead of leaving it running. The gather response action waits for the player leave a message vocally or with the keypad.' +
+                       // '</div>' +
                        '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5" style="padding-top: 8px; text-align: right;">' +
                        '  <button class="mdc-icon-button" id="' + this.cardId + '_next_edit">' +
                        '    <i class="material-icons mdc-icon-button__icon" aria-hidden="true">link</i>' +
@@ -401,7 +401,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
 
       $('#' + this.cardId + '_pause_container').hide()
-      //$('#' + this.cardId + '_continue_container').hide()
+      // $('#' + this.cardId + '_continue_container').hide()
       $('#' + this.cardId + '_hangup_container').hide()
       $('.' + this.cardId + '_gather_container').hide()
 
