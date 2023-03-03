@@ -167,17 +167,17 @@
 		},
 		"voice_message": {
 			"identifier": "voice-message",
-			"name": "Voice Line Command",
+			"name": "Phone Call Actions",
 			"category": "Phone Calls and Voice Messaging",
 			"versions": [{
-				"version": 2.9,
-				"name": "2.9",
-				"created": "2023-02-15T12:00:00.000000+00:00",
-				"notes": "Insert before support",
-				"sha512-hash": "63f392d6b38683dd16255e9cec32f00ca29593f1b7f2e147667194b53c708950030c4e07fc83b33a29c858f231c8a07adeae2945dcf4a3dfb1cbf84cac5a9511",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.9/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.9/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.9/cards/voice_message/client.js"
+				"version": 3.0,
+				"name": "3.0",
+				"created": "2023-03-03T12:00:00.000000+00:00",
+				"notes": "Documentation updates",
+				"sha512-hash": "7c5497dbf6ce8b8b868132b22728ca3e20cc034d8923b3e08a8ebde0feee4f48e74bda56a67b028bd83f7b7e2330c01774f7657b130340465250ad3c5e8d6aa1",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.0/cards/voice_message/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.0/cards/voice_message/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.0/cards/voice_message/client.js"
 			}]
 		},
 		"data_query": {
