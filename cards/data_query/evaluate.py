@@ -44,6 +44,11 @@ if processor is not None:
             'context': context
         }
 
+        try:
+            local_env.update(data_processor_environment)
+        except:
+            pass
+
         eval(code, {}, local_env) # nosec # pylint: disable=eval-used
 
         for key in context:
