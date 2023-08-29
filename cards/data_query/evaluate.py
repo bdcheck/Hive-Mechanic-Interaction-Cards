@@ -46,7 +46,7 @@ if processor is not None:
 
         try:
             local_env.update(data_processor_environment)
-        except:
+        except: # nosec
             pass
 
         eval(code, {}, local_env) # nosec # pylint: disable=eval-used
