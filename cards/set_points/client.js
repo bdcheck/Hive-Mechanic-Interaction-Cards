@@ -5,56 +5,56 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardFields () {
-      return [//{
-        //field: 'variable',
-        //type: 'text',
-        //multiline: false,
-        //label: {
+      return [// {
+        // field: 'variable',
+        // type: 'text',
+        // multiline: false,
+        // label: {
         //  en: 'Name'
-        //}
-      //}, 
-      {
-        field: 'value',
-        type: 'text',
-        multiline: false,
-        label: {
-          en: 'Number of Points'
-        }
-      //}, {
-      //  field: 'scope',
-      //  type: 'choice',
-      //  label: {
-      //    en: 'Scope'
-      //  },
-      //  options: [{
-       //   value: 'session',
-       //   label: {
-       //     en: 'Session'
-       //   }
-        //}, {
+        // }
+      // },
+        {
+          field: 'value',
+          type: 'text',
+          multiline: false,
+          label: {
+            en: 'Number of Points'
+          }
+          // }, {
+          //  field: 'scope',
+          //  type: 'choice',
+          //  label: {
+          //    en: 'Scope'
+          //  },
+          //  options: [{
+          //   value: 'session',
+          //   label: {
+          //     en: 'Session'
+          //   }
+        // }, {
         //  value: 'player',
         //  label: {
         //    en: 'Player'
         //  }
-        //}, {
+        // }, {
         //  value: 'game',
         //  label: {
         //    en: 'Game'
         //  }
-        //}]
-      }, {
-        field: 'description',
-        type: 'readonly',
-        value: {
-          en: 'Sets the playerPoints variable to a value of your choice. Points can be changed with the arithmetic card by using playerPoints as the name'
-        },
-        width: 7,
-        is_help: true
-      }, {
-        field: 'next',
-        type: 'card',
-        width: 5
-      }]
+        // }]
+        }, {
+          field: 'description',
+          type: 'readonly',
+          value: {
+            en: 'Sets the playerPoints variable to a value of your choice. Points can be changed with the arithmetic card by using playerPoints as the name'
+          },
+          width: 7,
+          is_help: true
+        }, {
+          field: 'next',
+          type: 'card',
+          width: 5
+        }]
     }
 
     viewBody () {
@@ -70,9 +70,9 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     issues (sequence) {
       const issues = super.issues(sequence)
 
-      //if (this.definition.variable === undefined || this.definition.variable.trim().length === 0) {
+      // if (this.definition.variable === undefined || this.definition.variable.trim().length === 0) {
       //  issues.push(['No variable name provided.', 'node', this.definition.id, this.cardName()])
-      //}
+      // }
 
       if (this.definition.value === undefined || this.definition.value.trim().length === 0) {
         issues.push(['No value provided.', 'node', this.definition.id, this.cardName()])
