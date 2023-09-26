@@ -40,11 +40,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
          */
 
     static cardName () {
-      return 'Process Response'
+      return 'Keyword Branch'
     }
 
     cardType () {
-      return 'Process Response'
+      return 'Keyword Branch'
     }
 
     setDefaultDestination (defaultId) {

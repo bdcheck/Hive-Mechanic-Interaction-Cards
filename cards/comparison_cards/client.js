@@ -191,11 +191,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'comparison-operator'
+      return 'Comparison Branch'
     }
 
     static cardName () {
-      return 'Comparison Operator'
+      return 'Comparison Branch'
     }
 
     setDefaultDestination (defaultId) {

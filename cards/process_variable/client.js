@@ -12,11 +12,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     static cardName () {
-      return 'Process Variable'
+      return 'Variable Branch'
     }
 
     cardType () {
-      return 'Process Variable'
+      return 'Variable Branch'
     }
 
     cardIcon () {

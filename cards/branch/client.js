@@ -88,7 +88,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Branch'
+      return 'Auto Branch'
     }
 
     viewBody () {
@@ -192,7 +192,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     static cardName () {
-      return 'Branch'
+      return 'Auto Branch'
     }
 
     static createCard (cardName) {

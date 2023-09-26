@@ -28,7 +28,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     viewBody () {
-      return '<div class="mdc-typography--body1" style="margin: 16px;">Game Over</div>'
+      return '<div class="mdc-typography--body1" style="margin: 16px;">End Session</div>'
     }
 
     initialize () {
@@ -52,11 +52,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Game Over'
+      return 'End Session'
     }
 
     static cardName () {
-      return 'Game Over'
+      return 'End Session'
     }
 
     static createCard (cardName) {
