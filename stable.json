@@ -277,14 +277,14 @@
 			"name": "Poll Result",
 			"category": "Additional Interactions",
 			"versions": [{
-				"version": 3.4,
-				"name": "3.4",
-				"created": "2023-09-26T12:00:00.000000+00:00",
-				"notes": "Added to repository",
-				"sha512-hash": "1889d69b1c4c5aaee88c3a4607eca64f85aa6c6032362fcdd901101d838404046f2b352d4b527bb699f2b1b32140f9686f3df670e6ae27bd832a95a41f253b76",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/poll_result/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/poll_result/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/poll_result/client.js"
+				"version": 3.5,
+				"name": "3.5",
+				"created": "2023-10-04T12:00:00.000000+00:00",
+				"notes": "Fixed incorrect upload.",
+				"sha512-hash": "19d5184278815700015c795d803b842005283971608812ff394f77fef72dd39748ba5399078fb74f46dd2bd0f72cb35ad33d57caea0a649a1d6d9d726b2836ca",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/client.js"
 			}]
 		},
 		"set_points": {
