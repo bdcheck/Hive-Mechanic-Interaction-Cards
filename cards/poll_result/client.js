@@ -1,15 +1,51 @@
 define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
-  class AcceptTermsNode extends Node {
+  class PollResultNode extends Node {
     cardIcon () {
-      return '<i class="fas fa-user-check" style="margin-right: 16px; font-size: 20px; "></i>'
+      return '<i class="fas fa-download" style="margin-right: 16px; font-size: 20px; "></i>'
     }
 
     cardFields () {
       return [{
+        field: 'variable',
+        type: 'text',
+        multiline: false,
+        label: {
+          en: 'Name'
+        }
+      }, {
+        field: 'value',
+        type: 'text',
+        multiline: false,
+        label: {
+          en: 'Value'
+        }
+      }, {
+        field: 'scope',
+        type: 'choice',
+        label: {
+          en: 'Scope'
+        },
+        options: [{
+          value: 'session',
+          label: {
+            en: 'Session'
+          }
+        }, {
+          value: 'player',
+          label: {
+            en: 'Player'
+          }
+        }, {
+          value: 'game',
+          label: {
+            en: 'Game'
+          }
+        }]
+      }, {
         field: 'description',
         type: 'readonly',
         value: {
-          en: 'Marks the terms & conditions as accepted for this activity.'
+          en: 'Sets a variable in the given scope, then proceeds to the next card.'
         },
         width: 7,
         is_help: true
@@ -21,7 +57,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     viewBody () {
-      return '<div class="mdc-typography--body1" style="margin: 16px;">Accept terms & conditions.</div>'
+      return '<div class="mdc-typography--body1" style="margin: 16px;">' + this.definition.variable + ' = ' + this.definition.value + '</div>'
     }
 
     initialize () {
@@ -32,6 +68,14 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
 
     issues (sequence) {
       const issues = super.issues(sequence)
+
+      if (this.definition.variable === undefined || this.definition.variable.trim().length === 0) {
+        issues.push(['No variable name provided.', 'node', this.definition.id, this.cardName()])
+      }
+
+      if (this.definition.value === undefined || this.definition.value.trim().length === 0) {
+        issues.push(['No value provided.', 'node', this.definition.id, this.cardName()])
+      }
 
       if (this.definition.next === undefined || this.definition.next === null || this.definition.next.trim().length === 0) {
         issues.push(['No next destination node selected.', 'node', this.definition.id, this.cardName()])
@@ -45,7 +89,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         this.definition.next = newId
 
         if (newId === null) {
-          console.log('accept-terms.js: Unable to resolve ' + oldId + ' SEQ: ' + this.sequence.definition.id)
+          console.log('set-variable.js: Unable to resolve ' + oldId + ' SEQ: ' + this.sequence.definition.id)
 
           delete this.definition.next
         }
@@ -87,17 +131,19 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Accept Terms'
+      return 'Poll Result'
     }
 
     static cardName () {
-      return 'Accept Terms'
+      return 'Poll Result'
     }
 
     static createCard (cardName) {
       const card = {
         name: cardName,
-        type: 'accept-terms',
+        type: 'poll-result',
+        variable: 'variable-name',
+        value: 'variable-value',
         id: Node.uuidv4()
       }
 
@@ -105,7 +151,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
   }
 
-  Node.registerCard('accept-terms', AcceptTermsNode)
+  Node.registerCard('poll-result', PollResultNode)
 
-  return AcceptTermsNode
+  return PollResultNode
 })
