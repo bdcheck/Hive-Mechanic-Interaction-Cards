@@ -1,158 +1,42 @@
-define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
-  class PollResultNode extends Node {
-    cardIcon () {
-      return '<i class="fas fa-download" style="margin-right: 16px; font-size: 20px; "></i>'
-    }
+# Incoming globals: definition, response, last_transition, previous_state
 
-    cardFields () {
-      return [{
-        field: 'variable',
-        type: 'text',
-        multiline: false,
-        label: {
-          en: 'Name'
-        }
-      }, {
-        field: 'value',
-        type: 'text',
-        multiline: false,
-        label: {
-          en: 'Value'
-        }
-      }, {
-        field: 'scope',
-        type: 'choice',
-        label: {
-          en: 'Scope'
-        },
-        options: [{
-          value: 'session',
-          label: {
-            en: 'Session'
-          }
-        }, {
-          value: 'player',
-          label: {
-            en: 'Player'
-          }
-        }, {
-          value: 'game',
-          label: {
-            en: 'Game'
-          }
-        }]
-      }, {
-        field: 'description',
-        type: 'readonly',
-        value: {
-          en: 'Sets a variable in the given scope, then proceeds to the next card.'
-        },
-        width: 7,
-        is_help: true
-      }, {
-        field: 'next',
-        type: 'card',
-        width: 5
-      }]
-    }
+logger = Logging.getLogger('db') # pylint: disable=undefined-variable
+logger.info('Hello?')
 
-    viewBody () {
-      return '<div class="mdc-typography--body1" style="margin: 16px;">' + this.definition.variable + ' = ' + this.definition.value + '</div>'
-    }
+counts = {}
 
-    initialize () {
-      super.initialize()
+for player in Player.objects.all(): # pylint: disable=undefined-variable
+    player_state = player.player_state
 
-      this.initializeFields()
-    }
+    vote_value = player_state.get('poll-response', None)
+    did_vote = player_state.get('player-vote', None)
 
-    issues (sequence) {
-      const issues = super.issues(sequence)
+    if vote_value is not None and did_vote is not None and did_vote == 'Yes':
+        count = counts.get(vote_value, 0)
+        count += 1
+        counts[vote_value] = count
 
-      if (this.definition.variable === undefined || this.definition.variable.trim().length === 0) {
-        issues.push(['No variable name provided.', 'node', this.definition.id, this.cardName()])
-      }
+message = 'results are:'
 
-      if (this.definition.value === undefined || this.definition.value.trim().length === 0) {
-        issues.push(['No value provided.', 'node', this.definition.id, this.cardName()])
-      }
+for value in counts:
+    message += '\\n%s: %s' % (value, count)
 
-      if (this.definition.next === undefined || this.definition.next === null || this.definition.next.trim().length === 0) {
-        issues.push(['No next destination node selected.', 'node', this.definition.id, this.cardName()])
-      }
+result['details'] = {
+    'name': definition['variable'],
+    'value': message,
+}
 
-      return issues
-    }
+if 'scope' in definition:
+    result['scope'] = definition['scope']
 
-    updateReferences (oldId, newId) {
-      if (this.definition.next === oldId) {
-        this.definition.next = newId
+result['actions'] = []
 
-        if (newId === null) {
-          console.log('set-variable.js: Unable to resolve ' + oldId + ' SEQ: ' + this.sequence.definition.id)
+result['next_id'] = definition['next']
 
-          delete this.definition.next
-        }
-      }
-    }
+if ('#' in result['next_id']) is False:
+    result['next_id'] = definition['sequence_id'] + '#' + result['next_id']
 
-    setDefaultDestination (defaultId) {
-      this.definition.next = defaultId
+context = extras['session'].fetch_session_context()
+context['result_of_poll'] = message
 
-      if (defaultId === null) {
-        delete this.definition.next
-      }
-    }
-
-    destinationNodes (sequence) {
-      const nodes = super.destinationNodes(sequence)
-
-      const id = this.definition.next
-
-      for (let i = 0; i < this.sequence.definition.items.length; i++) {
-        const item = this.sequence.definition.items[i]
-
-        if (item.id === id || (this.sequence.definition.id + '#' + item.id) === id) {
-          nodes.push(Node.createCard(item, sequence))
-        }
-      }
-
-      if (nodes.length === 0) {
-        const node = this.sequence.resolveNode(id)
-
-        if (node != null) {
-          nodes.push(node)
-        } else {
-          delete this.definition.next
-        }
-      }
-
-      return nodes
-    }
-
-    cardType () {
-      return 'Poll Result'
-    }
-
-    static cardName () {
-      return 'Poll Result'
-    }
-
-    static createCard (cardName) {
-      const card = {
-        name: cardName,
-        type: 'poll-result',
-        variable: 'variable-name',
-        value: 'variable-value',
-        id: Node.uuidv4()
-      }
-
-      return card
-    }
-  }
-
-  Node.registerCard('poll-result', PollResultNode)
-
-  return PollResultNode
-})
-
+# send message
