@@ -53,6 +53,10 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Gather Response<span>' +
                        '          </li>' +
+                       '          <li class="mdc-list-item" data-value="record" role="option">' +
+                       '            <span class="mdc-list-item__ripple"></span>' +
+                       '            <span class="mdc-list-item__text">Record Message<span>' +
+                       '          </li>' +
                        '          <li class="mdc-list-item" data-value="hangup" role="option">' +
                        '            <span class="mdc-list-item__ripple"></span>' +
                        '            <span class="mdc-list-item__text">Hang Up<span>' +
@@ -75,6 +79,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
                        '    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
                        '      Once the message is finished playing, the system will pause for a user defined amount of time before moving on to the next card.' +
                        '    </div>' +
+                       '</div>' +
+                       '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" id="' + this.cardId + '_record_container">' +
+                       '  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
+                       '    Once the message has been recorded, the system will immediately proceed to the next card without hanging up the call.' +
+                       '  </div>' +
                        '</div>' +
                        '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12" id="' + this.cardId + '_continue_container">' +
                        '  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 mdc-typography--caption" style="padding-top: 8px;">' +
@@ -401,6 +410,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       }
 
       $('#' + this.cardId + '_pause_container').hide()
+      $('#' + this.cardId + '_record_container').hide()
       // $('#' + this.cardId + '_continue_container').hide()
       $('#' + this.cardId + '_hangup_container').hide()
       $('.' + this.cardId + '_gather_container').hide()
@@ -412,6 +422,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         $('#' + this.cardId + '_continue_container').hide()
         $('#' + this.cardId + '_hangup_container').hide()
         $('.' + this.cardId + '_gather_container').hide()
+        $('#' + this.cardId + '_record_container').hide()
 
         if (me.definition.next_action === 'pause') {
           $('#' + this.cardId + '_pause_container').show()
@@ -421,6 +432,8 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           $('#' + this.cardId + '_continue_container').show()
         } else if (me.definition.next_action === 'hangup') {
           $('#' + this.cardId + '_hangup_container').show()
+        } else if (me.definition.next_action === 'record') {
+          $('#' + this.cardId + '_record_container').show()
         }
 
         me.sequence.markChanged(me.id)
@@ -432,6 +445,8 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         $('.' + this.cardId + '_gather_container').show()
       } else if (me.definition.next_action === 'continue') {
         $('#' + this.cardId + '_continue_container').show()
+      } else if (me.definition.next_action === 'record') {
+        $('#' + this.cardId + '_record_container').show()
       } else if (me.definition.next_action === 'hangup') {
         $('#' + this.cardId + '_hangup_container').show()
       }
