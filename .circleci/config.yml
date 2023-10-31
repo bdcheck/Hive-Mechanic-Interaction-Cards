@@ -31,20 +31,27 @@ jobs:
             pip install -r requirements.txt --progress-bar off
             python validate_manifest.py stable.json
 
+            pylint cards/accept_terms
+            pylint cards/arithmetic
             pylint cards/branch
+            pylint cards/calculate_percentage
+            pylint cards/check_terms
             pylint cards/comment
+            pylint cards/comparison_cards
+            pylint cards/data_query
             pylint cards/game_over
             pylint cards/http_request
+            pylint cards/image_sound
+            pylint cards/pause
+            pylint cards/poll_result
             pylint cards/process_response
             pylint cards/process_variable
+            pylint cards/response_contains_image
             pylint cards/send_message
             pylint cards/send_picture
-            pylint cards/send_picture
+            pylint cards/set_points
             pylint cards/set_variable
             pylint cards/voice_message
-            pylint cards/response_contains_image
-            pylint cards/check_terms
-            pylint cards/accept_terms
 
             pylint data_processors/positionstack
             pylint data_processors/yelp
