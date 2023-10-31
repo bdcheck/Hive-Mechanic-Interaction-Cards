@@ -170,14 +170,14 @@
 			"name": "Phone Call Actions",
 			"category": "Phone Calls and Voice Messaging",
 			"versions": [{
-				"version": 3.3,
-				"name": "3.3",
-				"created": "2023-09-26T12:00:00.000000+00:00",
-				"notes": "Renamed",
-				"sha512-hash": "e971cb85eb0de0ef2784a8e93436c84975ecb5852a8aa92202d793bd6f381c43ca62ddafa7c1345067d168fb67a868fec790b8ca099b8a899d29574c31d0c1ef",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.3/cards/voice_message/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.3/cards/voice_message/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.3/cards/voice_message/client.js"
+				"version": 3.6,
+				"name": "3.6",
+				"created": "2023-10-30T12:00:00.000000+00:00",
+				"notes": "Support for voice message recording",
+				"sha512-hash": "f117e7d05d14d37ce3d670c021e23edd56b88f92306b232c31d0cd11006e24d51a543bf235a2a8a468fdae46efe332872e8410cd5c39405e3db34b164e4e2880",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/voice_message/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/voice_message/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/voice_message/client.js"
 			}]
 		},
 		"data_query": {
@@ -277,14 +277,14 @@
 			"name": "Poll Result",
 			"category": "Additional Interactions",
 			"versions": [{
-				"version": 3.5,
-				"name": "3.5",
-				"created": "2023-10-04T12:00:00.000000+00:00",
+				"version": 3.6,
+				"name": "3.6",
+				"created": "2023-10-30T12:00:00.000000+00:00",
 				"notes": "Fixed incorrect upload.",
-				"sha512-hash": "19d5184278815700015c795d803b842005283971608812ff394f77fef72dd39748ba5399078fb74f46dd2bd0f72cb35ad33d57caea0a649a1d6d9d726b2836ca",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.5/cards/poll_result/client.js"
+				"sha512-hash": "f30d0c1be5bb60ee0b69f02f6c7f52087fd2664d5aba0f51066e57b7e77dd73d6af12d19f5b7f224d04e4c176bd81efcbae3c5a539d2c5b4bd099a1590188c9f",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/poll_result/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/poll_result/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.6/cards/poll_result/client.js"
 			}]
 		},
 		"set_points": {
