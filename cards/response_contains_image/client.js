@@ -112,11 +112,11 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
     }
 
     cardType () {
-      return 'Response Contains Image?'
+      return 'Received Image Branch'
     }
 
     static cardName () {
-      return 'Response Contains Image?'
+      return 'Received Image Branch'
     }
 
     static createCard (cardName) {

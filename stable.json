@@ -107,13 +107,13 @@
 		},
 		"response_contains_image": {
 			"identifier": "response-contains-image",
-			"name": "Response Contains Image",
+			"name": "Received Image Branch",
 			"category": "Advanced Messaging",
 			"versions": [{
 				"version": 2.8,
 				"name": "2.8",
 				"created": "2023-02-10T12:00:00.000000+00:00",
-				"notes": "'Insert before' update",
+				"notes": "Renamed card",
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/response_contains_image/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/response_contains_image/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/2.8/cards/response_contains_image/client.js",
