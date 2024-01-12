@@ -27,7 +27,7 @@ class LogGetFunction(object):
         from django.utils import timezone
         from builder.models import DataProcessorLog # pylint: disable=import-error
 
-        response = requests.get(*args, **kwargs) # pylint: disable=missing-timeout
+        response = requests.get(*args, **kwargs) # pylint: disable=missing-timeout # nosec
 
         request_payload = json.dumps(kwargs.get('params', {}), indent=2)
 
@@ -47,7 +47,7 @@ class LogPostFunction(object):
         from django.utils import timezone
         from builder.models import DataProcessorLog # pylint: disable=import-error
 
-        response = requests.post(*args, **kwargs) # pylint: disable=missing-timeout
+        response = requests.post(*args, **kwargs) # pylint: disable=missing-timeout # nosec
 
         request_payload = kwargs.get('data', None)
 

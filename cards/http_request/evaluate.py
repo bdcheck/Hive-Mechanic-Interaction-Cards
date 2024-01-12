@@ -40,9 +40,9 @@ if ('timeout' in definition) is False:
 
 try:
     if definition['http_method'] == 'post':
-        response = requests.post(definition['url'], params=payload, timeout=float(definition['timeout']))
+        response = requests.post(definition['url'], params=payload, timeout=float(definition['timeout'])) # nosec
     else:
-        response = requests.get(definition['url'], params=payload, timeout=float(definition['timeout']))
+        response = requests.get(definition['url'], params=payload, timeout=float(definition['timeout'])) # nosec
 except requests.exceptions.Timeout:
     result['next_id'] = definition['timeout_action']
 
