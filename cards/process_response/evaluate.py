@@ -74,9 +74,9 @@ elif 'timeout' in definition:
             if definition['timeout']['units'] == 'second':
                 test = test - datetime.timedelta(seconds=duration)
             elif definition['timeout']['units'] == 'minute':
-                test = test - datetime.timedelta(seconds=(duration * 60))
+                test = test - datetime.timedelta(seconds=(duration * 60)) # pylint: disable=superfluous-parens
             elif definition['timeout']['units'] == 'hour':
-                test = test - datetime.timedelta(seconds=(duration * 60 * 60))
+                test = test - datetime.timedelta(seconds=(duration * 60 * 60)) # pylint: disable=superfluous-parens
             elif definition['timeout']['units'] == 'day':
                 test = test - datetime.timedelta(days=duration)
             else:

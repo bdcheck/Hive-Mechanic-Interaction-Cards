@@ -1,4 +1,4 @@
-# pylint: disable=line-too-long
+# pylint: disable=line-too-long, useless-object-inheritance, too-few-public-methods, redefined-outer-name, reimported, import-outside-toplevel
 
 import json
 import logging
@@ -14,6 +14,49 @@ result['details'] = {
 }
 
 result['actions'] = []
+
+class LogGetFunction(object):
+    def __init__(self, processor_obj, session, context_obj):
+        self.processor = processor_obj
+        self.session = session
+        self.context = context_obj
+
+    def __call__(self, *args, **kwargs):
+        import json
+        import requests
+        from django.utils import timezone
+        from builder.models import DataProcessorLog # pylint: disable=import-error
+
+        response = requests.get(*args, **kwargs) # pylint: disable=missing-timeout
+
+        request_payload = json.dumps(kwargs.get('params', {}), indent=2)
+
+        DataProcessorLog.objects.create(data_processor=self.processor, method='GET', url=response.url, requested=timezone.now(), request_payload=json.dumps(request_payload, indent=2), response_status=response.status_code, response_payload=response.text, session=self.session, player=self.session.player, game=self.session.game_version.game, context=json.dumps(self.context, indent=2))
+
+        return response
+
+class LogPostFunction(object):
+    def __init__(self, processor_obj, session, context_obj):
+        self.processor = processor_obj
+        self.session = session
+        self.context = context_obj
+
+    def __call__(self, *args, **kwargs):
+        import json
+        import requests
+        from django.utils import timezone
+        from builder.models import DataProcessorLog # pylint: disable=import-error
+
+        response = requests.post(*args, **kwargs) # pylint: disable=missing-timeout
+
+        request_payload = kwargs.get('data', None)
+
+        if request_payload is None:
+            request_payload = kwargs.get('json', {})
+
+        DataProcessorLog.objects.create(data_processor=self.processor, method='POST', url=response.url, requested=timezone.now(), request_payload=json.dumps(request_payload, indent=2), response_status=response.status_code, response_payload=response.text, session=self.session, player=self.session.player, game=self.session.game_version.game, context=json.dumps(self.context, indent=2))
+
+        return response
 
 processor = DataProcessor.objects.filter(identifier=definition['processor']).first()
 
@@ -32,6 +75,8 @@ if processor is not None:
     else:
         original_context = context.copy()
 
+        context['session_id'] = extras['session'].pk
+
         code = compile(smart_str(processor.processor_function), '<string>', 'exec')
 
         metadata = {}
@@ -41,15 +86,12 @@ if processor is not None:
 
         local_env = {
             'metadata': metadata,
-            'context': context
+            'context': context,
+            'log_get': LogGetFunction(processor, extras.get('session', None), context),
+            'log_post': LogPostFunction(processor, extras.get('session', None), context),
         }
 
-        try:
-            local_env.update(data_processor_environment) # pylint: disable=undefined-variable
-        except: # nosec # pylint: disable=bare-except
-            pass
-
-        eval(code, {}, local_env) # nosec # pylint: disable=eval-used
+        eval(code, local_env, {}) # nosec # pylint: disable=eval-used
 
         for key in context:
             if key in original_context and context[key] == original_context[key]:
