@@ -12,34 +12,34 @@ for key in repository['cards'].keys():
     card_def = repository['cards'][key]
 
     versions = card_def['versions']
-    
+
     latest_version = sorted(versions, key=lambda version: version['version'], reverse=True)[0]
-    
-    remote_entry_content = requests.get(latest_version['entry-actions']).text
-    remote_evaluate_content = requests.get(latest_version['evaluate-function']).text
-    remote_client_content = requests.get(latest_version['client-implementation']).text
-    
+
+    remote_entry_content = requests.get(latest_version['entry-actions'], timeout=300).text
+    remote_evaluate_content = requests.get(latest_version['evaluate-function'], timeout=300).text
+    remote_client_content = requests.get(latest_version['client-implementation'], timeout=300).text
+
     prefix_index = latest_version['entry-actions'].index('/cards/') + 1
-    
+
     entry_content_path = latest_version['entry-actions'][prefix_index:]
     evaluate_content_path = latest_version['evaluate-function'][prefix_index:]
     client_content_path = latest_version['client-implementation'][prefix_index:]
 
     local_entry_content = ''
-    
+
     with open(entry_content_path, 'r', encoding='utf-8') as input_file:
         local_entry_content = input_file.read()
 
     local_evaluate_content = ''
-    
+
     with open(evaluate_content_path, 'r', encoding='utf-8') as input_file:
         local_evaluate_content = input_file.read()
 
     local_client_content = ''
-    
+
     with open(client_content_path, 'r', encoding='utf-8') as input_file:
         local_client_content = input_file.read()
-        
+
     if remote_entry_content != local_entry_content:
         print('[Card: ' + key + ' / entry-actions] Local file differs from remote file.')
         print(remote_entry_content)
@@ -67,7 +67,7 @@ for key in repository['cards'].keys():
     computed_hash.update(local_client_content.encode('utf-8'))
 
     local_hash = computed_hash.hexdigest()
-    
+
     if latest_version['sha512-hash'] != local_hash:
         print('[Card: ' + key + ' / hash] ' + local_hash)
 

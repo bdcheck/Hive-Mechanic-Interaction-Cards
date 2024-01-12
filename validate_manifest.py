@@ -17,9 +17,9 @@ with io.open(sys.argv[1], mode='r', encoding='utf-8') as repo_file:
         versions = card_def['versions']
 
         for version in versions:
-            entry_request = requests.get(version['entry-actions'])
-            evaluate_request = requests.get(version['evaluate-function'])
-            client_request = requests.get(version['client-implementation'])
+            entry_request = requests.get(version['entry-actions'], timeout=300)
+            evaluate_request = requests.get(version['evaluate-function'], timeout=300)
+            client_request = requests.get(version['client-implementation'], timeout=300)
 
             if entry_request.status_code != 200:
                 print('%d error retrieving %s' % (entry_request.status_code, version['entry-actions']))
@@ -56,7 +56,7 @@ with io.open(sys.argv[1], mode='r', encoding='utf-8') as repo_file:
         versions = processor_def['versions']
 
         for version in versions:
-            implemementation_request = requests.get(version['implementation'])
+            implemementation_request = requests.get(version['implementation'], timeout=300)
 
             if implemementation_request.status_code != 200:
                 print('%d error retrieving %s' % (implemementation_request.status_code, version['implementation']))
