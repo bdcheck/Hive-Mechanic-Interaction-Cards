@@ -1,7 +1,6 @@
 # pylint: disable=line-too-long
 
 import arrow
-import requests
 
 # Provided variables: context, metadata
 # API used: https://developer.wmata.com/docs/services/54763629281d83086473f231/operations/5476362a281d830c946a3d6c?
@@ -17,7 +16,7 @@ if 'wtama_bus_stop_id' in context:
         'api_key': metadata['api_key']
     }
 
-    response = requests.get(url, params=params, headers=headers, timeout=300)
+    response = log_get(url, params=params, headers=headers, timeout=300)
 
     response.raise_for_status()
 

@@ -50,14 +50,14 @@
 			"name": "HTTP Request",
 			"category": "Network and Third Party Communication",
 			"versions": [{
-				"version": 3.3,
-				"name": "3.3",
+				"version": 3.8,
+				"name": "3.8",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Code cleanup",
 				"sha512-hash": "e312f7d02c007c7ab1905178a296262b48ab771705e008519a38685eafde01f3b2e429b6fb28f59d91f6f1e8203ee06099603bfd85c08c6bb20a3ec8c6f3800a",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.7/cards/http_request/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.7/cards/http_request/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.7/cards/http_request/client.js"
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/http_request/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/http_request/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/http_request/client.js"
 			}]
 		},
 		"pause": {

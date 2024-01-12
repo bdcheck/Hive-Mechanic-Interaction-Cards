@@ -223,7 +223,7 @@ notes=FIXME,XXX,TODO
 
 # List of additional names supposed to be defined in builtins. Remember that
 # you should avoid to define new builtins when possible.
-additional-builtins=logger,response,context,metadata,result,definition,actions,extras,last_transition
+additional-builtins=logger,response,context,metadata,result,definition,actions,extras,last_transition,log_get,log_post
 
 # Tells whether unused global variables should be treated as a violation.
 allow-global-unused-variables=yes

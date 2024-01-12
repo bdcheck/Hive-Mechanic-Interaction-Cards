@@ -1,7 +1,5 @@
 # pylint: disable=line-too-long
 
-import requests
-
 # Provided variables: context, metadata
 # API used: https://openweathermap.org/current
 
@@ -42,7 +40,7 @@ if 'hive_physical_location_latitude' in context and 'hive_physical_location_long
     if 'units' in metadata:
         params['units'] = metadata['units']
 
-    response = requests.get(url, params=params, timeout=300)
+    response = log_get(url, params=params, timeout=300)
 
     response.raise_for_status()
 

@@ -1,7 +1,5 @@
 # pylint: disable=line-too-long
 
-import requests
-
 # Input: Diameter (in miles)
 # Output: Coordinates of edges of square boundary around player
 def generateSquareBoundary(SEARCH_RANGE):
@@ -28,7 +26,7 @@ if 'hive_physical_location_latitude' in context and 'hive_physical_location_long
 
     full_url = generateSquareBoundary(50)
 
-    response = requests.get(full_url, timeout=300)
+    response = log_get(full_url, timeout=300)
 
     response.raise_for_status()
 
