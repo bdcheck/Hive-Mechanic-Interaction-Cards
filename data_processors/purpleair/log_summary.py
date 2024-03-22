@@ -1,3 +1,4 @@
+# pylint: disable=line-too-long
 # Incoming variables: context, request, response, status_code
 
 nw_lat = request.get('nwlat', None)
