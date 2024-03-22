@@ -308,78 +308,78 @@
 			"identifier": "openweather-current",
 			"name": "Open Weather: Current Weather",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "a5ada857c48b4a3f4de3374ff579e5d8bc5cbc2cdfbf0d3ea12953b8c551f8a7ec9338c003f8ff89ce31372720ff52d658965c3ce2dcf0627156502cedfe2aa6",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/openweather/log_summary.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/openweather/current_weather.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/openweather/log_summary.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/openweather/current_weather.py"
 			}]
 		},
 		"positionstack-geocoder": {
 			"identifier": "positionstack-geocoder",
 			"name": "positionstack: Geocoder",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "093c2aa274076ace50fea4b7ae38b12cbecf4796b74d5b8a18652a348751bfd33fe4d9183294abf05ad20859649dfb2b3373320ad9dba39e6085728a32aeb312",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/positionstack/log_summary.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/positionstack/geocoder.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/positionstack/log_summary.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/positionstack/geocoder.py"
 			}]
 		},
 		"wmata-next-bus-arrival": {
 			"identifier": "wmata-next-bus-arrival",
 			"name": "WMATA: Next Bus Arrival",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "2577a38cedbdc86afb9a363dfca3162ba50299580cb4a936713ebca75c6dd6966278caa8357e80a0ff991a7e36760684e25891bfa9a03f170af88283694e023a",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/wmata/log_summary_next.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/wmata/next_bus_arrival.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/wmata/log_summary_next.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/wmata/next_bus_arrival.py"
 			}]
 		},
 		"wmata-nearest-bus-stop": {
 			"identifier": "wmata-nearest-bus-stop",
 			"name": "WMATA: Nearest Bus Stop",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "75b900bfd8395522179977c07a32d515ddc894d693d07f2a3185ba5d7c92f214f693eda0fc3aa5ddd1a0b0809825705ab7a7517a163bc415598ad1e2b9454130",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/wmata/log_summary_nearest.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/wmata/nearest_bus_stop.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/wmata/log_summary_nearest.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/wmata/nearest_bus_stop.py"
 			}]
 		},
 		"yelp-nearest-open-restaurant": {
 			"identifier": "yelp-nearest-open-restaurant",
 			"name": "Yelp: Nearest Open Restaurant",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "f742faa5e789c76410c01bd9b739de10f6881898f6ecbc1696e682b96da3d54b1e0e96af8fef7adfe13eca1405d6ce846d3171039ed3e9dd65eeacfcc0f709b7",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/yelp/log_summary.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/yelp/nearest_open_restaurant.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/yelp/log_summary.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/yelp/nearest_open_restaurant.py"
 			}]
 		},
 		"purpleair": {
 			"identifier": "purpleair",
 			"name": "Purple Air",
 			"versions": [{
-				"version": 3.8,
-				"name": "3.8",
+				"version": 3.9,
+				"name": "3.9",
 				"created": "2024-01-12T12:00:00.000000+00:00",
 				"notes": "Updated to use new request and response logging infrastructure",
 				"sha512-hash": "80a9c2ca46e3d9008407d3be35998559dc13e2ac4fbaa70e9bbd90675b51ee3a563b9181d7389c73cc2b9e6e4d80299cafc1e435036b5d83aa79913372b2987a",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/purpleair/log_summary.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.8/data_processors/purpleair/purpleair.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/purpleair/log_summary.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.9/data_processors/purpleair/purpleair.py"
 			}]
 		}
 	}
