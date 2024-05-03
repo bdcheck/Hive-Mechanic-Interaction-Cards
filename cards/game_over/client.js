@@ -48,6 +48,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       // Do nothing.
     }
 
+    // eslint-disable-next-line no-unused-vars
     setDefaultDestination (defaultId) {
       // Do nothing.
     }
