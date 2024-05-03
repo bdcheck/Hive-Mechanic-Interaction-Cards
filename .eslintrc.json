@@ -1,9 +1,0 @@
-{
-    "env": {
-        "amd": true,
-        "jquery": true	    
-    },
-    "extends": [
-        "standard"
-    ]
-}

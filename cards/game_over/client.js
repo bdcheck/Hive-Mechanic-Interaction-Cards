@@ -43,10 +43,12 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
       return nodes
     }
 
+    // eslint-disable-next-line no-unused-vars
     updateReferences (oldId, newId) {
       // Do nothing.
     }
 
+    // eslint-disable-next-line no-unused-vars
     setDefaultDestination (defaultId) {
       // Do nothing.
     }

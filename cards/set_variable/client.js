@@ -20,6 +20,13 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
           en: 'Value'
         }
       }, {
+        field: 'needs_moderation',
+        type: 'boolean',
+        advanced: 'true',
+        label: {
+          en: 'Requires moderation'
+        }
+      }, {
         field: 'scope',
         type: 'choice',
         label: {
