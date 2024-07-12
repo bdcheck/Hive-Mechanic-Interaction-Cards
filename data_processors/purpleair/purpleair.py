@@ -2,7 +2,8 @@
 
 # Input: Diameter (in miles)
 # Output: Coordinates of edges of square boundary around player
-def generateSquareBoundary(SEARCH_RANGE):
+
+def generateSquareBoundary(SEARCH_RANGE, LAT, LON):
     """Calculates a square boundary around the player's current location.
     Then generates a url to search for PurpleAir sensors in that area.
     """
@@ -24,7 +25,7 @@ if 'hive_physical_location_latitude' in context and 'hive_physical_location_long
     LAT = str(context['hive_physical_location_latitude'])
     LON = str(context['hive_physical_location_longitude'])
 
-    full_url = generateSquareBoundary(50)
+    full_url = generateSquareBoundary(50, LAT, LON)
 
     response = log_get(full_url, timeout=300)
 
