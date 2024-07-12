@@ -69,9 +69,9 @@
 				"name": "4.1",
 				"created": "2024-07-12T12:00:00.000000+00:00",
 				"notes": "Add moderation support",
-				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/entry.py",
-				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/evaluate.py",
-				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/client.js",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/4.1/cards/launch_session/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/4.1/cards/launch_session/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/4.1/cards/launch_session/client.js",
 				"sha512-hash": "6365b608ae0b692dceae672f22e757f61b8763bf405b8fda21e231769633d5a5a717e67ca25b52a7aa6d16de914834a49e7dd60790c2cf432c59c464b6ace2c7"
 			}]
 		},
