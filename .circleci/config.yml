@@ -42,6 +42,7 @@ jobs:
             pylint cards/game_over
             pylint cards/http_request
             pylint cards/image_sound
+            pylint cards/launch_session
             pylint cards/pause
             pylint cards/poll_result
             pylint cards/process_response
