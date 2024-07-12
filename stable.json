@@ -394,8 +394,8 @@
 				"created": "2024-07-12T12:00:00.000000+00:00",
 				"notes": "Cleaning up potential code issue with use of uninitialized variable",
 				"sha512-hash": "bb4b1389bec81e70b5baf65aaffc1e0e7d4de35fab0512336d6ce4b727aba7c68bdba259b668072f5f1fe207d30f8b831806f1c2463a4c087251403f9ade7743",
-				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/purpleair/log_summary.py",
-				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/data_processors/purpleair/purpleair.py"
+				"log-summary":  "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/4.2/data_processors/purpleair/log_summary.py",
+				"implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/4.2/data_processors/purpleair/purpleair.py"
 			}]
 		}
 	}
