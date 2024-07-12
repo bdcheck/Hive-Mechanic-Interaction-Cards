@@ -72,7 +72,7 @@
 				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/entry.py",
 				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/evaluate.py",
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/launch_session/client.js",
-				"sha512-hash": "984bb1729e39df57790971adc1f34db8d6ce962633fd8c0563f6e9d98896d2c99b27f75aa4bfd2019953b340aab7eab150b73fa8c6478f7c583a095d8beb30b1"
+				"sha512-hash": "6365b608ae0b692dceae672f22e757f61b8763bf405b8fda21e231769633d5a5a717e67ca25b52a7aa6d16de914834a49e7dd60790c2cf432c59c464b6ace2c7"
 			}]
 		},
 
