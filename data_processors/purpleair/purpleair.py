@@ -22,10 +22,10 @@ def generateSquareBoundary(search_range, latitude, longitude):
 # If data isn't found, record the error to Hive.
 
 if 'hive_physical_location_latitude' in context and 'hive_physical_location_longitude' in context:
-    latitude = str(context['hive_physical_location_latitude'])
-    longitude = str(context['hive_physical_location_longitude'])
+    hive_latitude = str(context['hive_physical_location_latitude'])
+    hive_longitude = str(context['hive_physical_location_longitude'])
 
-    full_url = generateSquareBoundary(50, latitude, longitude)
+    full_url = generateSquareBoundary(50, hive_latitude, hive_longitude)
 
     response = log_get(full_url, timeout=300)
 
@@ -40,15 +40,18 @@ if 'hive_physical_location_latitude' in context and 'hive_physical_location_long
 
     response_json['fields'].append('Distance_in_miles')  # Add a new field for distance of sensor from the user
 
-    List_of_distances = []
+    distances = []
 
-    for (ii, row) in enumerate(J['data']):  # Calculate the distance of each sensor from the user and insert the data into the JSON
-        distance_from_sensor = (((float(latitude) - row[lat_column_number]) ** 2 + (float(longitude) - row[lon_column_number]) ** 2) ** .5) * 69  # Calculate the distance away from each sensor (in miles). This is done using Pythagoras theorem, then multiplying by 69 to convert from degrees to miles.
+    for (ii, row) in enumerate(response_json['data']):  # Calculate the distance of each sensor from the user and insert the data into the JSON
+        # Calculate the distance away from each sensor (in miles). This is done using Pythagoras theorem, then multiplying by 69 to convert from degrees to miles.
+        distance_from_sensor = (((float(hive_latitude) - row[lat_column_number]) ** 2 + (float(hive_longitude) - row[lon_column_number]) ** 2) ** .5) * 69
+
         response_json['data'][ii].append(distance_from_sensor)
-        List_of_distances.append(distance_from_sensor)
 
-    if List_of_distances:
-        index_of_closest_sensor = List_of_distances.index(min(List_of_distances))
+        distances.append(distance_from_sensor)
+
+    if distances:
+        index_of_closest_sensor = distances.index(min(distances))
 
         # TO DO: Use confidence column to eliminate the closest sensor if the next nearest sensor has higher confidence...
 
