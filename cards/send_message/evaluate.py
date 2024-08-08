@@ -17,7 +17,8 @@
 #   }
 
 result['details'] = {
-    'message': definition['message']
+    'message': definition['message'],
+    'destinations': definition.get('destinations', '')
 }
 
 result['actions'] = []

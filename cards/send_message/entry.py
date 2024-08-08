@@ -1,4 +1,5 @@
 actions.append({
     'type': 'echo',
-    'message': definition['message']
+    'message': definition['message'],
+    'destinations': definition.get('destinations', '')
 })

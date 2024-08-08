@@ -27,6 +27,15 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         field: 'next',
         type: 'card',
         width: 5
+      }, {
+        field: 'destinations',
+        type: 'text',
+        multiline: true,
+        label: {
+          en: 'Destinations'
+        },
+        advanced: true,
+        requiresManager: true
       }]
     }
 
@@ -111,6 +120,7 @@ define(['material', 'cards/node', 'jquery'], function (mdc, Node) {
         name: cardName,
         context: '(Context goes here...)',
         message: '(Message goes here...)',
+        destinations: '',
         type: 'send-message',
         id: Node.uuidv4(),
         next: null
