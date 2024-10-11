@@ -350,7 +350,7 @@
 		},
 		"time_comparison": {
 			"identifier": "time-comparison",
-			"name": "Set Points",
+			"name": "Time Comparison",
 			"category": "Core Messaging and Control",
 			"versions": [{
 				"version": 4.4,
