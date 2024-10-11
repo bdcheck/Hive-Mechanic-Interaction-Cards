@@ -318,6 +318,51 @@
 				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/set_points/client.js"
 			}]
 		}
+		"set_time_variable": {
+			"identifier": "set-time-variable",
+			"name": "Set Time Variable",
+			"category": "Core Messaging and Control",
+			"versions": [{
+				"version": 4.4,
+				"name": "4.4",
+				"created": "2024-10-10T12:00:00.000000+00:00",
+				"notes": "Added to repository",
+				"sha512-hash": "db9a63001bbcdb7c31469cea992047604bc98fabec5c767adb4d8e3dc5aa6cb15f08d8d076c3683d5d3686ebcf74f04258cd2e385e9eccc2be86612018e12d76",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/set_time_variable/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/set_time_variable/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/set_time_variable/client.js"
+			}]
+		},
+		"summarize_variable": {
+			"identifier": "summarize-variable",
+			"name": "Summarize Variable",
+			"category": "Core Messaging and Control",
+			"versions": [{
+				"version": 4.4,
+				"name": "4.4",
+				"created": "2024-10-10T12:00:00.000000+00:00",
+				"notes": "Added to repository",
+				"sha512-hash": "db9a63001bbcdb7c31469cea992047604bc98fabec5c767adb4d8e3dc5aa6cb15f08d8d076c3683d5d3686ebcf74f04258cd2e385e9eccc2be86612018e12d76",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/summarize_variable/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/summarize_variable/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/main/cards/summarize_variable/client.js"
+			}]
+		},
+		"time_comparison": {
+			"identifier": "time-comparison",
+			"name": "Set Points",
+			"category": "Core Messaging and Control",
+			"versions": [{
+				"version": 4.4,
+				"name": "4.4",
+				"created": "2024-10-10T12:00:00.000000+00:00",
+				"notes": "Added to repository",
+				"sha512-hash": "db9a63001bbcdb7c31469cea992047604bc98fabec5c767adb4d8e3dc5aa6cb15f08d8d076c3683d5d3686ebcf74f04258cd2e385e9eccc2be86612018e12d76",
+				"entry-actions": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/time_comparison/entry.py",
+				"evaluate-function": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/time_comparison/evaluate.py",
+				"client-implementation": "https://raw.githubusercontent.com/bdcheck/Hive-Mechanic-Interaction-Cards/3.4/cards/time_comparison/client.js"
+			}]
+		}
 	},
 	"data_processors": {
 		"openweather-current": {
