@@ -51,7 +51,10 @@ jobs:
             pylint cards/send_message
             pylint cards/send_picture
             pylint cards/set_points
+            pylint cards/set_time_variable
             pylint cards/set_variable
+            pylint cards/summarize_variable
+            pylint cards/time_comparison
             pylint cards/voice_message
 
             pylint data_processors/positionstack
